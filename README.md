@@ -1,3 +1,5 @@
+# WARNING: Work in progress!
+---
 # Cineres
 Cineres is a text based roguelike with a retro style. 
 
