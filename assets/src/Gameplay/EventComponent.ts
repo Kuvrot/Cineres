@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Sprite } from 'cc';
+import { _decorator, Component, Node, Sprite, SpriteFrame } from 'cc';
 import { EventManager } from '../Core/EventManager';
 import { CityNameGenerator } from './Generation/CityNameGenerator';
 const { ccclass, property } = _decorator;
@@ -6,6 +6,17 @@ const { ccclass, property } = _decorator;
 @ccclass('EventComponent')
 export class EventComponent extends Component {
     
+    //Event type
+    // 0 = City type
+    // 1 = Forest
+    // 2 = Interaction
+    // 3 = Combat
+    // 4 = Store
+    // 5 = Loot
+    // 6 = Random store
+    @property
+    eventType: number = 0;
+
     @property
     prompt : string = "";
     
@@ -15,8 +26,8 @@ export class EventComponent extends Component {
     @property
     optionSelected : number = 0;
 
-   @property(Sprite)
-   image: Sprite;
+   @property(SpriteFrame)
+   eventImage: SpriteFrame;
     
     onEnable() {
     }
@@ -30,7 +41,7 @@ export class EventComponent extends Component {
     }
 
     getPrompt () {
-        if (this.getComponent(CityNameGenerator) != null){
+        if (this.eventType == 0 && this.getComponent(CityNameGenerator) != null){
             this.prompt = this.getComponent(CityNameGenerator).generateCityName(this.prompt);
         }
         return this.prompt;

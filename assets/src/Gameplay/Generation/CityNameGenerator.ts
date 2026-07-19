@@ -10,6 +10,8 @@ export class CityNameGenerator extends Component {
 
     cityName: string = "";
 
+    cityAdjectives: string = "";
+
     onEnable() {
     }
 
@@ -20,10 +22,11 @@ export class CityNameGenerator extends Component {
     generateCityName (prompt: string){
         let previousPrompt = prompt;
         let cityName = NameManager.instance.generateCityName();
-        let newPrompt = this.header += " " + "<color=#0000FF>" + cityName + "</color> ";
+        let newPrompt = this.header += " " + "<color=#00FFFF>" + cityName + "</color> ";
         newPrompt += '<br /> <br />';
         newPrompt += previousPrompt;
         newPrompt += '<br /> <br />';
+        newPrompt += '<br />' + NameManager.instance.generateCityAdjectives();
         return newPrompt;
     }
     

@@ -58,7 +58,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 60
+      "__id__": 63
     },
     "_id": "3f2aa2ba-f8bb-418d-8350-00afc21c85fb"
   },
@@ -1045,7 +1045,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "PlaceHolder",
+    "_name": "Display",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -1633,7 +1633,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 1.1,
-      "y": 112.659,
+      "y": 74.209,
       "z": 0
     },
     "_lrot": {
@@ -1672,7 +1672,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 229.1,
-      "height": 406.50000000000006
+      "height": 456.50000000000006
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1692,7 +1692,7 @@
     "_enabled": true,
     "__prefab": null,
     "_lineHeight": 25,
-    "_string": "---------------\nSTATS\n---------------\nHealth: 00\nStrength: 0\nSkill: 0\nGun Skill: 0\nAgility: 0\n\n---------------\nINVENTORY\n---------------\nBandages: 100\nMusket ammo: 00 \nPistol ammo: 00\n",
+    "_string": "---------------\nSTATS\n---------------\nHealth: 00\nStrength: 0\nSkill: 0\nGun Skill: 0\nAgility: 0\nHunger: 0\n\n---------------\nINVENTORY\n---------------\nReales: 2\nBandages: 1\nMusket ammo: 00 \nPistol ammo: 00\n",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
     "_fontSize": 25,
@@ -2052,12 +2052,15 @@
     "_children": [
       {
         "__id__": 56
+      },
+      {
+        "__id__": 59
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 59
+        "__id__": 62
       }
     ],
     "_prefab": null,
@@ -2148,14 +2151,16 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "prompt": "You can smell the misery that envolves this place. <br />Some locals see you with distrust, and others with curiosity.",
+    "eventType": 0,
+    "prompt": "",
     "options": [
       "Continue with your way",
-      "Ask the locals"
+      "Go to the store"
     ],
     "optionSelected": 0,
-    "image": {
-      "__id__": 28
+    "eventImage": {
+      "__uuid__": "94b667d2-b2ca-4efb-b145-d9882ba74a6a@f9941",
+      "__expectedType__": "cc.SpriteFrame"
     },
     "_id": "bcJ31S6OBMwpU2Z+Or2nzk"
   },
@@ -2173,6 +2178,90 @@
     "_id": "75yVn/sPtJ24+n8AZihw7w"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "Event_2",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 55
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 60
+      },
+      {
+        "__id__": 61
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "15VfjYcyVIe7CYbz0QEdAC"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 59
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "While you were walking, you accidentally get in an argument with a pompous individual.<br />You have been challenged to a duel by a<color=#FFFF00> Currutaco</color>",
+    "options": [
+      "Fight",
+      "Run away"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "6eUBYH3pZOILySFAoUDerk"
+  },
+  {
+    "__type__": "c0b8bLyeiZKQbF5dFXzNF9b",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 59
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "header": "You have arrived to a town called ",
+    "_id": "61Ga44T69P1YdBcbczjVaH"
+  },
+  {
     "__type__": "d370fKCLrdMCLRDBCDEGjBK",
     "_name": "",
     "_objFlags": 0,
@@ -2185,39 +2274,46 @@
     "events": [
       {
         "__id__": 57
+      },
+      {
+        "__id__": 60
       }
     ],
     "currentEvent": 0,
     "consoleText": {
       "__id__": 21
     },
+    "movingText": "Moving forward...",
+    "display": {
+      "__id__": 28
+    },
     "_id": "39/laC7VpDo7Ff1prEYwkh"
   },
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 61
-    },
-    "shadows": {
-      "__id__": 62
-    },
-    "_skybox": {
-      "__id__": 63
-    },
-    "fog": {
       "__id__": 64
     },
-    "octree": {
+    "shadows": {
       "__id__": 65
     },
-    "skin": {
+    "_skybox": {
       "__id__": 66
     },
-    "lightProbeInfo": {
+    "fog": {
       "__id__": 67
     },
-    "postSettings": {
+    "octree": {
       "__id__": 68
+    },
+    "skin": {
+      "__id__": 69
+    },
+    "lightProbeInfo": {
+      "__id__": 70
+    },
+    "postSettings": {
+      "__id__": 71
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
