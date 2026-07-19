@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, RichText } from 'cc';
+import { _decorator, Component, Node, RichText, Sprite, SpriteComponent } from 'cc';
 import { EventComponent } from '../Gameplay/EventComponent';
 const { ccclass, property } = _decorator;
 
@@ -17,6 +17,12 @@ export class EventManager extends Component {
 
     @property(RichText)
     consoleText : RichText;
+
+    @property
+    movingText : string = "Moving forward...";
+
+    @property(SpriteComponent)
+    display: SpriteComponent;
     
     start() {
         EventManager.instance = this;
@@ -30,9 +36,9 @@ export class EventManager extends Component {
     }
 
     generateNewEvent(){
-        let index = this.getRandomInt(0 , this.events.length);
+        let index = this.getRandomInt(0 , this.events.length - 1);
         while (index == this.previousEvent) {
-            index = this.getRandomInt(0 , this.events.length);
+            index = this.getRandomInt(0 , this.events.length - 1);
         }
         this.previousEvent = this.currentEvent;
         this.currentEvent = index;
@@ -61,6 +67,8 @@ export class EventManager extends Component {
             consoleText += i + ". " + this.events[this.currentEvent].options[i];
         }
         this.consoleText.string = consoleText;
+
+        this.display.spriteFrame = this.events[this.currentEvent].eventImage;
     }
 }
 
