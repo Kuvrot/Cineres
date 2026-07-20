@@ -58,7 +58,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 63
+      "__id__": 74
     },
     "_id": "3f2aa2ba-f8bb-418d-8350-00afc21c85fb"
   },
@@ -2055,12 +2055,30 @@
       },
       {
         "__id__": 59
+      },
+      {
+        "__id__": 61
+      },
+      {
+        "__id__": 63
+      },
+      {
+        "__id__": 65
+      },
+      {
+        "__id__": 67
+      },
+      {
+        "__id__": 69
+      },
+      {
+        "__id__": 71
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 62
+        "__id__": 73
       }
     ],
     "_prefab": null,
@@ -2190,9 +2208,6 @@
     "_components": [
       {
         "__id__": 60
-      },
-      {
-        "__id__": 61
       }
     ],
     "_prefab": null,
@@ -2249,17 +2264,413 @@
     "_id": "6eUBYH3pZOILySFAoUDerk"
   },
   {
-    "__type__": "c0b8bLyeiZKQbF5dFXzNF9b",
+    "__type__": "cc.Node",
+    "_name": "Event_3",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 55
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 62
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "d9GnXYlDhKKrm/as1Vfhfv"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 59
+      "__id__": 61
     },
     "_enabled": true,
     "__prefab": null,
-    "header": "You have arrived to a town called ",
-    "_id": "61Ga44T69P1YdBcbczjVaH"
+    "eventType": 3,
+    "prompt": "While you were walking a<color=\"#FF0000\">bandido </color> tries to rob you",
+    "options": [
+      "Fight",
+      "Try to flee and find another way",
+      "Give him everything you have"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "00vr8owChDNZAZdzdToSpa"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_4",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 55
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 64
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "0dw+3p3BdInJNzT810AW+P"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 63
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 2,
+    "prompt": "You stumble across a funerary ceremony.",
+    "options": [
+      "Pray with them (+1 strength)",
+      "Continue on your way"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "a7N1xQsuRCs46Xpz3zvjqf"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_5",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 55
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 66
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "37Jcyb5JBGWpOwCkItaddP"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 65
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 2,
+    "prompt": "You arrive to a little <color=#FFFF00> pueblo </color> <br /> They are celebrating a wedding.",
+    "options": [
+      "Celebrate with them <br /> (-2 agility) (-1 strength) (downs hunger to 0)",
+      "Continue on your way"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "a6AevJ7cRJFouw3rDVEWoL"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_6",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 55
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 68
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "77G7VePbFGYbDeRcjOzeSJ"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 67
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "A <color=#FF0000> corrupted verdugo </color> has appeared.",
+    "options": [
+      "Fight",
+      "Run away"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "2cYIDD8HxByKK3Z7Wo65b/"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_7",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 55
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 70
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "cffsnAcFVOxbRLQc0nWNIa"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 69
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "A <color=#FF0000> verdugo  maldito </color> has appeared.",
+    "options": [
+      "Fight",
+      "Run away"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "04pGMjHEJP5ZHdMqMCvIv7"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_8",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 55
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 72
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "3aetD98+BBuIQHpkPtfscg"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 71
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "A <color=#FF0000> tlahuelpuchi </color> has appeared.",
+    "options": [
+      "Fight",
+      "Run away"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "56iZO8vSFE26zPYwXPrdQm"
   },
   {
     "__type__": "d370fKCLrdMCLRDBCDEGjBK",
@@ -2292,28 +2703,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 64
+      "__id__": 75
     },
     "shadows": {
-      "__id__": 65
+      "__id__": 76
     },
     "_skybox": {
-      "__id__": 66
+      "__id__": 77
     },
     "fog": {
-      "__id__": 67
+      "__id__": 78
     },
     "octree": {
-      "__id__": 68
+      "__id__": 79
     },
     "skin": {
-      "__id__": 69
+      "__id__": 80
     },
     "lightProbeInfo": {
-      "__id__": 70
+      "__id__": 81
     },
     "postSettings": {
-      "__id__": 71
+      "__id__": 82
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
