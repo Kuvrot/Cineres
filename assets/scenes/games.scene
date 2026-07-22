@@ -58,7 +58,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 74
+      "__id__": 76
     },
     "_id": "3f2aa2ba-f8bb-418d-8350-00afc21c85fb"
   },
@@ -855,7 +855,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 457.3,
-      "height": 206.5
+      "height": 156.5
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -875,7 +875,7 @@
     "_enabled": true,
     "__prefab": null,
     "_lineHeight": 25,
-    "_string": "<color=#FF0000>Enemy text</color>\n<color=#00FF00>Console text</color>\n<color=#0000FF>Item text</color>\n<color=#00FFFF>Item text</color>\n<color=#FF00FF>Item text</color>\n<color=#FFFF00>Item text</color>\nConsole text\n",
+    "_string": "<color=#FF0000>Enemy text</color>\n<color=#00FF00>Console text</color>\n<color=#0000FF>Item text</color>\n<color=#00FFFF>Item text</color>\n<color=#FF00FF>Item text</color>\n<color=#FFFF00>Item text</color>",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
     "_fontSize": 20,
@@ -1134,7 +1134,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "94b667d2-b2ca-4efb-b145-d9882ba74a6a@f9941",
+      "__uuid__": "9bede9cd-4fb4-4b5a-8299-33ff6f6105b2@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -1842,7 +1842,7 @@
     "_priority": 0,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 473.5582154515778,
+    "_orthoHeight": 501.3824884792627,
     "_near": 0,
     "_far": 2000,
     "_color": {
@@ -2054,7 +2054,7 @@
         "__id__": 56
       },
       {
-        "__id__": 59
+        "__id__": 58
       },
       {
         "__id__": 61
@@ -2073,12 +2073,15 @@
       },
       {
         "__id__": 71
+      },
+      {
+        "__id__": 73
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 73
+        "__id__": 75
       }
     ],
     "_prefab": null,
@@ -2113,7 +2116,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_1",
+    "_name": "Event_0",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -2124,9 +2127,76 @@
     "_components": [
       {
         "__id__": 57
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "a5BMzKkSJDqY8dypXFku1c"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 56
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 2,
+    "prompt": "The misery of the region is unbearable. <br />\nMuch of the towns are now full with dust, bones, and ashes. <br />\nA couple years ago, something called<color=#FFFF00> La corrupción </color><br/>This curse spread like a plague.\nBut this plague didn't just killed people, it removed all the humanity of the body, and the remaining flesh and bones transformed into something else. Some people got insane, but others were transformed into something that can not be described as something native to this world. <br />",
+    "options": [
+      "Continue"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "9bede9cd-4fb4-4b5a-8299-33ff6f6105b2@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "17KGd4ovdHX5X0uMHLcNta"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_1",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 55
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 59
       },
       {
-        "__id__": 58
+        "__id__": 60
       }
     ],
     "_prefab": null,
@@ -2165,7 +2235,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 56
+      "__id__": 58
     },
     "_enabled": true,
     "__prefab": null,
@@ -2188,7 +2258,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 56
+      "__id__": 58
     },
     "_enabled": true,
     "__prefab": null,
@@ -2198,74 +2268,6 @@
   {
     "__type__": "cc.Node",
     "_name": "Event_2",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "_parent": {
-      "__id__": 55
-    },
-    "_children": [],
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 60
-      }
-    ],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_mobility": 0,
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "15VfjYcyVIe7CYbz0QEdAC"
-  },
-  {
-    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 59
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "eventType": 3,
-    "prompt": "While you were walking, you accidentally get in an argument with a pompous individual.<br />You have been challenged to a duel by a<color=#FFFF00> Currutaco</color>",
-    "options": [
-      "Fight",
-      "Run away"
-    ],
-    "optionSelected": 0,
-    "eventImage": {
-      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_id": "6eUBYH3pZOILySFAoUDerk"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Event_3",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -2306,7 +2308,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "d9GnXYlDhKKrm/as1Vfhfv"
+    "_id": "15VfjYcyVIe7CYbz0QEdAC"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -2319,22 +2321,21 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "While you were walking a<color=\"#FF0000\">bandido </color> tries to rob you",
+    "prompt": "While you were walking, you accidentally get in an argument with a pompous individual.<br />You have been challenged to a duel by a<color=#FFFF00> Currutaco</color>",
     "options": [
       "Fight",
-      "Try to flee and find another way",
-      "Give him everything you have"
+      "Run away"
     ],
     "optionSelected": 0,
     "eventImage": {
       "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "00vr8owChDNZAZdzdToSpa"
+    "_id": "6eUBYH3pZOILySFAoUDerk"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_4",
+    "_name": "Event_3",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -2375,7 +2376,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "0dw+3p3BdInJNzT810AW+P"
+    "_id": "d9GnXYlDhKKrm/as1Vfhfv"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -2387,22 +2388,23 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "eventType": 2,
-    "prompt": "You stumble across a funerary ceremony.",
+    "eventType": 3,
+    "prompt": "While you were walking a<color=\"#FF0000\">bandido </color> tries to rob you",
     "options": [
-      "Pray with them (+1 strength)",
-      "Continue on your way"
+      "Fight",
+      "Try to flee and find another way",
+      "Give him everything you have"
     ],
     "optionSelected": 0,
     "eventImage": {
       "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "a7N1xQsuRCs46Xpz3zvjqf"
+    "_id": "00vr8owChDNZAZdzdToSpa"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_5",
+    "_name": "Event_4",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -2443,7 +2445,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "37Jcyb5JBGWpOwCkItaddP"
+    "_id": "0dw+3p3BdInJNzT810AW+P"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -2456,9 +2458,9 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 2,
-    "prompt": "You arrive to a little <color=#FFFF00> pueblo </color> <br /> They are celebrating a wedding.",
+    "prompt": "You stumble across a funerary ceremony.",
     "options": [
-      "Celebrate with them <br /> (-2 agility) (-1 strength) (downs hunger to 0)",
+      "Pray with them (+1 strength)",
       "Continue on your way"
     ],
     "optionSelected": 0,
@@ -2466,11 +2468,11 @@
       "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "a6AevJ7cRJFouw3rDVEWoL"
+    "_id": "a7N1xQsuRCs46Xpz3zvjqf"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_6",
+    "_name": "Event_5",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -2511,7 +2513,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "77G7VePbFGYbDeRcjOzeSJ"
+    "_id": "37Jcyb5JBGWpOwCkItaddP"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -2523,22 +2525,22 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "eventType": 3,
-    "prompt": "A <color=#FF0000> corrupted verdugo </color> has appeared.",
+    "eventType": 2,
+    "prompt": "You arrive to a little <color=#FFFF00> pueblo </color> <br /> They are celebrating a wedding.",
     "options": [
-      "Fight",
-      "Run away"
+      "Celebrate with them <br /> (-2 agility) (-1 strength) (downs hunger to 0)",
+      "Continue on your way"
     ],
     "optionSelected": 0,
     "eventImage": {
       "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "2cYIDD8HxByKK3Z7Wo65b/"
+    "_id": "a6AevJ7cRJFouw3rDVEWoL"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_7",
+    "_name": "Event_6",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -2579,7 +2581,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "cffsnAcFVOxbRLQc0nWNIa"
+    "_id": "77G7VePbFGYbDeRcjOzeSJ"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -2592,7 +2594,7 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "A <color=#FF0000> verdugo  maldito </color> has appeared.",
+    "prompt": "A <color=#FF0000> corrupted verdugo </color> has appeared.",
     "options": [
       "Fight",
       "Run away"
@@ -2602,11 +2604,11 @@
       "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "04pGMjHEJP5ZHdMqMCvIv7"
+    "_id": "2cYIDD8HxByKK3Z7Wo65b/"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_8",
+    "_name": "Event_7",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -2647,7 +2649,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "3aetD98+BBuIQHpkPtfscg"
+    "_id": "cffsnAcFVOxbRLQc0nWNIa"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -2656,6 +2658,74 @@
     "__editorExtras__": {},
     "node": {
       "__id__": 71
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "A <color=#FF0000> verdugo  maldito </color> has appeared.",
+    "options": [
+      "Fight",
+      "Run away"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "04pGMjHEJP5ZHdMqMCvIv7"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_8",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 55
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 74
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "3aetD98+BBuIQHpkPtfscg"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 73
     },
     "_enabled": true,
     "__prefab": null,
@@ -2687,7 +2757,28 @@
         "__id__": 57
       },
       {
-        "__id__": 60
+        "__id__": 59
+      },
+      {
+        "__id__": 62
+      },
+      {
+        "__id__": 64
+      },
+      {
+        "__id__": 66
+      },
+      {
+        "__id__": 68
+      },
+      {
+        "__id__": 70
+      },
+      {
+        "__id__": 72
+      },
+      {
+        "__id__": 74
       }
     ],
     "currentEvent": 0,
@@ -2703,28 +2794,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 75
-    },
-    "shadows": {
-      "__id__": 76
-    },
-    "_skybox": {
       "__id__": 77
     },
-    "fog": {
+    "shadows": {
       "__id__": 78
     },
-    "octree": {
+    "_skybox": {
       "__id__": 79
     },
-    "skin": {
+    "fog": {
       "__id__": 80
     },
-    "lightProbeInfo": {
+    "octree": {
       "__id__": 81
     },
-    "postSettings": {
+    "skin": {
       "__id__": 82
+    },
+    "lightProbeInfo": {
+      "__id__": 83
+    },
+    "postSettings": {
+      "__id__": 84
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false

@@ -40,8 +40,16 @@ export class EventManager extends Component {
         while (index == this.previousEvent) {
             index = this.getRandomInt(0 , this.events.length - 1);
         }
-        this.previousEvent = this.currentEvent;
-        this.currentEvent = index;
+
+        
+        if (this.previousEvent != -1){
+            this.previousEvent = this.currentEvent;
+            this.currentEvent = index;
+        }else{
+            this.currentEvent = 0;
+            this.previousEvent = this.currentEvent;
+        }
+
         if (this.previousEvent >= 0){
             this.events[this.previousEvent].node.active = false;
         }

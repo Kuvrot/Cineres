@@ -17,7 +17,7 @@ export class EventComponent extends Component {
     @property
     eventType: number = 0;
 
-    @property
+    @property({ multiline: true })
     prompt : string = "";
     
     @property([String])
