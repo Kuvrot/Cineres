@@ -4,7 +4,6 @@ const { ccclass, property } = _decorator;
 
 @ccclass('EventManager')
 export class EventManager extends Component {
-    
     static instance : EventManager;
 
     @property([EventComponent])
@@ -35,12 +34,17 @@ export class EventManager extends Component {
     update(deltaTime: number) {
     }
 
-    generateNewEvent(){
-        let index = this.getRandomInt(0 , this.events.length - 1);
-        while (index == this.previousEvent) {
-            index = this.getRandomInt(0 , this.events.length - 1);
+    generateNewEvent(event: EventComponent = null){  
+        let index = 0;
+        console.log("pene");
+        if (event == null){
+            index = this.generateRandomEvent();
+        }else{
+            index = this.events.indexOf(event);
+            if (index == -1){
+                index = this.generateRandomEvent();
+            }
         }
-
         
         if (this.previousEvent != -1){
             this.previousEvent = this.currentEvent;
@@ -57,6 +61,14 @@ export class EventManager extends Component {
         this.displayPrompt();
     }
 
+    generateRandomEvent () {
+        let index = this.getRandomInt(0 , this.events.length - 1);
+        while (index == this.previousEvent) {
+            index = this.getRandomInt(0 , this.events.length - 1);
+        }
+        return index;
+    }
+
     clearConsole () {
         this.consoleText.string = "";
     }
@@ -67,7 +79,6 @@ export class EventManager extends Component {
 
     displayPrompt () {
         let consoleText = this.events[this.currentEvent].getPrompt();
-        
         //Display options
         consoleText += "<br/>";
         for (let i  = 0; i < this.events[this.currentEvent].options.length; i++){
@@ -75,7 +86,6 @@ export class EventManager extends Component {
             consoleText += i + ". " + this.events[this.currentEvent].options[i];
         }
         this.consoleText.string = consoleText;
-
         this.display.spriteFrame = this.events[this.currentEvent].eventImage;
     }
 }

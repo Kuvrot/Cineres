@@ -38,7 +38,6 @@ export class GameManager extends Component {
     start() {
         GameManager.instance = this;
     }
-
     update(deltaTime: number) {
         
     }

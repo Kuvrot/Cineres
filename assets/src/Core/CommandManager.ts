@@ -1,4 +1,4 @@
-import { _decorator, Component, EditBox, Node } from 'cc';
+import { _decorator, Component, EditBox, Node} from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('CommandManager')
@@ -6,7 +6,10 @@ export class CommandManager extends Component {
     
     @property(EditBox)
     command : EditBox;
-    
+
+    @property
+    isCommandEntered : boolean = false;
+
     static instance;
 
     start() {
@@ -14,11 +17,13 @@ export class CommandManager extends Component {
     }
 
     update(deltaTime: number) {
-        
     }
-
     enter () {
-        this.command.string = "";
+        this.isCommandEntered = true;
+    }
+    clearCommand(){
+        this.command.string = '';
+        this.isCommandEntered = false;
     }
 }
 
