@@ -9,9 +9,8 @@ export class GoToStore extends Component {
     
     @property(EventComponent)
     storeEvent: EventComponent;
-    
-    start() {
 
+    start() {
     }
 
     update(deltaTime: number) {

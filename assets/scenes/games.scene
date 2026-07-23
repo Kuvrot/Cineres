@@ -58,7 +58,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 90
+      "__id__": 82
     },
     "_id": "3f2aa2ba-f8bb-418d-8350-00afc21c85fb"
   },
@@ -2078,28 +2078,16 @@
         "__id__": 68
       },
       {
-        "__id__": 70
-      },
-      {
-        "__id__": 72
-      },
-      {
-        "__id__": 74
-      },
-      {
-        "__id__": 76
-      },
-      {
         "__id__": 65
       },
       {
-        "__id__": 78
+        "__id__": 70
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 89
+        "__id__": 81
       }
     ],
     "_prefab": null,
@@ -2336,7 +2324,7 @@
       "Buy food",
       "Buy musket ammo",
       "Buy pistol ammo",
-      "Continue with your way"
+      ""
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -2392,143 +2380,6 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_2",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "_parent": {
-      "__id__": 56
-    },
-    "_children": [],
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 67
-      }
-    ],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_mobility": 0,
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "15VfjYcyVIe7CYbz0QEdAC"
-  },
-  {
-    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 66
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "eventType": 3,
-    "prompt": "While you were walking, you accidentally get in an argument with a pompous individual.<br />You have been challenged to a duel by a<color=#FFFF00> Currutaco</color>",
-    "options": [
-      "Fight",
-      "Run away"
-    ],
-    "optionSelected": 0,
-    "eventImage": {
-      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_id": "6eUBYH3pZOILySFAoUDerk"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Event_3",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "_parent": {
-      "__id__": 56
-    },
-    "_children": [],
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 69
-      }
-    ],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_mobility": 0,
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "d9GnXYlDhKKrm/as1Vfhfv"
-  },
-  {
-    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 68
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "eventType": 3,
-    "prompt": "While you were walking a<color=#FF0000> bandido </color> tries to rob you",
-    "options": [
-      "Fight",
-      "Try to flee and find another way",
-      "Give him everything you have"
-    ],
-    "optionSelected": 0,
-    "eventImage": {
-      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_id": "00vr8owChDNZAZdzdToSpa"
-  },
-  {
-    "__type__": "cc.Node",
     "_name": "Event_4",
     "_objFlags": 0,
     "__editorExtras__": {},
@@ -2539,7 +2390,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 71
+        "__id__": 67
       }
     ],
     "_prefab": null,
@@ -2578,7 +2429,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 70
+      "__id__": 66
     },
     "_enabled": true,
     "__prefab": null,
@@ -2607,7 +2458,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 73
+        "__id__": 69
       }
     ],
     "_prefab": null,
@@ -2646,7 +2497,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 72
+      "__id__": 68
     },
     "_enabled": true,
     "__prefab": null,
@@ -2665,17 +2516,74 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_6",
+    "_name": "Enemies",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
       "__id__": 56
     },
+    "_children": [
+      {
+        "__id__": 71
+      },
+      {
+        "__id__": 73
+      },
+      {
+        "__id__": 75
+      },
+      {
+        "__id__": 77
+      },
+      {
+        "__id__": 79
+      }
+    ],
+    "_active": true,
+    "_components": [],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "4623+VXNRHhbcoklmYDpAZ"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_6",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 70
+    },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 75
+        "__id__": 72
       }
     ],
     "_prefab": null,
@@ -2714,7 +2622,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 74
+      "__id__": 71
     },
     "_enabled": true,
     "__prefab": null,
@@ -2737,13 +2645,13 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 56
+      "__id__": 70
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 77
+        "__id__": 74
       }
     ],
     "_prefab": null,
@@ -2782,7 +2690,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 76
+      "__id__": 73
     },
     "_enabled": true,
     "__prefab": null,
@@ -2801,74 +2709,17 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Enemies",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "_parent": {
-      "__id__": 56
-    },
-    "_children": [
-      {
-        "__id__": 79
-      },
-      {
-        "__id__": 81
-      },
-      {
-        "__id__": 83
-      },
-      {
-        "__id__": 85
-      },
-      {
-        "__id__": 87
-      }
-    ],
-    "_active": true,
-    "_components": [],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_mobility": 0,
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "4623+VXNRHhbcoklmYDpAZ"
-  },
-  {
-    "__type__": "cc.Node",
     "_name": "Event_8",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 78
+      "__id__": 70
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 80
+        "__id__": 76
       }
     ],
     "_prefab": null,
@@ -2907,7 +2758,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 79
+      "__id__": 75
     },
     "_enabled": true,
     "__prefab": null,
@@ -2926,17 +2777,17 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_9",
+    "_name": "Event_2",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 78
+      "__id__": 70
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 82
+        "__id__": 78
       }
     ],
     "_prefab": null,
@@ -2967,7 +2818,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "2ftmPFbh9FlaL5VsvWMKvD"
+    "_id": "15VfjYcyVIe7CYbz0QEdAC"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -2975,12 +2826,12 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 81
+      "__id__": 77
     },
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "A <color=#FF0000> Verdugo corrupto </color>has appeared.",
+    "prompt": "While you were walking, you accidentally get in an argument with a pompous individual.<br />You have been challenged to a duel by a<color=#FFFF00> Currutaco</color>",
     "options": [
       "Fight",
       "Run away"
@@ -2990,21 +2841,21 @@
       "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "c470PA5d1N76Rdtkh8mcb+"
+    "_id": "6eUBYH3pZOILySFAoUDerk"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_10",
+    "_name": "Event_3",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 78
+      "__id__": 70
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 84
+        "__id__": 80
       }
     ],
     "_prefab": null,
@@ -3035,7 +2886,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "8btgAXbMFJCaCuVd1HNUDY"
+    "_id": "d9GnXYlDhKKrm/as1Vfhfv"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -3043,158 +2894,23 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 83
+      "__id__": 79
     },
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "A <color=#FF0000> Verdugo maldito </color>has appeared.",
+    "prompt": "While you were walking a<color=#FF0000> bandido </color> tries to rob you",
     "options": [
       "Fight",
-      "Run away"
+      "Try to flee and find another way",
+      "Give him everything you have"
     ],
     "optionSelected": 0,
     "eventImage": {
       "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "d6p3MUlFxBqq4jn0VgZmMC"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Event_11",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "_parent": {
-      "__id__": 78
-    },
-    "_children": [],
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 86
-      }
-    ],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_mobility": 0,
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "c5tHp10ZZKuKV0nXB3xGKA"
-  },
-  {
-    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 85
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "eventType": 3,
-    "prompt": "A <color=#FF0000> Verdugo maldito </color>has appeared.",
-    "options": [
-      "Fight",
-      "Run away"
-    ],
-    "optionSelected": 0,
-    "eventImage": {
-      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_id": "408Ln8kaZJ9IChhLFwOEIy"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Event_12",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "_parent": {
-      "__id__": 78
-    },
-    "_children": [],
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 88
-      }
-    ],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_mobility": 0,
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "2dV3Xk2whG3LQZgZl5ittj"
-  },
-  {
-    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 87
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "eventType": 3,
-    "prompt": "A <color=#FF0000> Verdugo maldito </color>has appeared.",
-    "options": [
-      "Fight",
-      "Run away"
-    ],
-    "optionSelected": 0,
-    "eventImage": {
-      "__uuid__": "32cdbb80-e929-4b88-87b4-22793addab31@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_id": "6eoQ5DRkhP94HEDcU2XuXT"
+    "_id": "00vr8owChDNZAZdzdToSpa"
   },
   {
     "__type__": "d370fKCLrdMCLRDBCDEGjBK",
@@ -3214,40 +2930,28 @@
         "__id__": 60
       },
       {
+        "__id__": 78
+      },
+      {
+        "__id__": 80
+      },
+      {
         "__id__": 67
       },
       {
         "__id__": 69
       },
       {
-        "__id__": 71
+        "__id__": 72
       },
       {
-        "__id__": 73
+        "__id__": 74
       },
       {
-        "__id__": 75
-      },
-      {
-        "__id__": 77
-      },
-      {
-        "__id__": 80
+        "__id__": 76
       },
       {
         "__id__": 64
-      },
-      {
-        "__id__": 82
-      },
-      {
-        "__id__": 84
-      },
-      {
-        "__id__": 86
-      },
-      {
-        "__id__": 88
       }
     ],
     "currentEvent": 0,
@@ -3263,28 +2967,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 91
+      "__id__": 83
     },
     "shadows": {
-      "__id__": 92
+      "__id__": 84
     },
     "_skybox": {
-      "__id__": 93
+      "__id__": 85
     },
     "fog": {
-      "__id__": 94
+      "__id__": 86
     },
     "octree": {
-      "__id__": 95
+      "__id__": 87
     },
     "skin": {
-      "__id__": 96
+      "__id__": 88
     },
     "lightProbeInfo": {
-      "__id__": 97
+      "__id__": 89
     },
     "postSettings": {
-      "__id__": 98
+      "__id__": 90
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
