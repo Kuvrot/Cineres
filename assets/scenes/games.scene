@@ -1134,7 +1134,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "9bede9cd-4fb4-4b5a-8299-33ff6f6105b2@f9941",
+      "__uuid__": "8faca46d-3089-4c1a-86f2-42690042759c@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -2223,7 +2223,7 @@
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "94b667d2-b2ca-4efb-b145-d9882ba74a6a@f9941",
+      "__uuid__": "8faca46d-3089-4c1a-86f2-42690042759c@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_id": "bcJ31S6OBMwpU2Z+Or2nzk"
@@ -2320,15 +2320,15 @@
     "eventType": 4,
     "prompt": "You stumble across a <color=#FF0000> store </color>.\n\nPrices are high, and the food is of terrible quality. You can see the misery in the faces of everyone.",
     "options": [
-      "Buy Bandages",
-      "Buy food",
-      "Buy musket ammo",
-      "Buy pistol ammo",
-      ""
+      "Buy 1 Bandage (-1 reales)",
+      "Buy food (-1 reales)",
+      "Buy 1 musket bullet (-1 reales)",
+      "Buy 1 pistol ammo (-1 reales)",
+      "Continue"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "f9c4c104-39fa-48c3-b8ab-9644cd7f701e@f9941",
+      "__uuid__": "bed0c37a-ee14-488b-b772-b8c553db7ac7@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_id": "5duCK+vQlP3rJbQT+iagKU"
