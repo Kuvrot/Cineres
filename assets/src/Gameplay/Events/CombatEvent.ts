@@ -71,18 +71,28 @@ export class CombatEvent extends Component {
             EventManager.instance.enemyLabel.string += '#';
         }
 
-        if (CommandManager.instance.isCommandEntered){
-            EventManager.instance.clearConsole();
-            switch (CommandManager.instance.command.string) {
-                case '0' : this.attack(); break;
-                case '1' : this.useBandage(); break;
-                case '2' : this.usePistol(); break;
-                case '3' : this.useMusket(); break;
-                default : alert ("Invalid action"); break;
+        if (CommandManager.instance.isCommandEntered) {
+            if (this.health > 0) {
+                EventManager.instance.clearConsole();
+                switch (CommandManager.instance.command.string) {
+                    case '0': this.attack(); break;
+                    case '1': this.useBandage(); break;
+                    case '2': this.usePistol(); break;
+                    case '3': this.useMusket(); break;
+                    default: alert("Invalid action"); break;
+                }
+                this.generateEnemyAction();
+                GameManager.instance.println(this.generateOptions());
+                CommandManager.instance.clearCommand();
+            }else{
+                EventManager.instance.clearConsole();
+                switch (CommandManager.instance.command.string) {
+                    case '0': EventManager.instance.generateNewEvent(); break;
+                    default: alert("Invalid action"); break;
+                }
+                CommandManager.instance.clearCommand();
             }
-            this.generateEnemyAction();
-            GameManager.instance.println(this.generateOptions());
-            CommandManager.instance.clearCommand();
+            
         }
     }
 
@@ -135,37 +145,53 @@ export class CombatEvent extends Component {
 
     usePistol () {
         if (GameManager.instance.pistolAmmo > 0){
-            GameManager.instance.pistolAmmo--;
-            this.health -= GameManager.instance.strength;
-            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.getRandomInt(2 , 5)) + " damage");
+            if (!this.pistolFired){
+                let damage = (GameManager.instance.getRandomInt(2 , 5));
+                this.health -= damage;
+                GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "shoot your pistol and make " + damage + " damage");
+                this.pistolFired = true;
+            }else{
+                GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "reload your pistol");
+                this.pistolFired = false;
+            }
         }else{
-            alert("No pistol ammo available");
+            GameManager.instance.println("You reached into your pockets, but realize there is no ammo left, you wasted precious time");
         }
     }
 
     useMusket () {
         if (GameManager.instance.musketAmmo > 0){
-            GameManager.instance.musketAmmo--;
-            this.health -= GameManager.instance.strength * 2;
-            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.getRandomInt(2 , 10)) + " damage");
+            if (!this.musketFired){
+                GameManager.instance.musketAmmo--;
+                let damage = (GameManager.instance.getRandomInt(2 , 10));
+                this.health -= damage;
+                GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "shoot your musket and make " + damage + " damage");
+                this.musketFired = true;
+            }else{
+                GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "reload your musket");
+                this.musketFired = false;
+            }
         }else{
-            alert("No musket ammo available");
+            GameManager.instance.println("You reached into your pockets, but realize there is no ammo left, you wasted precious time");
         }
     }
 
     generateOptions () {
-        let options = "";
-        options += "0.attack <br />";
-        options += "1.use bandage (+10 health) <br / >";
+        let options = "<br />";
+        if (this.health <= 0){
+            options += "0.Continue <br />";
+        }
+        options += "0.Attack <br />";
+        options += "1.Use bandage (+10 health) <br / >";
         if (this.pistolFired){
-            options += "2.reload pistol <br / >";
+            options += "2.Reload pistol <br / >";
         }else{
-            options += "2.shoot pistol <br / >"
+            options += "2.Shoot pistol <br / >"
         }
         if (this.musketFired){
-            options += "2.reload musket <br / >";
+            options += "3.Reload musket <br / >";
         }else{
-            options += "2.shoot musket <br / >"
+            options += "3.Shoot musket <br / >"
         }
         return options;
     }

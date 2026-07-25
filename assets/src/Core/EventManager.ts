@@ -37,7 +37,8 @@ export class EventManager extends Component {
 
     update(deltaTime: number) {
     }
-
+    
+    //If the argument provided is null, a random event will be generate
     generateNewEvent(event: EventComponent = null){  
         let index = 0;
         console.log("pene");
