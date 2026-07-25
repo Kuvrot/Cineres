@@ -103,6 +103,9 @@ export class GameManager extends Component {
         if (this.hunger > 4){
             this.hunger = 4;
         }
+        if (this.health > 20){
+            this.health = 20;
+        }
     }
 
     hungerFeature () {

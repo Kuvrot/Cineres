@@ -10,28 +10,16 @@ export class CombatEvent extends Component {
     @property
     enemyName: string = "";
 
-    //Enemy actions
-    // 0 = attack
-    // 1 = dash
-    // 2 = block
-    @property
-    action : number = 0;
-
     //EnemyStats
     @property
     health: number = 10;
     @property
     agility: number = 10;
     @property
-    stamina: number = 10;
-    @property
     strength : number = 10;
     
-    //playerStateMachine
-    @property
     playerName : string = "You";
     
-    @property
     isCombatInitiated : boolean = false;
 
     musketFired : boolean = false;

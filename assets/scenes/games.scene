@@ -26,7 +26,7 @@
         "__id__": 59
       },
       {
-        "__id__": 86
+        "__id__": 103
       }
     ],
     "_active": true,
@@ -61,7 +61,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 88
+      "__id__": 105
     },
     "_id": "3f2aa2ba-f8bb-418d-8350-00afc21c85fb"
   },
@@ -2184,22 +2184,22 @@
         "__id__": 60
       },
       {
-        "__id__": 71
+        "__id__": 88
       },
       {
-        "__id__": 77
+        "__id__": 94
       },
       {
-        "__id__": 79
+        "__id__": 96
       },
       {
-        "__id__": 81
+        "__id__": 98
       },
       {
-        "__id__": 83
+        "__id__": 100
       },
       {
-        "__id__": 76
+        "__id__": 93
       },
       {
         "__id__": 65
@@ -2208,7 +2208,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 85
+        "__id__": 102
       }
     ],
     "_prefab": null,
@@ -2351,7 +2351,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_7",
+    "_name": "Event_8",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -2364,7 +2364,7 @@
         "__id__": 63
       },
       {
-        "__id__": 70
+        "__id__": 87
       }
     ],
     "_prefab": null,
@@ -2413,7 +2413,22 @@
         "__id__": 66
       },
       {
-        "__id__": 68
+        "__id__": 69
+      },
+      {
+        "__id__": 72
+      },
+      {
+        "__id__": 75
+      },
+      {
+        "__id__": 78
+      },
+      {
+        "__id__": 81
+      },
+      {
+        "__id__": 84
       }
     ],
     "_active": true,
@@ -2461,6 +2476,9 @@
     "_components": [
       {
         "__id__": 67
+      },
+      {
+        "__id__": 68
       }
     ],
     "_prefab": null,
@@ -2517,6 +2535,22 @@
     "_id": "6eUBYH3pZOILySFAoUDerk"
   },
   {
+    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 66
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "enemyName": "Currutaco",
+    "health": 3,
+    "agility": 7,
+    "strength": 10,
+    "_id": "a190+cHRlDz7khk2iPn4K5"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "Event_3",
     "_objFlags": 0,
@@ -2528,7 +2562,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 69
+        "__id__": 70
+      },
+      {
+        "__id__": 71
       }
     ],
     "_prefab": null,
@@ -2567,7 +2604,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 68
+      "__id__": 69
     },
     "_enabled": true,
     "__prefab": null,
@@ -2575,15 +2612,465 @@
     "prompt": "While you were walking a<color=#FF0000> bandido </color> tries to rob you",
     "options": [
       "Fight",
-      "Try to flee and find another way",
-      "Give him everything you have"
+      "Run away!"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "da223073-f567-46df-b302-c2fea9c6df06@f9941",
+      "__uuid__": "1daa0750-2f9a-4d82-8bcd-5c4f7a093354@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_id": "00vr8owChDNZAZdzdToSpa"
+  },
+  {
+    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 69
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "enemyName": "Bandido",
+    "health": 3,
+    "agility": 7,
+    "strength": 10,
+    "_id": "7cSAWI6wZJw4dusPJZAasc"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_10",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 65
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 73
+      },
+      {
+        "__id__": 74
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "b9gokN7UFJCJCeGrETYWB7"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 72
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "A<color=#FF0000> verdugo maldito </color>has appeared.",
+    "options": [
+      "Fight",
+      "Run away"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "c96fda03-893f-43a6-9eef-7dbca2228d1e@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "12lWfd/cFASoxO1HPMdCFO"
+  },
+  {
+    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 72
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "enemyName": "Bofo",
+    "health": 10,
+    "agility": 2,
+    "strength": 10,
+    "_id": "86CIdCP7hOsYXGqYtYOy8k"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_11",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 65
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 76
+      },
+      {
+        "__id__": 77
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "c46vflTFJFyqtnu7DUEwdi"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 75
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "A<color=#FF0000> bofo </color>has appeared.",
+    "options": [
+      "Fight",
+      "Run away"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "c96fda03-893f-43a6-9eef-7dbca2228d1e@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "99PfTU51NHtpDP6gRyW8BK"
+  },
+  {
+    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 75
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "enemyName": "Bofo",
+    "health": 10,
+    "agility": 2,
+    "strength": 10,
+    "_id": "c7YkECy+1NBIVZ2xaaokr9"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_12",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 65
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 79
+      },
+      {
+        "__id__": 80
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "ae0EwyxpROCLV+sqaICeDI"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 78
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "You hear a grotesque barking, you turn arround to find the source of the noice.\n\nA dark creature emerges from the dark. This is not an ordinary dog. You can see in his red glowing eyes that he is ready to use his big fangs on you o take you to the abism with his tail.\n\nA<color=#FF0000> espinoso </color>has appeared.",
+    "options": [
+      "Fight",
+      "Run away"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "2fb4abb6-96fc-496e-a492-03162facab6e@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "d8Aw3b5ONPaYlUKTwzdfYZ"
+  },
+  {
+    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 78
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "enemyName": "Espinoso",
+    "health": 3,
+    "agility": 10,
+    "strength": 10,
+    "_id": "f3ugxU/5hPmIB/npnP5VSY"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_13",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 65
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 82
+      },
+      {
+        "__id__": 83
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "26qgoOkb9IBKkzCCImx34j"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 81
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "A<color=#FF0000> Tlahuelpuchi </color>has appeared.",
+    "options": [
+      "Fight",
+      "Run away"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "6f9547a5-20ef-45af-82c5-c1c7e9fbff82@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "82/qcEk3JIB60fZm6ggtCh"
+  },
+  {
+    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 81
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "enemyName": "Tlahuelpuchi ",
+    "health": 5,
+    "agility": 5,
+    "strength": 5,
+    "_id": "bbOQPwPAtMg4oF5UrobuNR"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_14",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 65
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 85
+      },
+      {
+        "__id__": 86
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "ddulnvTQpDurk/JAa07jAu"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 84
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "A<color=#FF0000> Verdugo corrupto </color>has appeared.",
+    "options": [
+      "Fight",
+      "Run away"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "1f3d0e3a-f6c1-4fd4-b445-76727c497f87@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "7d9CDCYmxLS4f1+i19QjCR"
+  },
+  {
+    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 84
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "enemyName": "Verdugo corrupto",
+    "health": 10,
+    "agility": 5,
+    "strength": 10,
+    "_id": "05xIqzrJBOTp1tI3osFy0k"
   },
   {
     "__type__": "0faa0FxCxpC+rZLSeYB7svv",
@@ -2596,13 +3083,9 @@
     "_enabled": true,
     "__prefab": null,
     "enemyName": "verdugo maldito",
-    "action": 0,
-    "health": 10,
-    "agility": 10,
-    "stamina": 10,
+    "health": 5,
+    "agility": 7,
     "strength": 10,
-    "playerName": "You",
-    "isCombatInitiated": false,
     "_id": "70qCXBi1ZHl7Qt98lrpD5U"
   },
   {
@@ -2617,13 +3100,13 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 72
+        "__id__": 89
       },
       {
-        "__id__": 73
+        "__id__": 90
       },
       {
-        "__id__": 74
+        "__id__": 91
       }
     ],
     "_prefab": null,
@@ -2662,7 +3145,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 71
+      "__id__": 88
     },
     "_enabled": true,
     "__prefab": null,
@@ -2685,7 +3168,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 71
+      "__id__": 88
     },
     "_enabled": true,
     "__prefab": null,
@@ -2698,12 +3181,12 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 71
+      "__id__": 88
     },
     "_enabled": true,
     "__prefab": null,
     "storeEvent": {
-      "__id__": 75
+      "__id__": 92
     },
     "_id": "3dFfPmAQpL84L3o7O6Yp/Z"
   },
@@ -2713,7 +3196,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 76
+      "__id__": 93
     },
     "_enabled": true,
     "__prefab": null,
@@ -2735,7 +3218,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "StoreEvent",
+    "_name": "Event_9",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -2745,7 +3228,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 75
+        "__id__": 92
       }
     ],
     "_prefab": null,
@@ -2790,7 +3273,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 78
+        "__id__": 95
       }
     ],
     "_prefab": null,
@@ -2829,7 +3312,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 77
+      "__id__": 94
     },
     "_enabled": true,
     "__prefab": null,
@@ -2858,7 +3341,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 80
+        "__id__": 97
       }
     ],
     "_prefab": null,
@@ -2897,7 +3380,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 79
+      "__id__": 96
     },
     "_enabled": true,
     "__prefab": null,
@@ -2926,7 +3409,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 82
+        "__id__": 99
       }
     ],
     "_prefab": null,
@@ -2965,7 +3448,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 81
+      "__id__": 98
     },
     "_enabled": true,
     "__prefab": null,
@@ -2994,7 +3477,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 84
+        "__id__": 101
       }
     ],
     "_prefab": null,
@@ -3033,12 +3516,12 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 83
+      "__id__": 100
     },
     "_enabled": true,
     "__prefab": null,
     "eventType": 2,
-    "prompt": "You find yourself an abandoned house.\n\nThe ceilling has crumbled in some parts and the walls are full of mold.\n\nThe windows are broken, you can hear the wind whistle going in and out the house.",
+    "prompt": "You find an abandoned house.\n\nThe ceilling has crumbled in some parts and the walls are full of mold.\n\nThe windows are broken, you can hear the wind whistle by going in and out the house.",
     "options": [
       "Explore the house (- 2 agility)",
       "Continue on your way"
@@ -3065,25 +3548,34 @@
         "__id__": 61
       },
       {
-        "__id__": 72
+        "__id__": 89
       },
       {
         "__id__": 67
       },
       {
-        "__id__": 69
+        "__id__": 70
       },
       {
-        "__id__": 78
+        "__id__": 95
       },
       {
-        "__id__": 80
+        "__id__": 97
       },
       {
         "__id__": 63
       },
       {
-        "__id__": 75
+        "__id__": 92
+      },
+      {
+        "__id__": 99
+      },
+      {
+        "__id__": 101
+      },
+      {
+        "__id__": 63
       }
     ],
     "currentEvent": 0,
@@ -3111,7 +3603,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 87
+        "__id__": 104
       }
     ],
     "_prefab": null,
@@ -3150,7 +3642,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 86
+      "__id__": 103
     },
     "_enabled": true,
     "__prefab": null,
@@ -3166,28 +3658,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 89
+      "__id__": 106
     },
     "shadows": {
-      "__id__": 90
+      "__id__": 107
     },
     "_skybox": {
-      "__id__": 91
+      "__id__": 108
     },
     "fog": {
-      "__id__": 92
+      "__id__": 109
     },
     "octree": {
-      "__id__": 93
+      "__id__": 110
     },
     "skin": {
-      "__id__": 94
+      "__id__": 111
     },
     "lightProbeInfo": {
-      "__id__": 95
+      "__id__": 112
     },
     "postSettings": {
-      "__id__": 96
+      "__id__": 113
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
