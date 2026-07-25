@@ -1690,10 +1690,10 @@
         "__id__": 44
       },
       {
-        "__id__": 45
+        "__id__": 53
       },
       {
-        "__id__": 46
+        "__id__": 54
       }
     ],
     "_prefab": null,
@@ -1742,93 +1742,49 @@
     "skill": 10,
     "gunSkill": 10,
     "agility": 10,
+    "hunger": 0,
+    "reales": 2,
     "bandages": 1,
     "pistolAmmo": 0,
     "musketAmmo": 0,
+    "inventoryLabel": {
+      "__id__": 45
+    },
+    "statsHeader": "---------------\nSTATS\n---------------",
+    "inventoryHeader": "---------------\nINVENTORY\n---------------",
     "_id": "e13HwWLT9PT4lvMj0oCbDo"
   },
   {
-    "__type__": "7fe6e6l2LhCGLzdugvyZCMd",
+    "__type__": "cc.RichText",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 43
+      "__id__": 46
     },
     "_enabled": true,
     "__prefab": null,
-    "command": {
-      "__id__": 17
+    "_lineHeight": 25,
+    "_string": "---------------\nSTATS\n---------------\nHealth: 10\nStrength: 10\nSkill: 1\nGun Skill: 1\nAgility: 10\nHunger: 0\n\n---------------\nINVENTORY\n---------------\nReales: 2\nBandages: 1\nMusket ammo: 1 \nPistol ammo: 1\n",
+    "_horizontalAlign": 0,
+    "_verticalAlign": 1,
+    "_fontSize": 25,
+    "_fontColor": {
+      "__type__": "cc.Color",
+      "r": 0,
+      "g": 255,
+      "b": 0,
+      "a": 255
     },
-    "isCommandEntered": false,
-    "_id": "93UERE1PZAgoek/8EaN71n"
-  },
-  {
-    "__type__": "147a9iedzxKjYichpMCeXFo",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 43
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "_id": "26z0rbRjROspj/oL3C9u5A"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Inventory",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "_parent": {
-      "__id__": 3
-    },
-    "_children": [
-      {
-        "__id__": 48
-      }
-    ],
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 51
-      },
-      {
-        "__id__": 52
-      },
-      {
-        "__id__": 53
-      }
-    ],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 494.601,
-      "y": 27.925499999999953,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_mobility": 0,
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "64mJB6K6pI4Jf+he/TcvON"
+    "_maxWidth": 229.1,
+    "_fontFamily": "courier",
+    "_font": null,
+    "_isSystemFontUsed": true,
+    "_userDefinedFont": null,
+    "_cacheMode": 0,
+    "_imageAtlas": null,
+    "_handleTouchEvent": true,
+    "_id": "1b8fyLdBlG4Zk2GvlOaWSF"
   },
   {
     "__type__": "cc.Node",
@@ -1842,10 +1798,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 49
+        "__id__": 52
       },
       {
-        "__id__": 50
+        "__id__": 45
       }
     ],
     "_prefab": null,
@@ -1879,58 +1835,59 @@
     "_id": "7eEKLFDY1FjrHaxZcY+Gzt"
   },
   {
-    "__type__": "cc.UITransform",
-    "_name": "",
+    "__type__": "cc.Node",
+    "_name": "Inventory",
     "_objFlags": 0,
     "__editorExtras__": {},
-    "node": {
-      "__id__": 48
+    "_parent": {
+      "__id__": 3
     },
-    "_enabled": true,
-    "__prefab": null,
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 229.1,
-      "height": 456.50000000000006
+    "_children": [
+      {
+        "__id__": 46
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 48
+      },
+      {
+        "__id__": 49
+      },
+      {
+        "__id__": 50
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 494.601,
+      "y": 27.925499999999953,
+      "z": 0
     },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
     },
-    "_id": "80gJd0ewRBDbhGRBcBAPTh"
-  },
-  {
-    "__type__": "cc.RichText",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 48
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
     },
-    "_enabled": true,
-    "__prefab": null,
-    "_lineHeight": 25,
-    "_string": "---------------\nSTATS\n---------------\nHealth: 10\nStrength: 10\nSkill: 1\nGun Skill: 1\nAgility: 10\nHunger: 0\n\n---------------\nINVENTORY\n---------------\nReales: 2\nBandages: 1\nMusket ammo: 1 \nPistol ammo: 1\n",
-    "_horizontalAlign": 0,
-    "_verticalAlign": 1,
-    "_fontSize": 25,
-    "_fontColor": {
-      "__type__": "cc.Color",
-      "r": 0,
-      "g": 255,
-      "b": 0,
-      "a": 255
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "_maxWidth": 229.1,
-    "_fontFamily": "courier",
-    "_font": null,
-    "_isSystemFontUsed": true,
-    "_userDefinedFont": null,
-    "_cacheMode": 0,
-    "_imageAtlas": null,
-    "_handleTouchEvent": true,
-    "_id": "1b8fyLdBlG4Zk2GvlOaWSF"
+    "_id": "64mJB6K6pI4Jf+he/TcvON"
   },
   {
     "__type__": "cc.UITransform",
@@ -2022,7 +1979,7 @@
     "_scrollThreshold": 0.5,
     "_pageTurningEventTiming": 0.1,
     "_indicator": {
-      "__id__": 54
+      "__id__": 51
     },
     "_id": "81GdT/yztEgK3m1Z/zcu44"
   },
@@ -2046,6 +2003,56 @@
       "height": 10
     },
     "_id": "e4W99OHhBFXptYdE4kTUOK"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 46
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 229.1,
+      "height": 456.50000000000006
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "80gJd0ewRBDbhGRBcBAPTh"
+  },
+  {
+    "__type__": "7fe6e6l2LhCGLzdugvyZCMd",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 43
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "command": {
+      "__id__": 17
+    },
+    "isCommandEntered": false,
+    "_id": "93UERE1PZAgoek/8EaN71n"
+  },
+  {
+    "__type__": "147a9iedzxKjYichpMCeXFo",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 43
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_id": "26z0rbRjROspj/oL3C9u5A"
   },
   {
     "__type__": "cc.Camera",
@@ -2725,9 +2732,6 @@
     "_enabled": true,
     "__prefab": null,
     "enemyName": "verdugo  maldito",
-    "enemyAttackLabel": "",
-    "enemyDashLabel": "",
-    "enemyBlockLabel": "",
     "action": 0,
     "health": 10,
     "agility": 10,

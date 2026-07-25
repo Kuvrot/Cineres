@@ -24,7 +24,13 @@ export class GameManager extends Component {
     @property
     agility: number = 10;
 
+    @property
+    hunger: number = 0;
+
     //Inventory
+    @property
+    reales: number = 2;
+
     @property
     bandages: number = 1;
 
@@ -35,7 +41,7 @@ export class GameManager extends Component {
     musketAmmo: number = 0;
     
     @property(RichText)
-    InventoryLabel : RichText;
+    inventoryLabel : RichText;
 
     @property({multiline : true})
     statsHeader = "STATS";
@@ -49,7 +55,7 @@ export class GameManager extends Component {
         GameManager.instance = this;
     }
     update(deltaTime: number) {
-        
+        this.displayInventory();
     }
 
     println (text : string) {
@@ -59,6 +65,26 @@ export class GameManager extends Component {
 
     getRandomInt(min: number, max: number): number {
         return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    displayInventory () {
+        let inventoryString = "";
+        //Stats
+        inventoryString += "<br />" + this.statsHeader;
+        inventoryString += "<br />Health: " + this.health;
+        inventoryString += "<br />Strength: " + this.strength;
+        inventoryString += "<br />Skill: " + this.skill;
+        //inventoryString += "<br /> Gun skill: " + this.gunSkill);
+        inventoryString += "<br />Agility: " + this.agility;
+        inventoryString += "<br />Hunger: " + this.hunger;
+        
+        //Inventory
+        inventoryString += "<br />" + this.inventoryHeader;
+        inventoryString += "<br />Reales: " + this.reales;
+        inventoryString += "<br />Bandages: " + this.bandages;
+        inventoryString += "<br />Pistol ammo: " + this.pistolAmmo;
+        inventoryString += "<br />Musket ammo: " + this.musketAmmo;
+        this.inventoryLabel.string = inventoryString;
     }
 }
 
