@@ -50,6 +50,8 @@ export class CombatEvent extends Component {
     }
 
     update(deltaTime: number) {
+        this.enemyStatsLimits();
+
         if (!this.isCombatInitiated){
             if (CommandManager.instance.isCommandEntered){
                 switch(CommandManager.instance.command.string){
@@ -212,6 +214,15 @@ export class CombatEvent extends Component {
     //To-do
     lootEnemy () {
 
+    }
+
+    enemyStatsLimits(){
+        if (this.agility < 0){
+            this.agility = 0;
+        }
+        if (this.strength < 0){
+            this.agility = 0;
+        }
     }
 }
 

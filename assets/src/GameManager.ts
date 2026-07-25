@@ -8,6 +8,7 @@ export class GameManager extends Component {
     
     @property
     progress: number  = 0;
+
     //Stats
     @property
     health: number = 100;
@@ -73,7 +74,7 @@ export class GameManager extends Component {
         inventoryString += "<br />" + this.statsHeader;
         inventoryString += "<br />Health: " + this.health;
         inventoryString += "<br />Strength: " + this.strength;
-        inventoryString += "<br />Skill: " + this.skill;
+        //inventoryString += "<br />Skill: " + this.skill;
         //inventoryString += "<br /> Gun skill: " + this.gunSkill);
         inventoryString += "<br />Agility: " + this.agility;
         inventoryString += "<br />Hunger: " + this.hunger;
@@ -85,6 +86,21 @@ export class GameManager extends Component {
         inventoryString += "<br />Pistol ammo: " + this.pistolAmmo;
         inventoryString += "<br />Musket ammo: " + this.musketAmmo;
         this.inventoryLabel.string = inventoryString;
+    }
+
+    playerStatsLimits(){
+        if (this.agility < 0){
+            this.agility = 0;
+        }
+        if (this.strength < 1){
+            this.agility = 1;
+        }
+        if (this.health < 0){
+            this.health = 0;
+        }
+        if (this.hunger > 10){
+            this.hunger = 10;
+        }
     }
 }
 
