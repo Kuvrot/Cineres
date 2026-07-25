@@ -101,7 +101,6 @@ export class CombatEvent extends Component {
 
     generateEnemyAction(){
         GameManager.instance.println("<color=#FF0000>" + this.enemyName + " </color>" + "Attacks");
-        GameManager.instance.println("");
         let p = GameManager.instance.getRandomInt(0 , 10);
         if (p <= GameManager.instance.agility){
             GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "dodged the attack");
