@@ -1,5 +1,6 @@
 import { _decorator, Component, Node, RichText, Sprite, SpriteComponent } from 'cc';
 import { EventComponent } from '../Gameplay/EventComponent';
+import { GameManager } from '../GameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('EventManager')
@@ -65,19 +66,15 @@ export class EventManager extends Component {
     }
 
     generateRandomEvent () {
-        let index = this.getRandomInt(0 , this.events.length - 1);
+        let index = GameManager.instance.getRandomInt(0 , this.events.length - 1);
         while (index == this.previousEvent) {
-            index = this.getRandomInt(0 , this.events.length - 1);
+            index = GameManager.instance.getRandomInt(0 , this.events.length - 1);
         }
         return index;
     }
 
     clearConsole () {
         this.consoleText.string = "";
-    }
-
-    getRandomInt(min: number, max: number): number {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
     displayPrompt () {

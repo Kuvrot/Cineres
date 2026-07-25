@@ -1,7 +1,6 @@
 import { _decorator, Component, Node } from 'cc';
 import { GameManager } from '../../GameManager';
 import { EventManager } from '../../Core/EventManager';
-import { EventComponent } from '../EventComponent';
 import { CommandManager } from '../../Core/CommandManager';
 const { ccclass, property } = _decorator;
 
@@ -52,7 +51,7 @@ export class CombatEvent extends Component {
         if (!this.isCombatInitiated){
             if (CommandManager.instance.isCommandEntered){
                 switch(CommandManager.instance.command.string){
-                    case '0' : EventManager.instance.clearConsole(); CommandManager.instance.clearCommand(); this.println(this.generateOptions()); this.combatSystem(); this.isCombatInitiated = true; break;
+                    case '0' : EventManager.instance.clearConsole(); CommandManager.instance.clearCommand(); GameManager.instance.println(this.generateOptions()); this.combatSystem(); this.isCombatInitiated = true; break;
                     case '1' : EventManager.instance.clearConsole(); CommandManager.instance.clearCommand(); this.runAway(); break;
                 }
             }
@@ -82,13 +81,13 @@ export class CombatEvent extends Component {
                 default : alert ("Invalid action"); break;
             }
             this.generateEnemyAction();
-            this.println(this.generateOptions());
+            GameManager.instance.println(this.generateOptions());
             CommandManager.instance.clearCommand();
         }
     }
 
     runAway () {
-        let p = this.getRandomInt(0 , 10);
+        let p = GameManager.instance.getRandomInt(0 , 10);
         if (p <= GameManager.instance.agility){
             EventManager.instance.generateNewEvent();
         }else{
@@ -100,29 +99,25 @@ export class CombatEvent extends Component {
         }
     }
 
-    getRandomInt(min: number, max: number): number {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
     generateEnemyAction(){
-        this.println("<color=#FF0000>" + this.enemyName + " </color>" + "Attacks");
-        this.println("");
-        let p = this.getRandomInt(0 , 10);
+        GameManager.instance.println("<color=#FF0000>" + this.enemyName + " </color>" + "Attacks");
+        GameManager.instance.println("");
+        let p = GameManager.instance.getRandomInt(0 , 10);
         if (p <= GameManager.instance.agility){
-            this.println("<color=#00FFFF>" + "You" + " </color>" + "dodged the attack");
+            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "dodged the attack");
         }else{
-            this.println("<color=#00FFFF>" + "You" + " </color>" + "failed to dodged the attack and receive " + (this.strength / 2).toString() + " damage");
+            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "failed to dodged the attack and receive " + (this.strength / 2).toString() + " damage");
             GameManager.instance.health -= this.strength / 2;
         }
         GameManager.instance.agility -= 1;
     }
 
     attack () {
-        let p = this.getRandomInt(0 , 10);
+        let p = GameManager.instance.getRandomInt(0 , 10);
         if (p <= this.agility){
-            this.println("<color=#FF0000>" + this.enemyName + " </color>" + "dodges your attack");
+            GameManager.instance.println("<color=#FF0000>" + this.enemyName + " </color>" + "dodges your attack");
         }else{
-            this.println("<color=#FF0000>" + this.enemyName + " </color>" + "receive " + (GameManager.instance.strength / 2).toString()) + " damage";
+            GameManager.instance.println("<color=#FF0000>" + this.enemyName + " </color>" + "receive " + (GameManager.instance.strength / 2).toString()) + " damage";
             this.health -= GameManager.instance.strength / 2;
         }
         GameManager.instance.strength--;
@@ -133,7 +128,7 @@ export class CombatEvent extends Component {
         if (GameManager.instance.bandages > 0){
             GameManager.instance.bandages--;
             GameManager.instance.health+= 10;
-            this.println("<color=#00FFFF>" + "You" + " </color>" + "patch yourself");
+            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "patch yourself");
         }else{
             alert("No bandages available");
         }
@@ -143,7 +138,7 @@ export class CombatEvent extends Component {
         if (GameManager.instance.pistolAmmo > 0){
             GameManager.instance.pistolAmmo--;
             this.health -= GameManager.instance.strength;
-            this.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.strength) + " damage");
+            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.strength) + " damage");
         }else{
             alert("No pistol ammo available");
         }
@@ -153,7 +148,7 @@ export class CombatEvent extends Component {
         if (GameManager.instance.musketAmmo > 0){
             GameManager.instance.musketAmmo--;
             this.health -= GameManager.instance.strength * 2;
-            this.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.strength * 2) + " damage");
+            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.strength * 2) + " damage");
         }else{
             alert("No musket ammo available");
         }
@@ -174,11 +169,6 @@ export class CombatEvent extends Component {
             options += "2.shoot musket <br / >"
         }
         return options;
-    }
-
-    println (text : string) {
-        let newString = text + "<br />"
-        EventManager.instance.consoleText.string += newString;
     }
 }
 
