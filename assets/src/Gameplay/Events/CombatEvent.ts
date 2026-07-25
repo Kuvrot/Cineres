@@ -87,8 +87,7 @@ export class CombatEvent extends Component {
             }else{
                 EventManager.instance.clearConsole();
                 switch (CommandManager.instance.command.string) {
-                    case '0': EventManager.instance.generateNewEvent(); break;
-                    default: alert("Invalid action"); break;
+                    default: EventManager.instance.generateNewEvent(); break;
                 }
                 CommandManager.instance.clearCommand();
             }

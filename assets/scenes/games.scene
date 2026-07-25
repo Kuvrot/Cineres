@@ -58,7 +58,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 88
+      "__id__": 86
     },
     "_id": "3f2aa2ba-f8bb-418d-8350-00afc21c85fb"
   },
@@ -3077,13 +3077,7 @@
         "__id__": 80
       },
       {
-        "__id__": 86
-      },
-      {
         "__id__": 63
-      },
-      {
-        "__id__": 87
       },
       {
         "__id__": 75
@@ -3103,72 +3097,30 @@
     "_id": "39/laC7VpDo7Ff1prEYwkh"
   },
   {
-    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": null,
-    "_enabled": true,
-    "__prefab": null,
-    "eventType": 3,
-    "prompt": "A<color=#FF0000> verdugo corrupto</color>has appeared.",
-    "options": [
-      "Fight",
-      "Run away"
-    ],
-    "optionSelected": 0,
-    "eventImage": {
-      "__uuid__": "da223073-f567-46df-b302-c2fea9c6df06@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_id": "2cYIDD8HxByKK3Z7Wo65b/"
-  },
-  {
-    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": null,
-    "_enabled": true,
-    "__prefab": null,
-    "eventType": 3,
-    "prompt": "A<color=#FF0000> tlahuelpuchi </color>has appeared.",
-    "options": [
-      "Fight",
-      "Run away"
-    ],
-    "optionSelected": 0,
-    "eventImage": {
-      "__uuid__": "da223073-f567-46df-b302-c2fea9c6df06@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_id": "56iZO8vSFE26zPYwXPrdQm"
-  },
-  {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 89
+      "__id__": 87
     },
     "shadows": {
-      "__id__": 90
+      "__id__": 88
     },
     "_skybox": {
-      "__id__": 91
+      "__id__": 89
     },
     "fog": {
-      "__id__": 92
+      "__id__": 90
     },
     "octree": {
-      "__id__": 93
+      "__id__": 91
     },
     "skin": {
-      "__id__": 94
+      "__id__": 92
     },
     "lightProbeInfo": {
-      "__id__": 95
+      "__id__": 93
     },
     "postSettings": {
-      "__id__": 96
+      "__id__": 94
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
