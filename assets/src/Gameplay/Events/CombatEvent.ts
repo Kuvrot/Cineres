@@ -11,14 +11,6 @@ export class CombatEvent extends Component {
     @property
     enemyName: string = "";
 
-    //Actions label
-    @property
-    enemyAttackLabel = "" ;
-    @property
-    enemyDashLabel = "";
-    @property
-    enemyBlockLabel = "";
-
     //Enemy actions
     // 0 = attack
     // 1 = dash
@@ -48,7 +40,8 @@ export class CombatEvent extends Component {
     pistolFired: boolean = false;
 
     start() {
-        
+        //Cleans enemy name
+        this.enemyName.replace("  " , " ");
     }
 
     protected onDisable(): void {
@@ -59,8 +52,8 @@ export class CombatEvent extends Component {
         if (!this.isCombatInitiated){
             if (CommandManager.instance.isCommandEntered){
                 switch(CommandManager.instance.command.string){
-                    case '0' : EventManager.instance.clearConsole(); this.combatSystem(); this.isCombatInitiated = true; break;
-                    case '1' : this.runAway(); break;
+                    case '0' : EventManager.instance.clearConsole(); CommandManager.instance.clearCommand(); this.println(this.generateOptions()); this.combatSystem(); this.isCombatInitiated = true; break;
+                    case '1' : EventManager.instance.clearConsole(); CommandManager.instance.clearCommand(); this.runAway(); break;
                 }
             }
         }else{
@@ -73,19 +66,22 @@ export class CombatEvent extends Component {
     // 2 = use/reload pistol
     // 3 = use/reload musket
     combatSystem () {
+        //Enemy health bar
         EventManager.instance.enemyLabel.string = "<color=#FF0000>" + this.enemyName + " </color>";
-        for (let i = 1; i < this.health; i++){
+        for (let i = 1; i <= this.health; i++){
             EventManager.instance.enemyLabel.string += '#';
         }
 
         if (CommandManager.instance.isCommandEntered){
             EventManager.instance.clearConsole();
-            switch (CommandManager.instance.command) {
+            switch (CommandManager.instance.command.string) {
                 case '0' : this.attack(); break;
                 case '1' : this.useBandage(); break;
                 case '2' : this.usePistol(); break;
                 case '3' : this.useMusket(); break;
+                default : alert ("Invalid action"); break;
             }
+            this.generateEnemyAction();
             this.println(this.generateOptions());
             CommandManager.instance.clearCommand();
         }
@@ -109,8 +105,8 @@ export class CombatEvent extends Component {
     }
 
     generateEnemyAction(){
-        let action = this.getRandomInt(0 , 2);
         this.println("<color=#FF0000>" + this.enemyName + " </color>" + "Attacks");
+        this.println("");
         let p = this.getRandomInt(0 , 10);
         if (p <= GameManager.instance.agility){
             this.println("<color=#00FFFF>" + "You" + " </color>" + "dodged the attack");
@@ -126,11 +122,11 @@ export class CombatEvent extends Component {
         if (p <= this.agility){
             this.println("<color=#FF0000>" + this.enemyName + " </color>" + "dodges your attack");
         }else{
-            this.println("<color=#FF0000>" + this.enemyName + " </color>" + "get's " + (GameManager.instance.strength / 2).toString());
+            this.println("<color=#FF0000>" + this.enemyName + " </color>" + "receive " + (GameManager.instance.strength / 2).toString()) + " damage";
+            this.health -= GameManager.instance.strength / 2;
         }
-        this.health -= GameManager.instance.strength / 2;
         GameManager.instance.strength--;
-        this.agility --;
+        this.agility--;
     }
 
     useBandage () {
@@ -181,9 +177,8 @@ export class CombatEvent extends Component {
     }
 
     println (text : string) {
-        let newString = "<br />"
-        newString += text;
-       EventManager.instance.consoleText.string += newString;
+        let newString = text + "<br />"
+        EventManager.instance.consoleText.string += newString;
     }
 }
 
