@@ -185,7 +185,8 @@ export class CombatEvent extends Component {
     generateOptions () {
         let options = "<br />";
         if (this.health <= 0){
-            options += this.enemyName + " has been defeated";
+            EventManager.instance.clearConsole();
+            options += this.enemyName + " has been defeated <br />";
             options += "0.Continue <br />";
             this.lootEnemy();
             return options;
