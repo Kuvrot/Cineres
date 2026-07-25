@@ -1,4 +1,4 @@
-import { _decorator, Component, Node } from 'cc';
+import { _decorator, Component, EditBox, Node, RichText } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameManager')
@@ -33,6 +33,15 @@ export class GameManager extends Component {
     @property
     musketAmmo: number = 0;
     
+    @property(RichText)
+    InventoryLabel : RichText;
+
+    @property({multiline : true})
+    statsHeader = "STATS";
+
+    @property({multiline : true})
+    inventoryHeader = "INVENTORY";
+
     static instance : GameManager;
 
     start() {
