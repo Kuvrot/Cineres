@@ -29,7 +29,7 @@ export class CombatEvent extends Component {
     
     //playerStateMachine
     @property
-    playerTurn : boolean = false;
+    playerName : string = "You";
     
     @property
     isCombatInitiated : boolean = false;
@@ -42,6 +42,7 @@ export class CombatEvent extends Component {
         //Cleans enemy name
         this.enemyName.replace("  " , " ");
         this.enemyName = "<color=#FF0000>" + this.enemyName + " </color>";
+        this.playerName = "<color=#00FFFF>" + this.playerName + " </color>";
     }
 
     protected onDisable(): void {
@@ -73,8 +74,8 @@ export class CombatEvent extends Component {
         }
 
         if (CommandManager.instance.isCommandEntered) {
+            EventManager.instance.clearConsole();
             if (this.health > 0) {
-                EventManager.instance.clearConsole();
                 switch (CommandManager.instance.command.string) {
                     case '0': this.attack(); break;
                     case '1': this.useBandage(); break;
@@ -86,7 +87,6 @@ export class CombatEvent extends Component {
                 GameManager.instance.println(this.generateOptions());
                 CommandManager.instance.clearCommand();
             }else{
-                EventManager.instance.clearConsole();
                 switch (CommandManager.instance.command.string) {
                     default: EventManager.instance.generateNewEvent(); break;
                 }
@@ -113,11 +113,10 @@ export class CombatEvent extends Component {
     generateEnemyAction(){
         GameManager.instance.println(this.enemyName + "Attacks");
         let p = GameManager.instance.getRandomInt(1 , 10);
-        console.log("player:" + p + " - " + GameManager.instance.agility);
         if (p <= GameManager.instance.agility){
-            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "dodged the attack");
+            GameManager.instance.println(this.playerName + "dodged the attack");
         }else{
-            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "failed to dodged the attack and receive " + (this.strength / 2).toString() + " damage");
+            GameManager.instance.println(this.playerName + "failed to dodged the attack and receive " + (this.strength / 2).toString() + " damage");
             GameManager.instance.health -= this.strength / 2;
         }
         GameManager.instance.agility -= 1;
@@ -125,12 +124,12 @@ export class CombatEvent extends Component {
 
     attack () {
         let p = GameManager.instance.getRandomInt(1 , 10);
-        console.log("enemy:" + p + " - " + this.agility);
+        GameManager.instance.println(this.playerName + "attack");
         if (p <= this.agility){
             GameManager.instance.println(this.enemyName + "dodges your attack");
         }else{
             this.health -= GameManager.instance.strength;
-            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.strength) + " damage");
+            GameManager.instance.println(this.playerName + "make " + (GameManager.instance.strength) + " damage");
         }
         GameManager.instance.strength--;
         this.agility--;
@@ -140,7 +139,7 @@ export class CombatEvent extends Component {
         if (GameManager.instance.bandages > 0){
             GameManager.instance.bandages--;
             GameManager.instance.health+= 10;
-            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "patch yourself");
+            GameManager.instance.println(this.playerName + "patch yourself");
         }else{
             GameManager.instance.println("You reached into your pockets, but realize there is no bandages left, you wasted precious time");
         }
@@ -153,10 +152,10 @@ export class CombatEvent extends Component {
                 this.health -= damage;
                 this.agility-= damage/2;
                 GameManager.instance.pistolAmmo--;
-                GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "shoot your pistol and make " + damage + " damage");
+                GameManager.instance.println(this.playerName + "shoot your pistol and make " + damage + " damage");
                 this.pistolFired = true;
             }else{
-                GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "reload your pistol");
+                GameManager.instance.println(this.playerName + "reload your pistol");
                 this.pistolFired = false;
             }
         }else{
@@ -171,11 +170,11 @@ export class CombatEvent extends Component {
                 let damage = (GameManager.instance.getRandomInt(2 , 10));
                 this.health -= damage;
                 this.agility-= damage/2;
-                GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "shoot your musket and make " + damage + " damage");
+                GameManager.instance.println(this.playerName + "shoot your musket and make " + damage + " damage");
                 this.musketFired = true;
                 GameManager.instance.musketAmmo--;
             }else{
-                GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "reload your musket");
+                GameManager.instance.println(this.playerName + "reload your musket");
                 this.musketFired = false;
             }
         }else{
@@ -186,8 +185,9 @@ export class CombatEvent extends Component {
     generateOptions () {
         let options = "<br />";
         if (this.health <= 0){
-            options += "0.Continue <br />";
             options += this.enemyName + " has been defeated";
+            options += "0.Continue <br />";
+            this.lootEnemy();
             return options;
         }
         options += "0.Attack <br />";
@@ -203,6 +203,11 @@ export class CombatEvent extends Component {
             options += "3.Shoot musket <br / >"
         }
         return options;
+    }
+
+    //To-do
+    lootEnemy () {
+
     }
 }
 
