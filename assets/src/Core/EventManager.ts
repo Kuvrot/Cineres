@@ -17,6 +17,9 @@ export class EventManager extends Component {
     @property(RichText)
     consoleText : RichText;
 
+    @property(RichText)
+    enemyLabel : RichText;
+
     @property
     movingText : string = "Moving forward...";
 
