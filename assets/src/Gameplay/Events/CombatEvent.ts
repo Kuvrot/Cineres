@@ -116,8 +116,8 @@ export class CombatEvent extends Component {
         if (p <= this.agility){
             GameManager.instance.println("<color=#FF0000>" + this.enemyName + " </color>" + "dodges your attack");
         }else{
-            GameManager.instance.println("<color=#FF0000>" + this.enemyName + " </color>" + "receive " + (GameManager.instance.strength / 2).toString()) + " damage";
-            this.health -= GameManager.instance.strength / 2;
+            this.health -= GameManager.instance.strength;
+            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.strength) + " damage");
         }
         GameManager.instance.strength--;
         this.agility--;
@@ -137,7 +137,7 @@ export class CombatEvent extends Component {
         if (GameManager.instance.pistolAmmo > 0){
             GameManager.instance.pistolAmmo--;
             this.health -= GameManager.instance.strength;
-            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.strength) + " damage");
+            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.getRandomInt(2 , 5)) + " damage");
         }else{
             alert("No pistol ammo available");
         }
@@ -147,7 +147,7 @@ export class CombatEvent extends Component {
         if (GameManager.instance.musketAmmo > 0){
             GameManager.instance.musketAmmo--;
             this.health -= GameManager.instance.strength * 2;
-            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.strength * 2) + " damage");
+            GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.getRandomInt(2 , 10)) + " damage");
         }else{
             alert("No musket ammo available");
         }
