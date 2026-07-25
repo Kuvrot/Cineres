@@ -3,5 +3,6 @@
 # Cineres
 Cineres is a text based roguelike with a retro style. 
 
-<img width="1282" height="724" alt="imagen" src="https://github.com/user-attachments/assets/d0e2fd10-c958-4739-96b9-94a9eafa7048" />
+<img width="886" height="498" alt="imagen" src="https://github.com/user-attachments/assets/3df73bdb-725b-4987-84a2-588fdd7707ca" />
+
 
