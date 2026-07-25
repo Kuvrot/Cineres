@@ -142,7 +142,7 @@ export class CombatEvent extends Component {
             GameManager.instance.health+= 10;
             GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "patch yourself");
         }else{
-            alert("No bandages available");
+            GameManager.instance.println("You reached into your pockets, but realize there is no bandages left, you wasted precious time");
         }
     }
 
@@ -151,6 +151,7 @@ export class CombatEvent extends Component {
             if (!this.pistolFired){
                 let damage = (GameManager.instance.getRandomInt(2 , 5));
                 this.health -= damage;
+                this.agility-= damage/2;
                 GameManager.instance.pistolAmmo--;
                 GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "shoot your pistol and make " + damage + " damage");
                 this.pistolFired = true;
@@ -169,6 +170,7 @@ export class CombatEvent extends Component {
                 GameManager.instance.musketAmmo--;
                 let damage = (GameManager.instance.getRandomInt(2 , 10));
                 this.health -= damage;
+                this.agility-= damage/2;
                 GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "shoot your musket and make " + damage + " damage");
                 this.musketFired = true;
                 GameManager.instance.musketAmmo--;
