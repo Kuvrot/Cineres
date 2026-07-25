@@ -2601,7 +2601,7 @@
     "agility": 10,
     "stamina": 10,
     "strength": 10,
-    "playerTurn": false,
+    "playerName": "You",
     "isCombatInitiated": false,
     "_id": "70qCXBi1ZHl7Qt98lrpD5U"
   },

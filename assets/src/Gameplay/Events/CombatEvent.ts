@@ -85,15 +85,17 @@ export class CombatEvent extends Component {
                 }
                 this.generateEnemyAction();
                 GameManager.instance.println(this.generateOptions());
-                CommandManager.instance.clearCommand();
             }else{
-                switch (CommandManager.instance.command.string) {
-                    default: EventManager.instance.generateNewEvent(); break;
-                }
                 GameManager.instance.println(this.generateOptions());
-                CommandManager.instance.clearCommand();
+                switch (CommandManager.instance.command.string) {
+                    default: 
+                        EventManager.instance.clearConsole(); 
+                        CommandManager.instance.clearCommand();
+                        EventManager.instance.generateNewEvent(); 
+                        break;
+                }
             }
-            
+            CommandManager.instance.clearCommand();
         }
     }
 
@@ -187,6 +189,7 @@ export class CombatEvent extends Component {
         if (this.health <= 0){
             EventManager.instance.clearConsole();
             options += this.enemyName + " has been defeated <br />";
+            options += "<br />";
             options += "0.Continue <br />";
             this.lootEnemy();
             return options;
