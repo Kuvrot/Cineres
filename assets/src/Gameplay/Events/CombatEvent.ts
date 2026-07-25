@@ -41,6 +41,7 @@ export class CombatEvent extends Component {
     start() {
         //Cleans enemy name
         this.enemyName.replace("  " , " ");
+        this.enemyName = "<color=#FF0000>" + this.enemyName + " </color>";
     }
 
     protected onDisable(): void {
@@ -66,7 +67,7 @@ export class CombatEvent extends Component {
     // 3 = use/reload musket
     combatSystem () {
         //Enemy health bar
-        EventManager.instance.enemyLabel.string = "<color=#FF0000>" + this.enemyName + " </color>";
+        EventManager.instance.enemyLabel.string = this.enemyName;
         for (let i = 1; i <= this.health; i++){
             EventManager.instance.enemyLabel.string += '#';
         }
@@ -79,7 +80,7 @@ export class CombatEvent extends Component {
                     case '1': this.useBandage(); break;
                     case '2': this.usePistol(); break;
                     case '3': this.useMusket(); break;
-                    default: alert("Invalid action"); break;
+                    default: this.attack(); break;
                 }
                 this.generateEnemyAction();
                 GameManager.instance.println(this.generateOptions());
@@ -89,6 +90,7 @@ export class CombatEvent extends Component {
                 switch (CommandManager.instance.command.string) {
                     default: EventManager.instance.generateNewEvent(); break;
                 }
+                GameManager.instance.println(this.generateOptions());
                 CommandManager.instance.clearCommand();
             }
             
@@ -109,8 +111,9 @@ export class CombatEvent extends Component {
     }
 
     generateEnemyAction(){
-        GameManager.instance.println("<color=#FF0000>" + this.enemyName + " </color>" + "Attacks");
-        let p = GameManager.instance.getRandomInt(0 , 10);
+        GameManager.instance.println(this.enemyName + "Attacks");
+        let p = GameManager.instance.getRandomInt(1 , 10);
+        console.log("player:" + p + " - " + GameManager.instance.agility);
         if (p <= GameManager.instance.agility){
             GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "dodged the attack");
         }else{
@@ -121,9 +124,10 @@ export class CombatEvent extends Component {
     }
 
     attack () {
-        let p = GameManager.instance.getRandomInt(0 , 10);
+        let p = GameManager.instance.getRandomInt(1 , 10);
+        console.log("enemy:" + p + " - " + this.agility);
         if (p <= this.agility){
-            GameManager.instance.println("<color=#FF0000>" + this.enemyName + " </color>" + "dodges your attack");
+            GameManager.instance.println(this.enemyName + "dodges your attack");
         }else{
             this.health -= GameManager.instance.strength;
             GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "make " + (GameManager.instance.strength) + " damage");
@@ -147,6 +151,7 @@ export class CombatEvent extends Component {
             if (!this.pistolFired){
                 let damage = (GameManager.instance.getRandomInt(2 , 5));
                 this.health -= damage;
+                GameManager.instance.pistolAmmo--;
                 GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "shoot your pistol and make " + damage + " damage");
                 this.pistolFired = true;
             }else{
@@ -166,6 +171,7 @@ export class CombatEvent extends Component {
                 this.health -= damage;
                 GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "shoot your musket and make " + damage + " damage");
                 this.musketFired = true;
+                GameManager.instance.musketAmmo--;
             }else{
                 GameManager.instance.println("<color=#00FFFF>" + "You" + " </color>" + "reload your musket");
                 this.musketFired = false;
@@ -179,6 +185,8 @@ export class CombatEvent extends Component {
         let options = "<br />";
         if (this.health <= 0){
             options += "0.Continue <br />";
+            options += this.enemyName + " has been defeated";
+            return options;
         }
         options += "0.Attack <br />";
         options += "1.Use bandage (+10 health) <br / >";

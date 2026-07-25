@@ -1749,7 +1749,7 @@
     "reales": 2,
     "bandages": 1,
     "pistolAmmo": 2,
-    "musketAmmo": 2,
+    "musketAmmo": 0,
     "inventoryLabel": {
       "__id__": 45
     },
