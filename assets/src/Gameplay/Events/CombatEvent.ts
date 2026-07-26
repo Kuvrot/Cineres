@@ -95,17 +95,19 @@ export class CombatEvent extends Component {
             EventManager.instance.generateNewEvent();
         }else{
             alert("You failed to run away");
-            GameManager.instance.agility -= 1;
             this.isCombatInitiated = true;
             EventManager.instance.clearConsole();
+            CommandManager.instance.clearCommand();
+            GameManager.instance.println(this.generateOptions());
             this.combatSystem();
         }
+        GameManager.instance.agility -= 2;
     }
 
     generateEnemyAction(){
         GameManager.instance.println(this.enemyName + "Attacks");
         let p = GameManager.instance.getRandomInt(1 , 10);
-        if (p <= GameManager.instance.agility){
+        if (p <= GameManager.instance.agility - GameManager.instance.hunger){
             GameManager.instance.println(this.playerName + "dodged the attack");
         }else{
             GameManager.instance.println(this.playerName + "failed to dodged the attack and receive " + (this.strength / 2).toString() + " damage");
@@ -120,8 +122,8 @@ export class CombatEvent extends Component {
         if (p <= this.agility){
             GameManager.instance.println(this.enemyName + "dodges your attack");
         }else{
-            this.health -= GameManager.instance.strength;
-            GameManager.instance.println(this.playerName + "make " + (GameManager.instance.strength) + " damage");
+            this.health -= GameManager.instance.strength - GameManager.instance.hunger;
+            GameManager.instance.println(this.playerName + "make " + (GameManager.instance.strength - GameManager.instance.hunger) + " damage");
         }
         GameManager.instance.strength--;
         this.agility--;

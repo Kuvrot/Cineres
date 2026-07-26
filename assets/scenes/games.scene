@@ -26,7 +26,7 @@
         "__id__": 59
       },
       {
-        "__id__": 105
+        "__id__": 110
       }
     ],
     "_active": true,
@@ -61,7 +61,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 107
+      "__id__": 112
     },
     "_id": "3f2aa2ba-f8bb-418d-8350-00afc21c85fb"
   },
@@ -1746,7 +1746,7 @@
     "gunSkill": 10,
     "agility": 10,
     "hunger": 0,
-    "reales": 2,
+    "reales": 0,
     "bandages": 1,
     "pistolAmmo": 2,
     "musketAmmo": 0,
@@ -2071,7 +2071,7 @@
     "_priority": 0,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 476.67031763417305,
+    "_orthoHeight": 495.1080773606371,
     "_near": 0,
     "_far": 2000,
     "_color": {
@@ -2190,28 +2190,28 @@
         "__id__": 69
       },
       {
-        "__id__": 71
-      },
-      {
-        "__id__": 73
+        "__id__": 72
       },
       {
         "__id__": 75
       },
       {
+        "__id__": 78
+      },
+      {
         "__id__": 68
       },
       {
-        "__id__": 77
+        "__id__": 81
       },
       {
-        "__id__": 79
+        "__id__": 84
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 104
+        "__id__": 109
       }
     ],
     "_prefab": null,
@@ -2442,7 +2442,7 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 4,
-    "prompt": "You stumble across a <color=#FF0000> store </color>.\n\nPrices are high, and the food is of terrible quality. You can see the misery in the faces of everyone.",
+    "prompt": "You stumble across a <color=#FF0000>store </color>.\n\nPrices are high, and the food is of terrible quality. You can see the misery in the faces of everyone.",
     "options": [
       "Buy 1 Bandage (-1 reales)",
       "Buy food (-1 reales)",
@@ -2515,6 +2515,9 @@
     "_components": [
       {
         "__id__": 70
+      },
+      {
+        "__id__": 71
       }
     ],
     "_prefab": null,
@@ -2558,9 +2561,9 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 2,
-    "prompt": "You stumble across a funerary ceremony.",
+    "prompt": "You stumble across a funeral ceremony.",
     "options": [
-      "Pray with them (+1 strength)",
+      "Pray with them (+1 strength) (+2 health) (+1 bandage) (+2 hunger)",
       "Continue on your way"
     ],
     "optionSelected": 0,
@@ -2569,6 +2572,31 @@
       "__expectedType__": "cc.SpriteFrame"
     },
     "_id": "a7N1xQsuRCs46Xpz3zvjqf"
+  },
+  {
+    "__type__": "7ced8xolU9Ee65QxptHivvO",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 69
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "generateRandomLoot": false,
+    "agilityCost": 0,
+    "realesCost": 0,
+    "eat": false,
+    "health": 2,
+    "agility": 0,
+    "strength": 1,
+    "hunger": 2,
+    "reales": 0,
+    "bandages": 1,
+    "pistolAmmo": 0,
+    "musketAmmo": 0,
+    "action": false,
+    "_id": "38Yq2C31JJxoup/1r5TZuW"
   },
   {
     "__type__": "cc.Node",
@@ -2582,7 +2610,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 72
+        "__id__": 73
+      },
+      {
+        "__id__": 74
       }
     ],
     "_prefab": null,
@@ -2621,7 +2652,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 71
+      "__id__": 72
     },
     "_enabled": true,
     "__prefab": null,
@@ -2639,6 +2670,31 @@
     "_id": "a6AevJ7cRJFouw3rDVEWoL"
   },
   {
+    "__type__": "7ced8xolU9Ee65QxptHivvO",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 72
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "generateRandomLoot": false,
+    "agilityCost": 0,
+    "realesCost": 0,
+    "eat": true,
+    "health": 0,
+    "agility": -2,
+    "strength": -1,
+    "hunger": 0,
+    "reales": 0,
+    "bandages": 0,
+    "pistolAmmo": 0,
+    "musketAmmo": 0,
+    "action": false,
+    "_id": "5ajncB5Z1EiJyd0EApA0iC"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "Event_6",
     "_objFlags": 0,
@@ -2650,7 +2706,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 74
+        "__id__": 76
+      },
+      {
+        "__id__": 77
       }
     ],
     "_prefab": null,
@@ -2689,14 +2748,14 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 73
+      "__id__": 75
     },
     "_enabled": true,
     "__prefab": null,
     "eventType": 2,
     "prompt": "A <color=#FFFF00> corrida de toros </color> is  carrying out.",
     "options": [
-      "Watch the event (+ 2 agility) (+1 strength) (-2 reales))",
+      "Watch the event (+ 2 agility) (+1 strength) (-2 reales)",
       "Continue on your way"
     ],
     "optionSelected": 0,
@@ -2705,6 +2764,31 @@
       "__expectedType__": "cc.SpriteFrame"
     },
     "_id": "7f2jWO3BlHp4mDX4edkrxW"
+  },
+  {
+    "__type__": "7ced8xolU9Ee65QxptHivvO",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 75
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "generateRandomLoot": false,
+    "agilityCost": 0,
+    "realesCost": 2,
+    "eat": false,
+    "health": 0,
+    "agility": 2,
+    "strength": 1,
+    "hunger": 0,
+    "reales": 0,
+    "bandages": 0,
+    "pistolAmmo": 0,
+    "musketAmmo": 0,
+    "action": false,
+    "_id": "eebNbovuBBqr3/z24VVI7q"
   },
   {
     "__type__": "cc.Node",
@@ -2718,7 +2802,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 76
+        "__id__": 79
+      },
+      {
+        "__id__": 80
       }
     ],
     "_prefab": null,
@@ -2757,7 +2844,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 75
+      "__id__": 78
     },
     "_enabled": true,
     "__prefab": null,
@@ -2775,6 +2862,31 @@
     "_id": "a7ff10Ju5AFrrjk2IxNBAd"
   },
   {
+    "__type__": "7ced8xolU9Ee65QxptHivvO",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 78
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "generateRandomLoot": true,
+    "agilityCost": 2,
+    "realesCost": 0,
+    "eat": false,
+    "health": 5,
+    "agility": 0,
+    "strength": 0,
+    "hunger": 0,
+    "reales": 0,
+    "bandages": 0,
+    "pistolAmmo": 0,
+    "musketAmmo": 0,
+    "action": false,
+    "_id": "91bnT611JPUoGC4yo8YJn+"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "Event_10",
     "_objFlags": 0,
@@ -2786,7 +2898,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 78
+        "__id__": 82
+      },
+      {
+        "__id__": 83
       }
     ],
     "_prefab": null,
@@ -2825,7 +2940,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 77
+      "__id__": 81
     },
     "_enabled": true,
     "__prefab": null,
@@ -2843,6 +2958,31 @@
     "_id": "a6jZfoY+BF5r+WiMGPYobe"
   },
   {
+    "__type__": "7ced8xolU9Ee65QxptHivvO",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 81
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "generateRandomLoot": false,
+    "agilityCost": 0,
+    "realesCost": 2,
+    "eat": false,
+    "health": 0,
+    "agility": 2,
+    "strength": 1,
+    "hunger": 0,
+    "reales": -2,
+    "bandages": 0,
+    "pistolAmmo": 0,
+    "musketAmmo": 0,
+    "action": false,
+    "_id": "39vSmV25pG9J6ixS+OmFZF"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "Enemies",
     "_objFlags": 0,
@@ -2852,28 +2992,28 @@
     },
     "_children": [
       {
-        "__id__": 80
+        "__id__": 85
       },
       {
-        "__id__": 83
+        "__id__": 88
       },
       {
-        "__id__": 86
+        "__id__": 91
       },
       {
-        "__id__": 89
+        "__id__": 94
       },
       {
-        "__id__": 92
+        "__id__": 97
       },
       {
-        "__id__": 95
+        "__id__": 100
       },
       {
-        "__id__": 98
+        "__id__": 103
       },
       {
-        "__id__": 101
+        "__id__": 106
       }
     ],
     "_active": true,
@@ -2914,16 +3054,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 79
+      "__id__": 84
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 81
+        "__id__": 86
       },
       {
-        "__id__": 82
+        "__id__": 87
       }
     ],
     "_prefab": null,
@@ -2962,7 +3102,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 80
+      "__id__": 85
     },
     "_enabled": true,
     "__prefab": null,
@@ -2970,7 +3110,7 @@
     "prompt": "A<color=#FF0000> verdugo maldito </color>has appeared.",
     "options": [
       "Fight",
-      "Run away"
+      "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -2985,7 +3125,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 80
+      "__id__": 85
     },
     "_enabled": true,
     "__prefab": null,
@@ -3001,16 +3141,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 79
+      "__id__": 84
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 84
+        "__id__": 89
       },
       {
-        "__id__": 85
+        "__id__": 90
       }
     ],
     "_prefab": null,
@@ -3049,7 +3189,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 83
+      "__id__": 88
     },
     "_enabled": true,
     "__prefab": null,
@@ -3057,7 +3197,7 @@
     "prompt": "While you were walking, you accidentally get in an argument with a pompous individual.<br />You have been challenged to a duel by a<color=#FFFF00> Currutaco</color>",
     "options": [
       "Fight",
-      "Run away"
+      "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -3072,7 +3212,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 83
+      "__id__": 88
     },
     "_enabled": true,
     "__prefab": null,
@@ -3088,16 +3228,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 79
+      "__id__": 84
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 87
+        "__id__": 92
       },
       {
-        "__id__": 88
+        "__id__": 93
       }
     ],
     "_prefab": null,
@@ -3136,7 +3276,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 86
+      "__id__": 91
     },
     "_enabled": true,
     "__prefab": null,
@@ -3144,7 +3284,7 @@
     "prompt": "While you were walking a<color=#FF0000> bandido </color> tries to rob you",
     "options": [
       "Fight",
-      "Run away!"
+      "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -3159,7 +3299,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 86
+      "__id__": 91
     },
     "_enabled": true,
     "__prefab": null,
@@ -3175,16 +3315,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 79
+      "__id__": 84
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 90
+        "__id__": 95
       },
       {
-        "__id__": 91
+        "__id__": 96
       }
     ],
     "_prefab": null,
@@ -3223,7 +3363,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 89
+      "__id__": 94
     },
     "_enabled": true,
     "__prefab": null,
@@ -3231,7 +3371,7 @@
     "prompt": "A<color=#FF0000> verdugo maldito </color>has appeared.",
     "options": [
       "Fight",
-      "Run away"
+      "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -3246,7 +3386,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 89
+      "__id__": 94
     },
     "_enabled": true,
     "__prefab": null,
@@ -3262,16 +3402,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 79
+      "__id__": 84
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 93
+        "__id__": 98
       },
       {
-        "__id__": 94
+        "__id__": 99
       }
     ],
     "_prefab": null,
@@ -3310,7 +3450,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 92
+      "__id__": 97
     },
     "_enabled": true,
     "__prefab": null,
@@ -3318,7 +3458,7 @@
     "prompt": "A<color=#FF0000> bofo </color>has appeared.",
     "options": [
       "Fight",
-      "Run away"
+      "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -3333,7 +3473,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 92
+      "__id__": 97
     },
     "_enabled": true,
     "__prefab": null,
@@ -3349,16 +3489,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 79
+      "__id__": 84
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 96
+        "__id__": 101
       },
       {
-        "__id__": 97
+        "__id__": 102
       }
     ],
     "_prefab": null,
@@ -3397,7 +3537,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 95
+      "__id__": 100
     },
     "_enabled": true,
     "__prefab": null,
@@ -3405,7 +3545,7 @@
     "prompt": "You hear a grotesque barking, you turn arround to find the source of the noice.\n\nA dark creature emerges from the dark. This is not an ordinary dog. You can see in his red glowing eyes that he is ready to use his big fangs on you o take you to the abism with his tail.\n\nA<color=#FF0000> espinoso </color>has appeared.",
     "options": [
       "Fight",
-      "Run away"
+      "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -3420,7 +3560,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 95
+      "__id__": 100
     },
     "_enabled": true,
     "__prefab": null,
@@ -3436,16 +3576,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 79
+      "__id__": 84
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 99
+        "__id__": 104
       },
       {
-        "__id__": 100
+        "__id__": 105
       }
     ],
     "_prefab": null,
@@ -3484,7 +3624,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 98
+      "__id__": 103
     },
     "_enabled": true,
     "__prefab": null,
@@ -3492,7 +3632,7 @@
     "prompt": "A<color=#FF0000> Tlahuelpuchi </color>has appeared.",
     "options": [
       "Fight",
-      "Run away"
+      "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -3507,7 +3647,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 98
+      "__id__": 103
     },
     "_enabled": true,
     "__prefab": null,
@@ -3523,16 +3663,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 79
+      "__id__": 84
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 102
+        "__id__": 107
       },
       {
-        "__id__": 103
+        "__id__": 108
       }
     ],
     "_prefab": null,
@@ -3571,7 +3711,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 101
+      "__id__": 106
     },
     "_enabled": true,
     "__prefab": null,
@@ -3579,7 +3719,7 @@
     "prompt": "A<color=#FF0000> Verdugo corrupto </color>has appeared.",
     "options": [
       "Fight",
-      "Run away"
+      "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -3594,7 +3734,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 101
+      "__id__": 106
     },
     "_enabled": true,
     "__prefab": null,
@@ -3622,34 +3762,34 @@
         "__id__": 63
       },
       {
-        "__id__": 84
+        "__id__": 89
       },
       {
-        "__id__": 87
+        "__id__": 92
       },
       {
         "__id__": 70
       },
       {
-        "__id__": 72
+        "__id__": 73
       },
       {
-        "__id__": 81
+        "__id__": 86
       },
       {
         "__id__": 67
       },
       {
-        "__id__": 74
-      },
-      {
         "__id__": 76
       },
       {
-        "__id__": 81
+        "__id__": 79
       },
       {
-        "__id__": 78
+        "__id__": 86
+      },
+      {
+        "__id__": 82
       }
     ],
     "currentEvent": 0,
@@ -3677,7 +3817,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 106
+        "__id__": 111
       }
     ],
     "_prefab": null,
@@ -3716,7 +3856,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 105
+      "__id__": 110
     },
     "_enabled": true,
     "__prefab": null,
@@ -3732,28 +3872,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 108
-    },
-    "shadows": {
-      "__id__": 109
-    },
-    "_skybox": {
-      "__id__": 110
-    },
-    "fog": {
-      "__id__": 111
-    },
-    "octree": {
-      "__id__": 112
-    },
-    "skin": {
       "__id__": 113
     },
-    "lightProbeInfo": {
+    "shadows": {
       "__id__": 114
     },
-    "postSettings": {
+    "_skybox": {
       "__id__": 115
+    },
+    "fog": {
+      "__id__": 116
+    },
+    "octree": {
+      "__id__": 117
+    },
+    "skin": {
+      "__id__": 118
+    },
+    "lightProbeInfo": {
+      "__id__": 119
+    },
+    "postSettings": {
+      "__id__": 120
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false

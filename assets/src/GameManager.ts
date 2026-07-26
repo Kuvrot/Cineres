@@ -58,7 +58,6 @@ export class GameManager extends Component {
     update(deltaTime: number) {
         this.displayInventory();
         this.playerStatsLimits();
-        //this.hungerFeature();
     }
 
     println (text : string) {
@@ -106,11 +105,6 @@ export class GameManager extends Component {
         if (this.health > 20){
             this.health = 20;
         }
-    }
-
-    hungerFeature () {
-        this.strength = this.hunger;
-        this.agility -= this.hunger;
     }
 }
 
