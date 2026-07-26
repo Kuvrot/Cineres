@@ -16,8 +16,8 @@ export class GoToStore extends Component {
     update(deltaTime: number) {
        if (CommandManager.instance.isCommandEntered){
         switch (CommandManager.instance.command.string){
-            case '0' : EventManager.instance.generateNewEvent();
-            case '1' : EventManager.instance.generateNewEvent(this.storeEvent);
+            case '0' : EventManager.instance.generateNewEvent(); break;
+            case '1' : EventManager.instance.generateNewEvent(this.storeEvent); break;
         }
         CommandManager.instance.clearCommand();
        }
