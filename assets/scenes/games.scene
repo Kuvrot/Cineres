@@ -3162,9 +3162,9 @@
     "_enabled": true,
     "__prefab": null,
     "reales": false,
-    "bandages": false,
-    "pistolAmmo": false,
-    "musketAmmo": false,
+    "bandages": true,
+    "pistolAmmo": true,
+    "musketAmmo": true,
     "_id": "2cR21uCrBCraYTXBDcAu56"
   },
   {
@@ -3267,9 +3267,9 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": false,
+    "reales": true,
     "bandages": false,
-    "pistolAmmo": false,
+    "pistolAmmo": true,
     "musketAmmo": false,
     "_id": "f8u45a+D9NL7yA1Frk5P33"
   },
@@ -3373,10 +3373,10 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": false,
-    "bandages": false,
-    "pistolAmmo": false,
-    "musketAmmo": false,
+    "reales": true,
+    "bandages": true,
+    "pistolAmmo": true,
+    "musketAmmo": true,
     "_id": "32XcxbaL5DBpJasn7pYn7d"
   },
   {
@@ -3480,7 +3480,7 @@
     "_enabled": true,
     "__prefab": null,
     "reales": false,
-    "bandages": false,
+    "bandages": true,
     "pistolAmmo": false,
     "musketAmmo": false,
     "_id": "fbNCW6lPxA7Ipa5lDoG0oB"
@@ -3585,8 +3585,8 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": false,
-    "bandages": false,
+    "reales": true,
+    "bandages": true,
     "pistolAmmo": false,
     "musketAmmo": false,
     "_id": "63LQ19dz1FWbgALnrybkYq"
@@ -3797,8 +3797,8 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": false,
-    "bandages": false,
+    "reales": true,
+    "bandages": true,
     "pistolAmmo": false,
     "musketAmmo": false,
     "_id": "d0gFgDJpBPSqpWR6GryS9V"

@@ -101,17 +101,17 @@ export class GenericEvent extends Component {
             GameManager.instance.agility -= this.agilityCost;
         }
         if (this.reales > 0) {
-            GameManager.instance.println("Thou found " + this.reales + "<color=#FFFF00> Reales </color>");
+            GameManager.instance.println("Thou hast found " + this.reales + "<color=#FFFF00> Reales </color>");
         }
         if (this.bandages > 0) {
-            GameManager.instance.println("Thou found " + this.bandages + "<color=#FF00FF> Bandages </color>");
+            GameManager.instance.println("Thou hast found " + this.bandages + "<color=#FF00FF> Bandages </color>");
             
         }
         if (this.pistolAmmo > 0) {
-            GameManager.instance.println("Thou found " + this.pistolAmmo + "<color=#FF00FF> Pistol Ammo </color>");
+            GameManager.instance.println("Thou hast found " + this.pistolAmmo + "<color=#FF00FF> Pistol Ammo </color>");
         }
         if (this.musketAmmo > 0) {
-            GameManager.instance.println("Thou found " + this.musketAmmo + "<color=#FF00FF> Musket ammo </color>");
+            GameManager.instance.println("Thou hast found " + this.musketAmmo + "<color=#FF00FF> Musket ammo </color>");
         }
         if (this.agility > 0 || this.strength > 0 || this.health > 0){
             let stat = "Luckly, Thou wast able to rest. <br />";

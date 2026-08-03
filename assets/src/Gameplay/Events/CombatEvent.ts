@@ -2,6 +2,7 @@ import { _decorator, Component, Node } from 'cc';
 import { GameManager } from '../../GameManager';
 import { EventManager } from '../../Core/EventManager';
 import { CommandManager } from '../../Core/CommandManager';
+import { LootGeneration } from '../Generation/LootGeneration';
 const { ccclass, property } = _decorator;
 
 @ccclass('CombatEvent')
@@ -191,9 +192,9 @@ export class CombatEvent extends Component {
         if (this.health <= 0){
             EventManager.instance.clearConsole();
             options += this.enemyName + " hast been defeated <br />";
+            options += this.getComponent(LootGeneration).generateLoot() + "<br />";
             options += "<br />";
             options += "0.Continue <br />";
-            this.lootEnemy();
             return options;
         }
         options += "0.Attack <br />";
@@ -209,11 +210,6 @@ export class CombatEvent extends Component {
             options += "3.Fire musket <br / >"
         }
         return options;
-    }
-
-    //To-do
-    lootEnemy () {
-
     }
 
     enemyStatsLimits(){
