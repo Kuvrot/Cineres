@@ -43,13 +43,12 @@ export class EventManager extends Component {
         let index = 0;
         if (event == null){
             index = this.generateRandomEvent();
-        }else{
+        }else{ //Broken, use just for testing events
             index = this.events.indexOf(event);
             if (index == -1){
                 index = this.generateRandomEvent();
-            }
-        }
-        
+            } 
+        } 
         if (this.previousEvent != -1){
             this.previousEvent = this.currentEvent;
             this.currentEvent = index;

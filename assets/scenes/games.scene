@@ -26,7 +26,7 @@
         "__id__": 59
       },
       {
-        "__id__": 110
+        "__id__": 108
       }
     ],
     "_active": true,
@@ -61,7 +61,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 112
+      "__id__": 110
     },
     "_id": "3f2aa2ba-f8bb-418d-8350-00afc21c85fb"
   },
@@ -2184,34 +2184,34 @@
         "__id__": 60
       },
       {
-        "__id__": 64
+        "__id__": 63
       },
       {
-        "__id__": 69
+        "__id__": 70
       },
       {
-        "__id__": 72
+        "__id__": 73
       },
       {
-        "__id__": 75
+        "__id__": 76
       },
       {
-        "__id__": 78
+        "__id__": 79
       },
       {
         "__id__": 68
       },
       {
-        "__id__": 81
+        "__id__": 82
       },
       {
-        "__id__": 84
+        "__id__": 85
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 109
+        "__id__": 107
       }
     ],
     "_prefab": null,
@@ -2324,33 +2324,9 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "initialEvent": {
-      "__id__": 63
-    },
+    "initialEvent": null,
+    "uniqueEvent": true,
     "_id": "dcWcTEkU9E7KsvRCwj/D/f"
-  },
-  {
-    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 64
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "eventType": 0,
-    "prompt": "",
-    "options": [
-      "Continue with your way",
-      "Go to the store"
-    ],
-    "optionSelected": 0,
-    "eventImage": {
-      "__uuid__": "8faca46d-3089-4c1a-86f2-42690042759c@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_id": "bcJ31S6OBMwpU2Z+Or2nzk"
   },
   {
     "__type__": "cc.Node",
@@ -2364,7 +2340,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 63
+        "__id__": 64
       },
       {
         "__id__": 65
@@ -2404,12 +2380,35 @@
     "_id": "69AzQMd0FAwKeMsoqyAQfu"
   },
   {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 63
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 0,
+    "prompt": "",
+    "options": [
+      "Continue with your way",
+      "Go to the store"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "8faca46d-3089-4c1a-86f2-42690042759c@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "bcJ31S6OBMwpU2Z+Or2nzk"
+  },
+  {
     "__type__": "c0b8bLyeiZKQbF5dFXzNF9b",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 64
+      "__id__": 63
     },
     "_enabled": true,
     "__prefab": null,
@@ -2422,7 +2421,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 64
+      "__id__": 63
     },
     "_enabled": true,
     "__prefab": null,
@@ -2444,10 +2443,10 @@
     "eventType": 4,
     "prompt": "You stumble across a <color=#FF0000>store </color>.\n\nPrices are high, and the food is of terrible quality. You can see the misery in the faces of everyone.",
     "options": [
-      "Buy 1 Bandage (-1 reales)",
-      "Buy food (-1 reales)",
-      "Buy 1 musket bullet (-1 reales)",
-      "Buy 1 pistol ammo (-1 reales)",
+      "Buy 1 Bandage",
+      "Eat some bread",
+      "Buy 1 pistol ammo",
+      "Buy 1 musket ammo",
       "Continue"
     ],
     "optionSelected": 0,
@@ -2470,6 +2469,9 @@
     "_components": [
       {
         "__id__": 67
+      },
+      {
+        "__id__": 69
       }
     ],
     "_prefab": null,
@@ -2503,6 +2505,20 @@
     "_id": "1c30Ka4bdCWKS4FagYIImV"
   },
   {
+    "__type__": "9b80dsc/L1Npp465KAXZu6Z",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 68
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "generalPrice": 1,
+    "musketAmmoPrice": 2,
+    "_id": "21Fx5Aph5AXIS910nC47V7"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "Event_4",
     "_objFlags": 0,
@@ -2514,10 +2530,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 70
+        "__id__": 71
       },
       {
-        "__id__": 71
+        "__id__": 72
       }
     ],
     "_prefab": null,
@@ -2556,7 +2572,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 69
+      "__id__": 70
     },
     "_enabled": true,
     "__prefab": null,
@@ -2579,7 +2595,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 69
+      "__id__": 70
     },
     "_enabled": true,
     "__prefab": null,
@@ -2610,10 +2626,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 73
+        "__id__": 74
       },
       {
-        "__id__": 74
+        "__id__": 75
       }
     ],
     "_prefab": null,
@@ -2652,7 +2668,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 72
+      "__id__": 73
     },
     "_enabled": true,
     "__prefab": null,
@@ -2675,7 +2691,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 72
+      "__id__": 73
     },
     "_enabled": true,
     "__prefab": null,
@@ -2706,10 +2722,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 76
+        "__id__": 77
       },
       {
-        "__id__": 77
+        "__id__": 78
       }
     ],
     "_prefab": null,
@@ -2748,7 +2764,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 75
+      "__id__": 76
     },
     "_enabled": true,
     "__prefab": null,
@@ -2771,7 +2787,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 75
+      "__id__": 76
     },
     "_enabled": true,
     "__prefab": null,
@@ -2802,10 +2818,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 79
+        "__id__": 80
       },
       {
-        "__id__": 80
+        "__id__": 81
       }
     ],
     "_prefab": null,
@@ -2844,7 +2860,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 78
+      "__id__": 79
     },
     "_enabled": true,
     "__prefab": null,
@@ -2867,7 +2883,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 78
+      "__id__": 79
     },
     "_enabled": true,
     "__prefab": null,
@@ -2888,7 +2904,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_10",
+    "_name": "Concert",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -2898,10 +2914,10 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 82
+        "__id__": 83
       },
       {
-        "__id__": 83
+        "__id__": 84
       }
     ],
     "_prefab": null,
@@ -2940,7 +2956,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 81
+      "__id__": 82
     },
     "_enabled": true,
     "__prefab": null,
@@ -2963,7 +2979,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 81
+      "__id__": 82
     },
     "_enabled": true,
     "__prefab": null,
@@ -2992,28 +3008,25 @@
     },
     "_children": [
       {
-        "__id__": 85
+        "__id__": 86
       },
       {
-        "__id__": 88
+        "__id__": 89
       },
       {
-        "__id__": 91
+        "__id__": 92
       },
       {
-        "__id__": 94
+        "__id__": 95
       },
       {
-        "__id__": 97
+        "__id__": 98
       },
       {
-        "__id__": 100
+        "__id__": 101
       },
       {
-        "__id__": 103
-      },
-      {
-        "__id__": 106
+        "__id__": 104
       }
     ],
     "_active": true,
@@ -3054,16 +3067,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 84
+      "__id__": 85
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 86
+        "__id__": 87
       },
       {
-        "__id__": 87
+        "__id__": 88
       }
     ],
     "_prefab": null,
@@ -3102,7 +3115,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 85
+      "__id__": 86
     },
     "_enabled": true,
     "__prefab": null,
@@ -3114,7 +3127,7 @@
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "ef34153f-e00e-40f0-8f97-6a61a0d318b5@f9941",
+      "__uuid__": "1f3d0e3a-f6c1-4fd4-b445-76727c497f87@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_id": "04pGMjHEJP5ZHdMqMCvIv7"
@@ -3125,14 +3138,14 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 85
+      "__id__": 86
     },
     "_enabled": true,
     "__prefab": null,
     "enemyName": "verdugo maldito",
-    "health": 5,
-    "agility": 7,
-    "strength": 10,
+    "maxHealth": 10,
+    "maxAgility": 7,
+    "maxStrength": 10,
     "_id": "70qCXBi1ZHl7Qt98lrpD5U"
   },
   {
@@ -3141,16 +3154,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 84
+      "__id__": 85
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 89
+        "__id__": 90
       },
       {
-        "__id__": 90
+        "__id__": 91
       }
     ],
     "_prefab": null,
@@ -3189,7 +3202,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 88
+      "__id__": 89
     },
     "_enabled": true,
     "__prefab": null,
@@ -3212,14 +3225,14 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 88
+      "__id__": 89
     },
     "_enabled": true,
     "__prefab": null,
     "enemyName": "Currutaco",
-    "health": 3,
-    "agility": 7,
-    "strength": 10,
+    "maxHealth": 3,
+    "maxAgility": 5,
+    "maxStrength": 10,
     "_id": "a190+cHRlDz7khk2iPn4K5"
   },
   {
@@ -3228,16 +3241,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 84
+      "__id__": 85
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 92
+        "__id__": 93
       },
       {
-        "__id__": 93
+        "__id__": 94
       }
     ],
     "_prefab": null,
@@ -3276,7 +3289,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 91
+      "__id__": 92
     },
     "_enabled": true,
     "__prefab": null,
@@ -3299,14 +3312,14 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 91
+      "__id__": 92
     },
     "_enabled": true,
     "__prefab": null,
     "enemyName": "Bandido",
-    "health": 3,
-    "agility": 7,
-    "strength": 10,
+    "maxHealth": 3,
+    "maxAgility": 7,
+    "maxStrength": 10,
     "_id": "7cSAWI6wZJw4dusPJZAasc"
   },
   {
@@ -3315,16 +3328,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 84
+      "__id__": 85
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 95
+        "__id__": 96
       },
       {
-        "__id__": 96
+        "__id__": 97
       }
     ],
     "_prefab": null,
@@ -3363,12 +3376,12 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 94
+      "__id__": 95
     },
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "A<color=#FF0000> verdugo maldito </color>has appeared.",
+    "prompt": "A<color=#FF0000> Bofo </color>has appeared.",
     "options": [
       "Fight",
       "Run away (-2 agility)"
@@ -3386,14 +3399,14 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 94
+      "__id__": 95
     },
     "_enabled": true,
     "__prefab": null,
     "enemyName": "Bofo",
-    "health": 10,
-    "agility": 2,
-    "strength": 10,
+    "maxHealth": 15,
+    "maxAgility": 1,
+    "maxStrength": 10,
     "_id": "86CIdCP7hOsYXGqYtYOy8k"
   },
   {
@@ -3402,16 +3415,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 84
+      "__id__": 85
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 98
+        "__id__": 99
       },
       {
-        "__id__": 99
+        "__id__": 100
       }
     ],
     "_prefab": null,
@@ -3450,19 +3463,19 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 97
+      "__id__": 98
     },
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "A<color=#FF0000> bofo </color>has appeared.",
+    "prompt": "A<color=#FF0000> Verdugo corrupto </color>has appeared.",
     "options": [
       "Fight",
       "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "c96fda03-893f-43a6-9eef-7dbca2228d1e@f9941",
+      "__uuid__": "ef34153f-e00e-40f0-8f97-6a61a0d318b5@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_id": "99PfTU51NHtpDP6gRyW8BK"
@@ -3473,14 +3486,14 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 97
+      "__id__": 98
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Bofo",
-    "health": 10,
-    "agility": 2,
-    "strength": 10,
+    "enemyName": "Verdugo corrupto",
+    "maxHealth": 7,
+    "maxAgility": 7,
+    "maxStrength": 10,
     "_id": "c7YkECy+1NBIVZ2xaaokr9"
   },
   {
@@ -3489,16 +3502,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 84
+      "__id__": 85
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 101
+        "__id__": 102
       },
       {
-        "__id__": 102
+        "__id__": 103
       }
     ],
     "_prefab": null,
@@ -3537,7 +3550,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 100
+      "__id__": 101
     },
     "_enabled": true,
     "__prefab": null,
@@ -3560,14 +3573,14 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 100
+      "__id__": 101
     },
     "_enabled": true,
     "__prefab": null,
     "enemyName": "Espinoso",
-    "health": 3,
-    "agility": 10,
-    "strength": 10,
+    "maxHealth": 1,
+    "maxAgility": 15,
+    "maxStrength": 10,
     "_id": "f3ugxU/5hPmIB/npnP5VSY"
   },
   {
@@ -3576,16 +3589,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 84
+      "__id__": 85
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 104
+        "__id__": 105
       },
       {
-        "__id__": 105
+        "__id__": 106
       }
     ],
     "_prefab": null,
@@ -3624,7 +3637,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 103
+      "__id__": 104
     },
     "_enabled": true,
     "__prefab": null,
@@ -3647,102 +3660,15 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 103
+      "__id__": 104
     },
     "_enabled": true,
     "__prefab": null,
     "enemyName": "Tlahuelpuchi ",
-    "health": 5,
-    "agility": 5,
-    "strength": 5,
+    "maxHealth": 4,
+    "maxAgility": 2,
+    "maxStrength": 7,
     "_id": "bbOQPwPAtMg4oF5UrobuNR"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Event_14",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "_parent": {
-      "__id__": 84
-    },
-    "_children": [],
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 107
-      },
-      {
-        "__id__": 108
-      }
-    ],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_mobility": 0,
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "ddulnvTQpDurk/JAa07jAu"
-  },
-  {
-    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 106
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "eventType": 3,
-    "prompt": "A<color=#FF0000> Verdugo corrupto </color>has appeared.",
-    "options": [
-      "Fight",
-      "Run away (-2 agility)"
-    ],
-    "optionSelected": 0,
-    "eventImage": {
-      "__uuid__": "1f3d0e3a-f6c1-4fd4-b445-76727c497f87@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_id": "7d9CDCYmxLS4f1+i19QjCR"
-  },
-  {
-    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 106
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "enemyName": "Verdugo corrupto",
-    "health": 10,
-    "agility": 5,
-    "strength": 10,
-    "_id": "05xIqzrJBOTp1tI3osFy0k"
   },
   {
     "__type__": "d370fKCLrdMCLRDBCDEGjBK",
@@ -3759,37 +3685,49 @@
         "__id__": 61
       },
       {
-        "__id__": 63
+        "__id__": 64
       },
       {
-        "__id__": 89
+        "__id__": 90
       },
       {
-        "__id__": 92
+        "__id__": 93
       },
       {
-        "__id__": 70
+        "__id__": 71
       },
       {
-        "__id__": 73
+        "__id__": 74
       },
       {
-        "__id__": 86
+        "__id__": 87
       },
       {
         "__id__": 67
       },
       {
-        "__id__": 76
+        "__id__": 77
       },
       {
-        "__id__": 79
+        "__id__": 80
       },
       {
-        "__id__": 86
+        "__id__": 87
       },
       {
-        "__id__": 82
+        "__id__": 83
+      },
+      {
+        "__id__": 96
+      },
+      {
+        "__id__": 99
+      },
+      {
+        "__id__": 102
+      },
+      {
+        "__id__": 105
       }
     ],
     "currentEvent": 0,
@@ -3817,7 +3755,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 111
+        "__id__": 109
       }
     ],
     "_prefab": null,
@@ -3856,7 +3794,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 110
+      "__id__": 108
     },
     "_enabled": true,
     "__prefab": null,
@@ -3872,28 +3810,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 113
+      "__id__": 111
     },
     "shadows": {
-      "__id__": 114
+      "__id__": 112
     },
     "_skybox": {
-      "__id__": 115
+      "__id__": 113
     },
     "fog": {
-      "__id__": 116
+      "__id__": 114
     },
     "octree": {
-      "__id__": 117
+      "__id__": 115
     },
     "skin": {
-      "__id__": 118
+      "__id__": 116
     },
     "lightProbeInfo": {
-      "__id__": 119
+      "__id__": 117
     },
     "postSettings": {
-      "__id__": 120
+      "__id__": 118
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false

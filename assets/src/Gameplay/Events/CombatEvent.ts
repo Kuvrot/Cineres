@@ -12,12 +12,16 @@ export class CombatEvent extends Component {
 
     //EnemyStats
     @property
-    health: number = 10;
+    maxHealth: number = 10;
     @property
-    agility: number = 10;
+    maxAgility: number = 10;
     @property
-    strength : number = 10;
+    maxStrength : number = 10;
     
+    health : number = 10;
+    agility: number = 10;
+    strength : number = 10;
+
     playerName : string = "You";
     
     isCombatInitiated : boolean = false;
@@ -31,6 +35,12 @@ export class CombatEvent extends Component {
         this.enemyName.replace("  " , " ");
         this.enemyName = "<color=#FF0000>" + this.enemyName + " </color>";
         this.playerName = "<color=#00FFFF>" + this.playerName + " </color>";
+    }
+
+    protected onLoad(): void {
+        this.health = this.maxHealth
+        this.agility = this.maxAgility;
+        this.strength = this.maxStrength;
     }
 
     protected onDisable(): void {
