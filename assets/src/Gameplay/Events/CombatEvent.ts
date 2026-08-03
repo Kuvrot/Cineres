@@ -128,7 +128,7 @@ export class CombatEvent extends Component {
 
     attack () {
         let p = GameManager.instance.getRandomInt(1 , 10);
-        GameManager.instance.println(this.playerName + "attack");
+        GameManager.instance.println(this.playerName + "attack with your sabre");
         if (p <= this.agility){
             GameManager.instance.println(this.enemyName + "dodges your attack");
         }else{
@@ -143,7 +143,7 @@ export class CombatEvent extends Component {
         if (GameManager.instance.bandages > 0){
             GameManager.instance.bandages--;
             GameManager.instance.health+= 10;
-            GameManager.instance.println(this.playerName + "patch yourself");
+            GameManager.instance.println(this.playerName + " patch yourself up");
         }else{
             GameManager.instance.println("You reached into your pockets, but realize there is no bandages left, you wasted precious time");
         }
