@@ -43,7 +43,7 @@ export class GenericEvent extends Component {
         
     }
 
-    protected onLoad(): void {
+    protected onEnable(): void {
         if (!this.generateRandomLoot){
             return;
         }
@@ -70,11 +70,10 @@ export class GenericEvent extends Component {
                         EventManager.instance.generateNewEvent();
                     }
                 }
-                CommandManager.instance.clearCommand(); 
             }else{
                 EventManager.instance.generateNewEvent();
-                CommandManager.instance.clearCommand(); 
             }
+            CommandManager.instance.clearCommand(); 
         }
     }
 
