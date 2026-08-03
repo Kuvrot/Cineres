@@ -50,6 +50,8 @@ export class GameManager extends Component {
     @property({multiline : true})
     inventoryHeader = "INVENTORY";
 
+    hungerCounter: number = 0;
+
     static instance : GameManager;
 
     start() {
@@ -58,6 +60,8 @@ export class GameManager extends Component {
     update(deltaTime: number) {
         this.displayInventory();
         this.playerStatsLimits();
+        this.increaseHunger();
+
     }
 
     println (text : string) {
@@ -106,6 +110,13 @@ export class GameManager extends Component {
             this.health = 20;
         }
     }
+
+    increaseHunger () {
+        if (this.hungerCounter > 5){
+            this.hunger++;
+            this.hungerCounter = 0;
+        }
+    } 
 }
 
 
