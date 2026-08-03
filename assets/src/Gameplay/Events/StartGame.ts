@@ -13,8 +13,15 @@ export class StartGame extends Component {
     @property
     uniqueEvent : boolean = true;
 
+    eventHappened = false;
+
     start() {
 
+    }
+    protected onEnable(): void {
+        if (this.eventHappened){
+            EventManager.instance.generateNewEvent(this.initialEvent);
+        }
     }
 
     update(deltaTime: number) {
@@ -22,7 +29,9 @@ export class StartGame extends Component {
         if (CommandManager.instance.command.string == '0'){
             EventManager.instance.generateNewEvent(this.initialEvent);
             if (this.uniqueEvent){
-                EventManager.instance.events.splice(EventManager.instance.events.indexOf(this.getComponent(EventComponent)), 1);
+                this.eventHappened = true;
+                //This lines breakes the game
+                //EventManager.instance.events.splice(EventManager.instance.events.indexOf(this.getComponent(EventComponent)), 1);
             }
         }else{
             alert("Incorrect command!");
