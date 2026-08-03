@@ -43,7 +43,7 @@ export class StoreEvent extends Component {
 
     validateMoney (price: number) {
         if (GameManager.instance.reales < price){
-            alert('Not enough money');
+            alert('Thou hast not enough reales');
             return false;
         }
         return true;

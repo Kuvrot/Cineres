@@ -80,7 +80,7 @@ export class GenericEvent extends Component {
     displayText () {  
         if (this.realesCost > 0){
             if ((GameManager.instance.reales - this.realesCost < 0)){
-                GameManager.instance.println("You don't have enough reales");
+                GameManager.instance.println("Thou hast not enough reales");
                 GameManager.instance.println("");
                 GameManager.instance.println("0.Continue");
                 return;
@@ -101,20 +101,20 @@ export class GenericEvent extends Component {
             GameManager.instance.agility -= this.agilityCost;
         }
         if (this.reales > 0) {
-            GameManager.instance.println("You found " + this.reales + "<color=#FFFF00> Reales </color>");
+            GameManager.instance.println("Thou found " + this.reales + "<color=#FFFF00> Reales </color>");
         }
         if (this.bandages > 0) {
-            GameManager.instance.println("You found " + this.bandages + "<color=#FF00FF> Bandages </color>");
+            GameManager.instance.println("Thou found " + this.bandages + "<color=#FF00FF> Bandages </color>");
             
         }
         if (this.pistolAmmo > 0) {
-            GameManager.instance.println("You found " + this.pistolAmmo + "<color=#FF00FF> Pistol Ammo </color>");
+            GameManager.instance.println("Thou found " + this.pistolAmmo + "<color=#FF00FF> Pistol Ammo </color>");
         }
         if (this.musketAmmo > 0) {
-            GameManager.instance.println("You found " + this.musketAmmo + "<color=#FF00FF> Musket ammo </color>");
+            GameManager.instance.println("Thou found " + this.musketAmmo + "<color=#FF00FF> Musket ammo </color>");
         }
         if (this.agility > 0 || this.strength > 0 || this.health > 0){
-            let stat = "Luckly, you were able to rest <br />";
+            let stat = "Luckly, Thou wast able to rest. <br />";
             if (this.agility > 0){
                 stat += "| +" + this.agility + " agility | <br />";
             }
@@ -127,11 +127,11 @@ export class GenericEvent extends Component {
             GameManager.instance.println(stat);
         }
         if (this.eat) {
-            GameManager.instance.println("Your hunger has been satisfied. <br />");
+            GameManager.instance.println("Thy hunger hast been satisfied. <br />");
             GameManager.instance.hunger = 0;
         }else{
             if (this.hunger > 0){
-                GameManager.instance.println("Your hunger has increased by " + this.hunger +  "<br />");
+                GameManager.instance.println("Thy hunger hast increased by " + this.hunger +  "<br />");
                 GameManager.instance.hunger += this.hunger;
             }
         }

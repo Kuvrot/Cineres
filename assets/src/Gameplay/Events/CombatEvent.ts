@@ -22,7 +22,7 @@ export class CombatEvent extends Component {
     agility: number = 10;
     strength : number = 10;
 
-    playerName : string = "You";
+    playerName : string = "Thou";
     
     isCombatInitiated : boolean = false;
 
@@ -128,9 +128,9 @@ export class CombatEvent extends Component {
 
     attack () {
         let p = GameManager.instance.getRandomInt(1 , 10);
-        GameManager.instance.println(this.playerName + "attack with your sabre");
+        GameManager.instance.println(this.playerName + "attackest with thy blade");
         if (p <= this.agility){
-            GameManager.instance.println(this.enemyName + "dodges your attack");
+            GameManager.instance.println(this.enemyName + "dodges thy attack");
         }else{
             this.health -= GameManager.instance.strength - GameManager.instance.hunger;
             GameManager.instance.println(this.playerName + "make " + (GameManager.instance.strength - GameManager.instance.hunger) + " damage");
@@ -143,9 +143,9 @@ export class CombatEvent extends Component {
         if (GameManager.instance.bandages > 0){
             GameManager.instance.bandages--;
             GameManager.instance.health+= 10;
-            GameManager.instance.println(this.playerName + " patch yourself up");
+            GameManager.instance.println(this.playerName + " dress thy wounds.");
         }else{
-            GameManager.instance.println("You reached into your pockets, but realize there is no bandages left, you wasted precious time");
+            GameManager.instance.println("Thou reached into thy pockets, but found no bandages remained; thou hadst wasted precious time");
         }
     }
 
@@ -156,14 +156,14 @@ export class CombatEvent extends Component {
                 this.health -= damage;
                 this.agility-= damage/2;
                 GameManager.instance.pistolAmmo--;
-                GameManager.instance.println(this.playerName + "shoot your pistol and make " + damage + " damage");
+                GameManager.instance.println(this.playerName + " fire thy pistol and make " + damage + " damage");
                 this.pistolFired = true;
             }else{
-                GameManager.instance.println(this.playerName + "reload your pistol");
+                GameManager.instance.println(this.playerName + " reloaded thy pistol");
                 this.pistolFired = false;
             }
         }else{
-            GameManager.instance.println("You reached into your pockets, but realize there is no ammo left, you wasted precious time");
+            GameManager.instance.println("Thou reached into thy pockets, but found no ammo remained; thou hadst wasted precious time");
         }
     }
 
@@ -174,15 +174,15 @@ export class CombatEvent extends Component {
                 let damage = (GameManager.instance.getRandomInt(2 , 10));
                 this.health -= damage;
                 this.agility-= damage/2;
-                GameManager.instance.println(this.playerName + "shoot your musket and make " + damage + " damage");
+                GameManager.instance.println(this.playerName + " fire thy musket and make " + damage + " damage");
                 this.musketFired = true;
                 GameManager.instance.musketAmmo--;
             }else{
-                GameManager.instance.println(this.playerName + "reload your musket");
+                GameManager.instance.println(this.playerName + " reloaded thy musket");
                 this.musketFired = false;
             }
         }else{
-            GameManager.instance.println("You reached into your pockets, but realize there is no ammo left, you wasted precious time");
+            GameManager.instance.println("Thou reached into thy pockets, but found no ammo remained; thou hadst wasted precious time");
         }
     }
 
@@ -190,7 +190,7 @@ export class CombatEvent extends Component {
         let options = "<br />";
         if (this.health <= 0){
             EventManager.instance.clearConsole();
-            options += this.enemyName + " has been defeated <br />";
+            options += this.enemyName + " hast been defeated <br />";
             options += "<br />";
             options += "0.Continue <br />";
             this.lootEnemy();
@@ -201,12 +201,12 @@ export class CombatEvent extends Component {
         if (this.pistolFired){
             options += "2.Reload pistol <br / >";
         }else{
-            options += "2.Shoot pistol <br / >"
+            options += "2.Fire pistol <br / >"
         }
         if (this.musketFired){
             options += "3.Reload musket <br / >";
         }else{
-            options += "3.Shoot musket <br / >"
+            options += "3.Fire musket <br / >"
         }
         return options;
     }
