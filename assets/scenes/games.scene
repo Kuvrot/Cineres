@@ -607,7 +607,7 @@
       "b": 0,
       "a": 255
     },
-    "_string": "Click here...",
+    "_string": "Insert command here ...",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
     "_actualFontSize": 20,
@@ -1172,8 +1172,8 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -3.7810130377530413,
-      "y": 8.475500000000011,
+      "x": -4.133084897333113,
+      "y": 0.4421492939844933,
       "z": -1000
     },
     "_lrot": {
@@ -1211,8 +1211,8 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 456.2140000000001,
-      "height": 626.3728930481285
+      "width": 461.71,
+      "height": 565.8210784313725
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1236,17 +1236,17 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 207,
+      "g": 207,
+      "b": 207,
       "a": 255
     },
     "_spriteFrame": {
       "__uuid__": "d2853d57-b5bd-4918-af2c-7d729d54fb2f@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 0,
-    "_fillType": 0,
+    "_type": 3,
+    "_fillType": 1,
     "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -1254,7 +1254,7 @@
       "y": 0
     },
     "_fillStart": 0,
-    "_fillRange": 0,
+    "_fillRange": 1,
     "_isTrimmedMode": true,
     "_useGrayscale": false,
     "_atlas": null,
