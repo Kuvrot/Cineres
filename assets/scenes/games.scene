@@ -3161,7 +3161,7 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "A<color=#FF0000> verdugo maldito </color>has appeared.",
+    "prompt": "",
     "options": [
       "Fight",
       "Run away (-2 agility)"
@@ -3479,7 +3479,7 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "A<color=#FF0000> Bofo </color>has appeared.",
+    "prompt": "",
     "options": [
       "Fight",
       "Run away (-2 agility)"
@@ -3585,7 +3585,7 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "A<color=#FF0000> Verdugo corrupto </color>has appeared.",
+    "prompt": "",
     "options": [
       "Fight",
       "Run away (-2 agility)"
@@ -3691,7 +3691,7 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "Thou hearest a most grotesque barking, and turnest thee about to seek the source thereof.\n\nOut of the darkness there cometh forth a fell creature. This is no common hound. In its glowing crimson eyes thou beholdest a cruel hunger, and its great fangs stand ready to rend thy flesh. With its baleful tail it would drag thee down into the very abyss.\n\nA<color=#FF0000> espinoso </color>hast appeared.",
+    "prompt": "You hear a grotesque barking and turn around to seek its source.\n\nFrom the shadows emerges a dark creature. This is no ordinary hound. Its crimson eyes burn with malice, and its gaping maw reveals monstrous fangs eager to rend thy flesh. Its serpentine tail lashes behind it, as though it would drag thee into the abyss itself.",
     "options": [
       "Fight",
       "Run away (-2 agility)"
@@ -3797,7 +3797,7 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "A<color=#FF0000> Tlahuelpuchi </color>has appeared.",
+    "prompt": "",
     "options": [
       "Fight",
       "Run away (-2 agility)"

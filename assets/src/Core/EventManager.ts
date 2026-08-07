@@ -1,6 +1,7 @@
 import { _decorator, Component, Node, RichText, Sprite, SpriteComponent } from 'cc';
 import { EventComponent } from '../Gameplay/EventComponent';
 import { GameManager } from '../GameManager';
+import { CombatEvent } from '../Gameplay/Events/CombatEvent';
 const { ccclass, property } = _decorator;
 
 @ccclass('EventManager')
@@ -80,9 +81,14 @@ export class EventManager extends Component {
     displayPrompt () {
         let consoleText = this.events[this.currentEvent].getPrompt();
         //Display options
-        consoleText += "<br/>";
+        consoleText += "<br />";
+        if (this.events[this.currentEvent].eventType == 3 && this.events[this.currentEvent].getComponent(CombatEvent)){
+            consoleText += "<br />";
+            consoleText += "A<color=#FF0000> " + this.events[this.currentEvent].getComponent(CombatEvent).enemyName +  " </color>has appeared.";
+            consoleText += "<br />";
+        }
         for (let i  = 0; i < this.events[this.currentEvent].options.length; i++){
-            consoleText += "<br/>"
+            consoleText += "<br/>";
             consoleText += i + ". " + this.events[this.currentEvent].options[i];
         }
         this.consoleText.string = consoleText;

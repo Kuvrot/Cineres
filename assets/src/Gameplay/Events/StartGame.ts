@@ -33,8 +33,6 @@ export class StartGame extends Component {
                 //This lines breakes the game
                 //EventManager.instance.events.splice(EventManager.instance.events.indexOf(this.getComponent(EventComponent)), 1);
             }
-        }else{
-            alert("Incorrect command!");
         }
         CommandManager.instance.clearCommand();
        }
