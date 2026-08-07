@@ -23,10 +23,13 @@
         "__id__": 44
       },
       {
-        "__id__": 61
+        "__id__": 65
       },
       {
-        "__id__": 118
+        "__id__": 122
+      },
+      {
+        "__id__": 58
       }
     ],
     "_active": true,
@@ -61,7 +64,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 120
+      "__id__": 124
     },
     "_id": "3f2aa2ba-f8bb-418d-8350-00afc21c85fb"
   },
@@ -81,13 +84,13 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 58
+        "__id__": 62
       },
       {
-        "__id__": 59
+        "__id__": 63
       },
       {
-        "__id__": 60
+        "__id__": 64
       }
     ],
     "_prefab": null,
@@ -151,7 +154,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 57
+        "__id__": 61
       }
     ],
     "_prefab": null,
@@ -1629,6 +1632,9 @@
     "clickEvents": [
       {
         "__id__": 43
+      },
+      {
+        "__id__": 57
       }
     ],
     "_interactable": true,
@@ -2093,6 +2099,103 @@
     "_id": "9a1e4aQ2ZF47zAW86ByHLu"
   },
   {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 58
+    },
+    "component": "",
+    "_componentId": "8d302XsxsxFzYgdVo1x/wD5",
+    "handler": "playEnter",
+    "customEventData": ""
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "SoundManager",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 59
+      },
+      {
+        "__id__": 60
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "23r4tqjyxMVZhqu70rNngY"
+  },
+  {
+    "__type__": "8d302XsxsxFzYgdVo1x/wD5",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 58
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "keyboardClip": {
+      "__uuid__": "00e9ca2f-29c1-4699-86f6-99528a2f20b9",
+      "__expectedType__": "cc.AudioClip"
+    },
+    "enterClip": {
+      "__uuid__": "38cc4746-932d-4195-94a2-fd0438e58478",
+      "__expectedType__": "cc.AudioClip"
+    },
+    "command": {
+      "__id__": 17
+    },
+    "_id": "acyik/qwRDna1Q30gqENJD"
+  },
+  {
+    "__type__": "cc.AudioSource",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 58
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_clip": null,
+    "_loop": false,
+    "_playOnAwake": false,
+    "_volume": 1,
+    "_id": "a3OQGJc7VPo6V+TuJcV+hL"
+  },
+  {
     "__type__": "cc.Camera",
     "_name": "",
     "_objFlags": 0,
@@ -2171,7 +2274,7 @@
     "_enabled": true,
     "__prefab": null,
     "_cameraComponent": {
-      "__id__": 57
+      "__id__": 61
     },
     "_alignCanvasWithScreen": true,
     "_id": "4b0eUJUzFNOIuahXtKsKAy"
@@ -2216,40 +2319,40 @@
     },
     "_children": [
       {
-        "__id__": 62
+        "__id__": 66
       },
       {
-        "__id__": 65
+        "__id__": 69
       },
       {
-        "__id__": 72
+        "__id__": 76
       },
       {
-        "__id__": 75
+        "__id__": 79
       },
       {
-        "__id__": 78
+        "__id__": 82
       },
       {
-        "__id__": 81
+        "__id__": 85
       },
       {
-        "__id__": 70
+        "__id__": 74
       },
       {
-        "__id__": 84
+        "__id__": 88
       },
       {
-        "__id__": 87
+        "__id__": 91
       },
       {
-        "__id__": 116
+        "__id__": 120
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 117
+        "__id__": 121
       }
     ],
     "_prefab": null,
@@ -2288,16 +2391,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 61
+      "__id__": 65
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 63
+        "__id__": 67
       },
       {
-        "__id__": 64
+        "__id__": 68
       }
     ],
     "_prefab": null,
@@ -2336,7 +2439,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 62
+      "__id__": 66
     },
     "_enabled": true,
     "__prefab": null,
@@ -2358,7 +2461,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 62
+      "__id__": 66
     },
     "_enabled": true,
     "__prefab": null,
@@ -2372,19 +2475,19 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 61
+      "__id__": 65
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 66
+        "__id__": 70
       },
       {
-        "__id__": 67
+        "__id__": 71
       },
       {
-        "__id__": 68
+        "__id__": 72
       }
     ],
     "_prefab": null,
@@ -2423,7 +2526,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 65
+      "__id__": 69
     },
     "_enabled": true,
     "__prefab": null,
@@ -2446,7 +2549,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 65
+      "__id__": 69
     },
     "_enabled": true,
     "__prefab": null,
@@ -2459,12 +2562,12 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 65
+      "__id__": 69
     },
     "_enabled": true,
     "__prefab": null,
     "storeEvent": {
-      "__id__": 69
+      "__id__": 73
     },
     "_id": "3dFfPmAQpL84L3o7O6Yp/Z"
   },
@@ -2474,7 +2577,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 70
+      "__id__": 74
     },
     "_enabled": true,
     "__prefab": null,
@@ -2500,16 +2603,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 61
+      "__id__": 65
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 69
+        "__id__": 73
       },
       {
-        "__id__": 71
+        "__id__": 75
       }
     ],
     "_prefab": null,
@@ -2548,7 +2651,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 70
+      "__id__": 74
     },
     "_enabled": true,
     "__prefab": null,
@@ -2562,16 +2665,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 61
+      "__id__": 65
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 73
+        "__id__": 77
       },
       {
-        "__id__": 74
+        "__id__": 78
       }
     ],
     "_prefab": null,
@@ -2610,7 +2713,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 72
+      "__id__": 76
     },
     "_enabled": true,
     "__prefab": null,
@@ -2633,7 +2736,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 72
+      "__id__": 76
     },
     "_enabled": true,
     "__prefab": null,
@@ -2658,16 +2761,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 61
+      "__id__": 65
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 76
+        "__id__": 80
       },
       {
-        "__id__": 77
+        "__id__": 81
       }
     ],
     "_prefab": null,
@@ -2706,7 +2809,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 75
+      "__id__": 79
     },
     "_enabled": true,
     "__prefab": null,
@@ -2729,7 +2832,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 75
+      "__id__": 79
     },
     "_enabled": true,
     "__prefab": null,
@@ -2754,16 +2857,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 61
+      "__id__": 65
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 79
+        "__id__": 83
       },
       {
-        "__id__": 80
+        "__id__": 84
       }
     ],
     "_prefab": null,
@@ -2802,7 +2905,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 78
+      "__id__": 82
     },
     "_enabled": true,
     "__prefab": null,
@@ -2825,7 +2928,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 78
+      "__id__": 82
     },
     "_enabled": true,
     "__prefab": null,
@@ -2850,16 +2953,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 61
+      "__id__": 65
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 82
+        "__id__": 86
       },
       {
-        "__id__": 83
+        "__id__": 87
       }
     ],
     "_prefab": null,
@@ -2898,7 +3001,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 81
+      "__id__": 85
     },
     "_enabled": true,
     "__prefab": null,
@@ -2921,7 +3024,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 81
+      "__id__": 85
     },
     "_enabled": true,
     "__prefab": null,
@@ -2946,16 +3049,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 61
+      "__id__": 65
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 85
+        "__id__": 89
       },
       {
-        "__id__": 86
+        "__id__": 90
       }
     ],
     "_prefab": null,
@@ -2994,7 +3097,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 84
+      "__id__": 88
     },
     "_enabled": true,
     "__prefab": null,
@@ -3017,7 +3120,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 84
+      "__id__": 88
     },
     "_enabled": true,
     "__prefab": null,
@@ -3042,12 +3145,9 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 61
+      "__id__": 65
     },
     "_children": [
-      {
-        "__id__": 88
-      },
       {
         "__id__": 92
       },
@@ -3065,6 +3165,9 @@
       },
       {
         "__id__": 112
+      },
+      {
+        "__id__": 116
       }
     ],
     "_active": true,
@@ -3105,113 +3208,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 87
-    },
-    "_children": [],
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 89
-      },
-      {
-        "__id__": 90
-      },
-      {
-        "__id__": 91
-      }
-    ],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_mobility": 0,
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "cffsnAcFVOxbRLQc0nWNIa"
-  },
-  {
-    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 88
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "eventType": 3,
-    "prompt": "",
-    "options": [
-      "Fight",
-      "Run away (-2 agility)"
-    ],
-    "optionSelected": 0,
-    "eventImage": {
-      "__uuid__": "1f3d0e3a-f6c1-4fd4-b445-76727c497f87@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_id": "04pGMjHEJP5ZHdMqMCvIv7"
-  },
-  {
-    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 88
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "enemyName": "verdugo maldito",
-    "maxHealth": 10,
-    "maxAgility": 7,
-    "maxStrength": 10,
-    "_id": "70qCXBi1ZHl7Qt98lrpD5U"
-  },
-  {
-    "__type__": "ce10fd/l6JKAKy30te3aHLN",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 88
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "reales": false,
-    "bandages": true,
-    "pistolAmmo": true,
-    "musketAmmo": true,
-    "_id": "2cR21uCrBCraYTXBDcAu56"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Event_2",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "_parent": {
-      "__id__": 87
+      "__id__": 91
     },
     "_children": [],
     "_active": false,
@@ -3254,7 +3251,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "15VfjYcyVIe7CYbz0QEdAC"
+    "_id": "cffsnAcFVOxbRLQc0nWNIa"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -3267,17 +3264,17 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "While you were walking, you accidentally get in an argument with a pompous individual.<br />You have been challenged to a duel by a<color=#FFFF00> Currutaco</color>",
+    "prompt": "",
     "options": [
       "Fight",
       "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "da223073-f567-46df-b302-c2fea9c6df06@f9941",
+      "__uuid__": "1f3d0e3a-f6c1-4fd4-b445-76727c497f87@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "6eUBYH3pZOILySFAoUDerk"
+    "_id": "04pGMjHEJP5ZHdMqMCvIv7"
   },
   {
     "__type__": "0faa0FxCxpC+rZLSeYB7svv",
@@ -3289,11 +3286,11 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Currutaco",
-    "maxHealth": 3,
-    "maxAgility": 5,
+    "enemyName": "verdugo maldito",
+    "maxHealth": 10,
+    "maxAgility": 7,
     "maxStrength": 10,
-    "_id": "a190+cHRlDz7khk2iPn4K5"
+    "_id": "70qCXBi1ZHl7Qt98lrpD5U"
   },
   {
     "__type__": "ce10fd/l6JKAKy30te3aHLN",
@@ -3305,19 +3302,19 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": true,
-    "bandages": false,
+    "reales": false,
+    "bandages": true,
     "pistolAmmo": true,
-    "musketAmmo": false,
-    "_id": "f8u45a+D9NL7yA1Frk5P33"
+    "musketAmmo": true,
+    "_id": "2cR21uCrBCraYTXBDcAu56"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_3",
+    "_name": "Event_2",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 87
+      "__id__": 91
     },
     "_children": [],
     "_active": false,
@@ -3360,7 +3357,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "d9GnXYlDhKKrm/as1Vfhfv"
+    "_id": "15VfjYcyVIe7CYbz0QEdAC"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -3373,17 +3370,17 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "While you were walking a<color=#FF0000> bandido </color> tries to rob you",
+    "prompt": "While you were walking, you accidentally get in an argument with a pompous individual.<br />You have been challenged to a duel by a<color=#FFFF00> Currutaco</color>",
     "options": [
       "Fight",
       "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "1daa0750-2f9a-4d82-8bcd-5c4f7a093354@f9941",
+      "__uuid__": "da223073-f567-46df-b302-c2fea9c6df06@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "00vr8owChDNZAZdzdToSpa"
+    "_id": "6eUBYH3pZOILySFAoUDerk"
   },
   {
     "__type__": "0faa0FxCxpC+rZLSeYB7svv",
@@ -3395,11 +3392,11 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Bandido",
+    "enemyName": "Currutaco",
     "maxHealth": 3,
-    "maxAgility": 7,
+    "maxAgility": 5,
     "maxStrength": 10,
-    "_id": "7cSAWI6wZJw4dusPJZAasc"
+    "_id": "a190+cHRlDz7khk2iPn4K5"
   },
   {
     "__type__": "ce10fd/l6JKAKy30te3aHLN",
@@ -3412,18 +3409,18 @@
     "_enabled": true,
     "__prefab": null,
     "reales": true,
-    "bandages": true,
+    "bandages": false,
     "pistolAmmo": true,
-    "musketAmmo": true,
-    "_id": "32XcxbaL5DBpJasn7pYn7d"
+    "musketAmmo": false,
+    "_id": "f8u45a+D9NL7yA1Frk5P33"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_10",
+    "_name": "Event_3",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 87
+      "__id__": 91
     },
     "_children": [],
     "_active": false,
@@ -3466,7 +3463,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "b9gokN7UFJCJCeGrETYWB7"
+    "_id": "d9GnXYlDhKKrm/as1Vfhfv"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -3479,17 +3476,17 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "",
+    "prompt": "While you were walking a<color=#FF0000> bandido </color> tries to rob you",
     "options": [
       "Fight",
       "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "c96fda03-893f-43a6-9eef-7dbca2228d1e@f9941",
+      "__uuid__": "1daa0750-2f9a-4d82-8bcd-5c4f7a093354@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "12lWfd/cFASoxO1HPMdCFO"
+    "_id": "00vr8owChDNZAZdzdToSpa"
   },
   {
     "__type__": "0faa0FxCxpC+rZLSeYB7svv",
@@ -3501,11 +3498,11 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Bofo",
-    "maxHealth": 15,
-    "maxAgility": 1,
+    "enemyName": "Bandido",
+    "maxHealth": 3,
+    "maxAgility": 7,
     "maxStrength": 10,
-    "_id": "86CIdCP7hOsYXGqYtYOy8k"
+    "_id": "7cSAWI6wZJw4dusPJZAasc"
   },
   {
     "__type__": "ce10fd/l6JKAKy30te3aHLN",
@@ -3517,19 +3514,19 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": false,
+    "reales": true,
     "bandages": true,
-    "pistolAmmo": false,
-    "musketAmmo": false,
-    "_id": "fbNCW6lPxA7Ipa5lDoG0oB"
+    "pistolAmmo": true,
+    "musketAmmo": true,
+    "_id": "32XcxbaL5DBpJasn7pYn7d"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_11",
+    "_name": "Event_10",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 87
+      "__id__": 91
     },
     "_children": [],
     "_active": false,
@@ -3572,7 +3569,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "c46vflTFJFyqtnu7DUEwdi"
+    "_id": "b9gokN7UFJCJCeGrETYWB7"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -3592,10 +3589,10 @@
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "ef34153f-e00e-40f0-8f97-6a61a0d318b5@f9941",
+      "__uuid__": "c96fda03-893f-43a6-9eef-7dbca2228d1e@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "99PfTU51NHtpDP6gRyW8BK"
+    "_id": "12lWfd/cFASoxO1HPMdCFO"
   },
   {
     "__type__": "0faa0FxCxpC+rZLSeYB7svv",
@@ -3607,11 +3604,11 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Verdugo corrupto",
-    "maxHealth": 7,
-    "maxAgility": 7,
+    "enemyName": "Bofo",
+    "maxHealth": 15,
+    "maxAgility": 1,
     "maxStrength": 10,
-    "_id": "c7YkECy+1NBIVZ2xaaokr9"
+    "_id": "86CIdCP7hOsYXGqYtYOy8k"
   },
   {
     "__type__": "ce10fd/l6JKAKy30te3aHLN",
@@ -3623,19 +3620,19 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": true,
+    "reales": false,
     "bandages": true,
     "pistolAmmo": false,
     "musketAmmo": false,
-    "_id": "63LQ19dz1FWbgALnrybkYq"
+    "_id": "fbNCW6lPxA7Ipa5lDoG0oB"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_12",
+    "_name": "Event_11",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 87
+      "__id__": 91
     },
     "_children": [],
     "_active": false,
@@ -3678,7 +3675,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "ae0EwyxpROCLV+sqaICeDI"
+    "_id": "c46vflTFJFyqtnu7DUEwdi"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -3691,17 +3688,17 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "You hear a grotesque barking and turn around to seek its source.\n\nFrom the shadows emerges a dark creature. This is no ordinary hound. Its crimson eyes burn with malice, and its gaping maw reveals monstrous fangs eager to rend thy flesh. Its serpentine tail lashes behind it, as though it would drag thee into the abyss itself.",
+    "prompt": "",
     "options": [
       "Fight",
       "Run away (-2 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "2fb4abb6-96fc-496e-a492-03162facab6e@f9941",
+      "__uuid__": "ef34153f-e00e-40f0-8f97-6a61a0d318b5@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "d8Aw3b5ONPaYlUKTwzdfYZ"
+    "_id": "99PfTU51NHtpDP6gRyW8BK"
   },
   {
     "__type__": "0faa0FxCxpC+rZLSeYB7svv",
@@ -3713,11 +3710,11 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Espinoso",
-    "maxHealth": 1,
-    "maxAgility": 15,
+    "enemyName": "Verdugo corrupto",
+    "maxHealth": 7,
+    "maxAgility": 7,
     "maxStrength": 10,
-    "_id": "f3ugxU/5hPmIB/npnP5VSY"
+    "_id": "c7YkECy+1NBIVZ2xaaokr9"
   },
   {
     "__type__": "ce10fd/l6JKAKy30te3aHLN",
@@ -3729,19 +3726,19 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": false,
-    "bandages": false,
+    "reales": true,
+    "bandages": true,
     "pistolAmmo": false,
     "musketAmmo": false,
-    "_id": "86Fa3umPZIo5BnaIixU57/"
+    "_id": "63LQ19dz1FWbgALnrybkYq"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_13",
+    "_name": "Event_12",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 87
+      "__id__": 91
     },
     "_children": [],
     "_active": false,
@@ -3784,7 +3781,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "26qgoOkb9IBKkzCCImx34j"
+    "_id": "ae0EwyxpROCLV+sqaICeDI"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -3793,6 +3790,112 @@
     "__editorExtras__": {},
     "node": {
       "__id__": 112
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "You hear a grotesque barking and turn around to seek its source.\n\nFrom the shadows emerges a dark creature. This is no ordinary hound. Its crimson eyes burn with malice, and its gaping maw reveals monstrous fangs eager to rend thy flesh. Its serpentine tail lashes behind it, as though it would drag thee into the abyss itself.",
+    "options": [
+      "Fight",
+      "Run away (-2 agility)"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "2fb4abb6-96fc-496e-a492-03162facab6e@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "d8Aw3b5ONPaYlUKTwzdfYZ"
+  },
+  {
+    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 112
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "enemyName": "Espinoso",
+    "maxHealth": 1,
+    "maxAgility": 15,
+    "maxStrength": 10,
+    "_id": "f3ugxU/5hPmIB/npnP5VSY"
+  },
+  {
+    "__type__": "ce10fd/l6JKAKy30te3aHLN",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 112
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "reales": false,
+    "bandages": false,
+    "pistolAmmo": false,
+    "musketAmmo": false,
+    "_id": "86Fa3umPZIo5BnaIixU57/"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Event_13",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 91
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 117
+      },
+      {
+        "__id__": 118
+      },
+      {
+        "__id__": 119
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "26qgoOkb9IBKkzCCImx34j"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 116
     },
     "_enabled": true,
     "__prefab": null,
@@ -3815,7 +3918,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 112
+      "__id__": 116
     },
     "_enabled": true,
     "__prefab": null,
@@ -3831,7 +3934,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 112
+      "__id__": 116
     },
     "_enabled": true,
     "__prefab": null,
@@ -3847,7 +3950,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 61
+      "__id__": 65
     },
     "_children": [],
     "_active": true,
@@ -3888,49 +3991,46 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 61
+      "__id__": 65
     },
     "_enabled": true,
     "__prefab": null,
     "events": [
       {
-        "__id__": 63
+        "__id__": 67
       },
       {
-        "__id__": 66
-      },
-      {
-        "__id__": 93
+        "__id__": 70
       },
       {
         "__id__": 97
       },
       {
+        "__id__": 101
+      },
+      {
+        "__id__": 77
+      },
+      {
+        "__id__": 80
+      },
+      {
+        "__id__": 93
+      },
+      {
         "__id__": 73
       },
       {
-        "__id__": 76
+        "__id__": 83
+      },
+      {
+        "__id__": 86
+      },
+      {
+        "__id__": 93
       },
       {
         "__id__": 89
-      },
-      {
-        "__id__": 69
-      },
-      {
-        "__id__": 79
-      },
-      {
-        "__id__": 82
-      },
-      {
-        "__id__": 89
-      },
-      {
-        "__id__": 85
-      },
-      {
-        "__id__": 101
       },
       {
         "__id__": 105
@@ -3940,6 +4040,9 @@
       },
       {
         "__id__": 113
+      },
+      {
+        "__id__": 117
       }
     ],
     "currentEvent": 0,
@@ -3967,7 +4070,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 119
+        "__id__": 123
       }
     ],
     "_prefab": null,
@@ -4006,7 +4109,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 118
+      "__id__": 122
     },
     "_enabled": true,
     "__prefab": null,
@@ -4022,28 +4125,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 121
-    },
-    "shadows": {
-      "__id__": 122
-    },
-    "_skybox": {
-      "__id__": 123
-    },
-    "fog": {
-      "__id__": 124
-    },
-    "octree": {
       "__id__": 125
     },
-    "skin": {
+    "shadows": {
       "__id__": 126
     },
-    "lightProbeInfo": {
+    "_skybox": {
       "__id__": 127
     },
-    "postSettings": {
+    "fog": {
       "__id__": 128
+    },
+    "octree": {
+      "__id__": 129
+    },
+    "skin": {
+      "__id__": 130
+    },
+    "lightProbeInfo": {
+      "__id__": 131
+    },
+    "postSettings": {
+      "__id__": 132
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
