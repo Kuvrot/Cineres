@@ -45,7 +45,7 @@ export class EventManager extends Component {
         let index = 0;
         if (event == null){
             index = this.generateRandomEvent();
-        }else{ //Broken, use just for testing events
+        }else{
             index = this.events.indexOf(event);
             if (index == -1){
                 index = this.generateRandomEvent();
