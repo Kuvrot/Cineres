@@ -54,7 +54,7 @@ export class CombatEvent extends Component {
         if (!this.isCombatInitiated){
             if (CommandManager.instance.isCommandEntered){
                 switch(CommandManager.instance.command.string){
-                    case '0' : EventManager.instance.clearConsole(); CommandManager.instance.clearCommand(); GameManager.instance.println(this.generateOptions()); this.combatSystem(); this.isCombatInitiated = true; break;
+                    default : EventManager.instance.clearConsole(); CommandManager.instance.clearCommand(); GameManager.instance.println(this.generateOptions()); this.combatSystem(); this.isCombatInitiated = true; break;
                     case '1' : EventManager.instance.clearConsole(); CommandManager.instance.clearCommand(); this.runAway(); break;
                 }
             }
@@ -197,7 +197,7 @@ export class CombatEvent extends Component {
             options += "0.Continue <br />";
             return options;
         }
-        options += "0.Attack <br />";
+        options += "0.Attack with thy blade<br />";
         options += "1.Use bandage (+10 health) <br / >";
         if (this.pistolFired){
             options += "2.Reload pistol <br / >";
