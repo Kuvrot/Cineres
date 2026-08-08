@@ -16,6 +16,8 @@ export class SoundManager extends Component {
     enterClip : AudioClip;
     @property(AudioClip)
     shotClip : AudioClip;
+    @property(AudioClip)
+    reloadClip : AudioClip;
 
     @property(AudioClip)
     coinClip : AudioClip;
@@ -71,6 +73,13 @@ export class SoundManager extends Component {
             return;
         }
         this.audioSource.playOneShot(this.shotClip);
+    }
+
+    playReloadSound () {
+        if (this.reloadClip == null){
+            return;
+        }
+        this.audioSource.playOneShot(this.reloadClip);
     }
 
     playCoinSound () {

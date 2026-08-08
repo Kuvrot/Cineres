@@ -2178,12 +2178,16 @@
       "__uuid__": "b46a31f9-440e-4f38-9ef6-189f6b681d6e",
       "__expectedType__": "cc.AudioClip"
     },
+    "reloadClip": {
+      "__uuid__": "edb9a6c2-fcd7-41a5-ad19-8714a985a93e",
+      "__expectedType__": "cc.AudioClip"
+    },
     "coinClip": {
       "__uuid__": "13f2704c-455e-4c68-99fa-90657c11b5aa",
       "__expectedType__": "cc.AudioClip"
     },
     "pageClip": {
-      "__uuid__": "f0fdccbd-baab-40f4-8dd5-f3e04cfcefc3",
+      "__uuid__": "11b82aae-f3f1-4712-8768-7eb4a230829e",
       "__expectedType__": "cc.AudioClip"
     },
     "attackClip": {
