@@ -39,7 +39,7 @@ export class CombatEvent extends Component {
         this.playerName = "<color=#00FFFF>" + this.playerName + " </color>";
     }
 
-    protected onLoad(): void {
+    protected onEnable(): void {
         this.health = this.maxHealth
         this.agility = this.maxAgility;
         this.strength = this.maxStrength;
