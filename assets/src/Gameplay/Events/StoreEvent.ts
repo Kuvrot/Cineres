@@ -24,14 +24,21 @@ export class StoreEvent extends Component {
     update(deltaTime: number) {
         if (CommandManager.instance.isCommandEntered){
             switch (CommandManager.instance.command.string){
-                case '0': if (!this.validateMoney(this.generalPrice)){break;} GameManager.instance.bandages += 1; GameManager.instance.reales -= this.generalPrice; SoundManager.instance.playCoinSound(); break;
+                case '0': this.buyItem(this.generalPrice , GameManager.instance.bandages); break;
                 case '1' : if (!this.validateMoney(this.generalPrice)){break;} GameManager.instance.hunger /= 2; GameManager.instance.reales -= this.generalPrice; SoundManager.instance.playCoinSound(); break;
-                case '2': if (!this.validateMoney(this.generalPrice)){break;} GameManager.instance.pistolAmmo += 1; GameManager.instance.reales -= this.generalPrice; SoundManager.instance.playCoinSound(); break;
-                case '3': if (!this.validateMoney(this.musketAmmoPrice)){break;} GameManager.instance.musketAmmo += 1; GameManager.instance.reales -= this.musketAmmoPrice; SoundManager.instance.playCoinSound(); break;
+                case '2': this.buyItem(this.generalPrice , GameManager.instance.pistolAmmo); break;
+                case '3': this.buyItem(this.musketAmmoPrice , GameManager.instance.musketAmmo); break;
                 default: EventManager.instance.generateNewEvent(); SoundManager.instance.playInventorySound(); break;
             }
             CommandManager.instance.clearCommand();
         }
+    }
+
+    buyItem(price: number, item: number) {
+        if (!this.validateMoney(price)) { return; } 
+        item += 1; 
+        GameManager.instance.reales -= price; 
+        SoundManager.instance.playCoinSound();
     }
 
     generateCostsString (price: number) {
