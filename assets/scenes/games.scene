@@ -2174,6 +2174,30 @@
       "__uuid__": "38cc4746-932d-4195-94a2-fd0438e58478",
       "__expectedType__": "cc.AudioClip"
     },
+    "shotClip": {
+      "__uuid__": "b46a31f9-440e-4f38-9ef6-189f6b681d6e",
+      "__expectedType__": "cc.AudioClip"
+    },
+    "coinClip": {
+      "__uuid__": "13f2704c-455e-4c68-99fa-90657c11b5aa",
+      "__expectedType__": "cc.AudioClip"
+    },
+    "pageClip": {
+      "__uuid__": "f0fdccbd-baab-40f4-8dd5-f3e04cfcefc3",
+      "__expectedType__": "cc.AudioClip"
+    },
+    "attackClip": {
+      "__uuid__": "a0847a8e-592c-41b1-978f-3940b8f3070d",
+      "__expectedType__": "cc.AudioClip"
+    },
+    "inventoryClip": {
+      "__uuid__": "c01c3d83-c3b9-4493-b114-5af7b93ec74a",
+      "__expectedType__": "cc.AudioClip"
+    },
+    "swingClip": {
+      "__uuid__": "a0847a8e-592c-41b1-978f-3940b8f3070d",
+      "__expectedType__": "cc.AudioClip"
+    },
     "command": {
       "__id__": 17
     },

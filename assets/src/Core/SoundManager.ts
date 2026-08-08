@@ -37,11 +37,11 @@ export class SoundManager extends Component {
 
     
     start() {
-        SoundManager.instance = this;
         this.audioSource = this.getComponent(AudioSource);
     }
 
     onLoad() {
+        SoundManager.instance = this;
         input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
         this.command.node.on(EditBox.EventType.TEXT_CHANGED, this.onTextChanged, this);
     }
@@ -81,10 +81,14 @@ export class SoundManager extends Component {
     }
 
     playPageSound () {
-        if (this.pageClip == null){
-            return;
+        try{
+            if (this.pageClip == null){
+                return;
+            }
+            this.audioSource.playOneShot(this.pageClip);
+        }catch{
+            console.log("Error playing page sound");
         }
-        this.audioSource.playOneShot(this.pageClip);
     }
 
     playInventorySound(){
