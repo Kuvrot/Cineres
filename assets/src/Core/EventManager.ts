@@ -86,7 +86,7 @@ export class EventManager extends Component {
         consoleText += "<br />";
         if (this.events[this.currentEvent].eventType == 3 && this.events[this.currentEvent].getComponent(CombatEvent)){
             consoleText += "<br />";
-            consoleText += "A<color=#FF0000> " + this.events[this.currentEvent].getComponent(CombatEvent).enemyName +  "</color>has appeared.";
+            consoleText += "A<color=#FF0000> " + this.events[this.currentEvent].getComponent(CombatEvent).enemyName +  " </color>has appeared.";
             consoleText += "<br />";
         }
         for (let i  = 0; i < this.events[this.currentEvent].options.length; i++){

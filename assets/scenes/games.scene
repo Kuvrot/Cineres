@@ -26,7 +26,7 @@
         "__id__": 65
       },
       {
-        "__id__": 122
+        "__id__": 123
       },
       {
         "__id__": 58
@@ -64,7 +64,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 124
+      "__id__": 125
     },
     "_id": "3f2aa2ba-f8bb-418d-8350-00afc21c85fb"
   },
@@ -2381,6 +2381,9 @@
     "_components": [
       {
         "__id__": 121
+      },
+      {
+        "__id__": 122
       }
     ],
     "_prefab": null,
@@ -2562,7 +2565,8 @@
     "prompt": "",
     "options": [
       "Continue with your way",
-      "Go to the store"
+      "Go to the store",
+      "Rest in a <color=#00FFFF>posada </color> (-3 reales , +10 agility)"
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -2597,6 +2601,7 @@
     "storeEvent": {
       "__id__": 73
     },
+    "restingCost": 3,
     "_id": "3dFfPmAQpL84L3o7O6Yp/Z"
   },
   {
@@ -4087,6 +4092,19 @@
     "_id": "39/laC7VpDo7Ff1prEYwkh"
   },
   {
+    "__type__": "b34fdCuf6hBUbVNX/fX4nTT",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 65
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "healingAmount": 10,
+    "_id": "8eEmk5BP1MZ7/O57nDadIC"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "OSTManager",
     "_objFlags": 0,
@@ -4098,7 +4116,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 123
+        "__id__": 124
       }
     ],
     "_prefab": null,
@@ -4137,7 +4155,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 122
+      "__id__": 123
     },
     "_enabled": true,
     "__prefab": null,
@@ -4153,28 +4171,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 125
-    },
-    "shadows": {
       "__id__": 126
     },
-    "_skybox": {
+    "shadows": {
       "__id__": 127
     },
-    "fog": {
+    "_skybox": {
       "__id__": 128
     },
-    "octree": {
+    "fog": {
       "__id__": 129
     },
-    "skin": {
+    "octree": {
       "__id__": 130
     },
-    "lightProbeInfo": {
+    "skin": {
       "__id__": 131
     },
-    "postSettings": {
+    "lightProbeInfo": {
       "__id__": 132
+    },
+    "postSettings": {
+      "__id__": 133
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false

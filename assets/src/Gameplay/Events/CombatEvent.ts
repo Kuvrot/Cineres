@@ -4,6 +4,7 @@ import { EventManager } from '../../Core/EventManager';
 import { CommandManager } from '../../Core/CommandManager';
 import { LootGeneration } from '../Generation/LootGeneration';
 import { SoundManager } from '../../Core/SoundManager';
+import { StatsManager } from '../../Core/StatsManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('CombatEvent')
@@ -95,7 +96,11 @@ export class CombatEvent extends Component {
                     default: 
                         EventManager.instance.clearConsole(); 
                         CommandManager.instance.clearCommand();
-                        EventManager.instance.generateNewEvent(); 
+                        EventManager.instance.generateNewEvent();
+                        if (GameManager.instance.health + StatsManager.instance.healingAmount <= 20){
+                            GameManager.instance.bandages--;
+                            GameManager.instance.health+=StatsManager.instance.healingAmount;
+                        }
                         break;
                 }
             }
@@ -147,7 +152,7 @@ export class CombatEvent extends Component {
     useBandage () {
         if (GameManager.instance.bandages > 0){
             GameManager.instance.bandages--;
-            GameManager.instance.health+= 10;
+            GameManager.instance.health+= StatsManager.instance.healingAmount;
             GameManager.instance.println(this.playerName + " dress thy wounds.");
             SoundManager.instance.playPageSound();
         }else{
