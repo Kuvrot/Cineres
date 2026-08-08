@@ -3314,7 +3314,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "verdugo maldito",
+    "enemyName": "Verdugo maldito",
     "maxHealth": 10,
     "maxAgility": 7,
     "maxStrength": 10,
@@ -3632,7 +3632,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Bofo",
+    "enemyName": "Kimen",
     "maxHealth": 15,
     "maxAgility": 1,
     "maxStrength": 10,
@@ -3950,7 +3950,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Tlahuelpuchi ",
+    "enemyName": "Tlahuelpuchi",
     "maxHealth": 4,
     "maxAgility": 2,
     "maxStrength": 7,
@@ -4088,7 +4088,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Tombeau",
+    "_name": "OSTManager",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -4142,7 +4142,7 @@
     "_enabled": true,
     "__prefab": null,
     "_clip": {
-      "__uuid__": "452503d0-4054-4ba7-aab4-5f66ad6c967f",
+      "__uuid__": "c3276b40-9902-42c3-bf63-7080a680dba3",
       "__expectedType__": "cc.AudioClip"
     },
     "_loop": true,
