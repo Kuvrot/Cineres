@@ -26,14 +26,12 @@ export class StartGame extends Component {
 
     update(deltaTime: number) {
        if (CommandManager.instance.isCommandEntered){
-        if (CommandManager.instance.command.string == '0'){
             EventManager.instance.generateNewEvent(this.initialEvent);
             if (this.uniqueEvent){
                 this.eventHappened = true;
                 //This lines breakes the game
                 //EventManager.instance.events.splice(EventManager.instance.events.indexOf(this.getComponent(EventComponent)), 1);
             }
-        }
         CommandManager.instance.clearCommand();
        }
     }
