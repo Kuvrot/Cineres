@@ -44,6 +44,12 @@ export class CombatEvent extends Component {
         this.health = this.maxHealth
         this.agility = this.maxAgility;
         this.strength = this.maxStrength;
+        this.musketFired = false;
+        this.pistolFired = false;
+        if (GameManager.instance.health + StatsManager.instance.healingAmount <= 20 && GameManager.instance.bandages > 0) {
+            GameManager.instance.bandages--;
+            GameManager.instance.health += StatsManager.instance.healingAmount;
+        }
     }
 
     protected onDisable(): void {
@@ -97,10 +103,6 @@ export class CombatEvent extends Component {
                         EventManager.instance.clearConsole(); 
                         CommandManager.instance.clearCommand();
                         EventManager.instance.generateNewEvent();
-                        if (GameManager.instance.health + StatsManager.instance.healingAmount <= 20){
-                            GameManager.instance.bandages--;
-                            GameManager.instance.health+=StatsManager.instance.healingAmount;
-                        }
                         break;
                 }
             }
