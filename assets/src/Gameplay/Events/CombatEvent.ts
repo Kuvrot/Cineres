@@ -85,7 +85,9 @@ export class CombatEvent extends Component {
                     case '3': this.useMusket(); break;
                     default: this.attack(); break;
                 }
-                this.generateEnemyAction();
+                if (this.health > 0){
+                    this.generateEnemyAction();
+                }
                 GameManager.instance.println(this.generateOptions());
             }else{
                 GameManager.instance.println(this.generateOptions());
@@ -162,14 +164,15 @@ export class CombatEvent extends Component {
                 GameManager.instance.pistolAmmo--;
                 GameManager.instance.println(this.playerName + " fire thy pistol and make " + damage + " damage");
                 this.pistolFired = true;
+                SoundManager.instance.playShotSound();
             }else{
                 GameManager.instance.println(this.playerName + " reloaded thy pistol");
                 this.pistolFired = false;
+                SoundManager.instance.playReloadSound();
             }
         }else{
             GameManager.instance.println("Thou reached into thy pockets, but found no ammo remained; thou hadst wasted precious time");
         }
-        SoundManager.instance.playShotSound();
     }
 
     useMusket () {
@@ -182,14 +185,15 @@ export class CombatEvent extends Component {
                 GameManager.instance.println(this.playerName + " fire thy musket and make " + damage + " damage");
                 this.musketFired = true;
                 GameManager.instance.musketAmmo--;
+                SoundManager.instance.playShotSound();
             }else{
                 GameManager.instance.println(this.playerName + " reloaded thy musket");
                 this.musketFired = false;
+                SoundManager.instance.playReloadSound();
             }
         }else{
             GameManager.instance.println("Thou reached into thy pockets, but found no ammo remained; thou hadst wasted precious time");
         }
-        SoundManager.instance.playShotSound();
     }
 
     generateOptions () {
