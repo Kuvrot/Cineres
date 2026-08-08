@@ -2,6 +2,7 @@ import { _decorator, Component, Node, RichText, Sprite, SpriteComponent } from '
 import { EventComponent } from '../Gameplay/EventComponent';
 import { GameManager } from '../GameManager';
 import { CombatEvent } from '../Gameplay/Events/CombatEvent';
+import { SoundManager } from './SoundManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('EventManager')
@@ -39,7 +40,7 @@ export class EventManager extends Component {
     update(deltaTime: number) {
     }
     
-    //If the argument provided is null, a random event will be generate
+    //If the argument provided is null, a random event will be generated
     generateNewEvent(event: EventComponent = null){  
         GameManager.instance.hungerCounter++;
         let index = 0;
@@ -64,6 +65,7 @@ export class EventManager extends Component {
         }
         this.events[this.currentEvent].node.active = true;
         this.displayPrompt();
+        SoundManager.instance.playPageSound();
     }
 
     generateRandomEvent () {

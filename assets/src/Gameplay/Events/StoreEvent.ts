@@ -3,6 +3,7 @@ import { CommandManager } from '../../Core/CommandManager';
 import { EventManager } from '../../Core/EventManager';
 import { EventComponent } from '../EventComponent';
 import { GameManager } from '../../GameManager';
+import { SoundManager } from '../../Core/SoundManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('StoreEvent')
@@ -23,11 +24,11 @@ export class StoreEvent extends Component {
     update(deltaTime: number) {
         if (CommandManager.instance.isCommandEntered){
             switch (CommandManager.instance.command.string){
-                case '0': if (!this.validateMoney(this.generalPrice)){break;} GameManager.instance.bandages += 1; GameManager.instance.reales -= this.generalPrice; break;
-                case '1' : if (!this.validateMoney(this.generalPrice)){break;} GameManager.instance.hunger /= 2; GameManager.instance.reales -= this.generalPrice; break;
-                case '2': if (!this.validateMoney(this.generalPrice)){break;} GameManager.instance.pistolAmmo += 1; GameManager.instance.reales -= this.generalPrice; break;
-                case '3': if (!this.validateMoney(this.musketAmmoPrice)){break;} GameManager.instance.musketAmmo += 1; GameManager.instance.reales -= this.musketAmmoPrice; break;
-                default: EventManager.instance.generateNewEvent(); break;
+                case '0': if (!this.validateMoney(this.generalPrice)){break;} GameManager.instance.bandages += 1; GameManager.instance.reales -= this.generalPrice; SoundManager.instance.playCoinSound(); break;
+                case '1' : if (!this.validateMoney(this.generalPrice)){break;} GameManager.instance.hunger /= 2; GameManager.instance.reales -= this.generalPrice; SoundManager.instance.playCoinSound(); break;
+                case '2': if (!this.validateMoney(this.generalPrice)){break;} GameManager.instance.pistolAmmo += 1; GameManager.instance.reales -= this.generalPrice; SoundManager.instance.playCoinSound(); break;
+                case '3': if (!this.validateMoney(this.musketAmmoPrice)){break;} GameManager.instance.musketAmmo += 1; GameManager.instance.reales -= this.musketAmmoPrice; SoundManager.instance.playCoinSound(); break;
+                default: EventManager.instance.generateNewEvent(); SoundManager.instance.playInventorySound(); break;
             }
             CommandManager.instance.clearCommand();
         }

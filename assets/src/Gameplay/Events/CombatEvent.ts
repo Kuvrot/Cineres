@@ -3,6 +3,7 @@ import { GameManager } from '../../GameManager';
 import { EventManager } from '../../Core/EventManager';
 import { CommandManager } from '../../Core/CommandManager';
 import { LootGeneration } from '../Generation/LootGeneration';
+import { SoundManager } from '../../Core/SoundManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('CombatEvent')
@@ -138,6 +139,7 @@ export class CombatEvent extends Component {
         }
         GameManager.instance.strength--;
         this.agility--;
+        SoundManager.instance.playSwingSound();
     }
 
     useBandage () {
@@ -145,6 +147,7 @@ export class CombatEvent extends Component {
             GameManager.instance.bandages--;
             GameManager.instance.health+= 10;
             GameManager.instance.println(this.playerName + " dress thy wounds.");
+            SoundManager.instance.playPageSound();
         }else{
             GameManager.instance.println("Thou reached into thy pockets, but found no bandages remained; thou hadst wasted precious time");
         }
@@ -166,6 +169,7 @@ export class CombatEvent extends Component {
         }else{
             GameManager.instance.println("Thou reached into thy pockets, but found no ammo remained; thou hadst wasted precious time");
         }
+        SoundManager.instance.playShotSound();
     }
 
     useMusket () {
@@ -185,6 +189,7 @@ export class CombatEvent extends Component {
         }else{
             GameManager.instance.println("Thou reached into thy pockets, but found no ammo remained; thou hadst wasted precious time");
         }
+        SoundManager.instance.playShotSound();
     }
 
     generateOptions () {
