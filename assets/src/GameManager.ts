@@ -4,7 +4,7 @@ import { EventManager } from './Core/EventManager';
 const { ccclass, property, executionOrder } = _decorator;
 
 @ccclass('GameManager')
-@executionOrder(-10) 
+@executionOrder(-1) 
 export class GameManager extends Component {
     
     @property

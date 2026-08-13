@@ -2431,7 +2431,7 @@
       "__id__": 65
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 67
@@ -2660,7 +2660,7 @@
       "__id__": 65
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 75
@@ -2790,7 +2790,7 @@
       "__id__": 65
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 78
@@ -2852,7 +2852,7 @@
       "__id__": 65
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 82
@@ -2948,7 +2948,7 @@
       "__id__": 65
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 85
@@ -3044,7 +3044,7 @@
       "__id__": 65
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 88
@@ -3140,7 +3140,7 @@
       "__id__": 65
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 91
@@ -3236,7 +3236,7 @@
       "__id__": 65
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 94
@@ -3332,7 +3332,7 @@
       "__id__": 65
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 97
@@ -3389,7 +3389,7 @@
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "f7c27337-cc42-48be-a46b-1e45cdc920ef@f9941",
+      "__uuid__": "f31a4cb4-7809-499f-9c63-af8c753c4a7c@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_id": "33UInGkrlOML99HPPNCFn/"
@@ -3491,7 +3491,7 @@
       "__id__": 99
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 101
@@ -3597,7 +3597,7 @@
       "__id__": 99
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 105
@@ -3703,7 +3703,7 @@
       "__id__": 99
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 109
@@ -3809,7 +3809,7 @@
       "__id__": 99
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 113
@@ -3915,7 +3915,7 @@
       "__id__": 99
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 117
@@ -4021,7 +4021,7 @@
       "__id__": 99
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 121
@@ -4127,7 +4127,7 @@
       "__id__": 99
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 125
