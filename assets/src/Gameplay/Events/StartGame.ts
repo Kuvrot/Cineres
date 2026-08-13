@@ -29,7 +29,7 @@ export class StartGame extends Component {
             EventManager.instance.generateNewEvent(this.initialEvent);
             if (this.uniqueEvent){
                 this.eventHappened = true;
-                //This lines breakes the game
+                //This line breakes the game
                 //EventManager.instance.events.splice(EventManager.instance.events.indexOf(this.getComponent(EventComponent)), 1);
             }
         CommandManager.instance.clearCommand();

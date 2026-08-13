@@ -1,6 +1,7 @@
 import { _decorator, Component, Node, Sprite, SpriteFrame } from 'cc';
 import { EventManager } from '../Core/EventManager';
 import { CityNameGenerator } from './Generation/CityNameGenerator';
+import { GenerateUselessEvent } from './Generation/GenerateUselessEvent';
 const { ccclass, property } = _decorator;
 
 @ccclass('EventComponent')
@@ -28,8 +29,11 @@ export class EventComponent extends Component {
 
    @property(SpriteFrame)
    eventImage: SpriteFrame;
-    
-    onEnable() {
+
+    protected onDisable(): void {
+        if (this.getComponent(GenerateUselessEvent) != null) {
+            this.getComponent(GenerateUselessEvent).generateEvent();
+        }
     }
 
     update(deltaTime: number) {

@@ -1,9 +1,10 @@
 import { _decorator, Component, EditBox, Node, RichText } from 'cc';
 import { EventManager } from './Core/EventManager';
 
-const { ccclass, property } = _decorator;
+const { ccclass, property, executionOrder } = _decorator;
 
 @ccclass('GameManager')
+@executionOrder(-10) 
 export class GameManager extends Component {
     
     @property
