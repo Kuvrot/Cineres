@@ -19,6 +19,10 @@ export class CommandManager extends Component {
     update(deltaTime: number) {
     }
     enter () {
+        this.command.string.trim();
+        if (this.command.string == ''){
+           this.command.string = '0'; 
+        }
         this.isCommandEntered = true;
     }
     clearCommand(){
