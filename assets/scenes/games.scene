@@ -34,6 +34,7 @@
     ],
     "_active": true,
     "_components": [],
+    "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
@@ -2883,7 +2884,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_9",
+    "_name": "Store",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -3041,7 +3042,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Event_5",
+    "_name": "Wedding",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -3105,7 +3106,7 @@
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "d2853d57-b5bd-4918-af2c-7d729d54fb2f@f9941",
+      "__uuid__": "8321c3cd-5170-4475-a797-2dd66f3a8fc7@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_id": "a6AevJ7cRJFouw3rDVEWoL"
@@ -3393,7 +3394,7 @@
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "d2853d57-b5bd-4918-af2c-7d729d54fb2f@f9941",
+      "__uuid__": "f85b8ea0-f3b3-4950-8841-4acef73865c1@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_id": "a6jZfoY+BF5r+WiMGPYobe"
