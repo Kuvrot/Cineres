@@ -14,7 +14,7 @@ export class StoreEvent extends Component {
     @property
     musketAmmoPrice: number = 2;
 
-    onEnable() {
+    onLoad() {
         let event = this.getComponent(EventComponent);
         for (let i = 0; i < event.options.length - 2; i++){
             event.options[i] += this.generateCostsString(this.generalPrice);
