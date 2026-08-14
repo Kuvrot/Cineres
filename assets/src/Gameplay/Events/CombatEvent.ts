@@ -21,9 +21,9 @@ export class CombatEvent extends Component {
     @property
     maxStrength : number = 10;
     
-    health : number = 10;
-    agility: number = 10;
-    strength : number = 10;
+    enemyHealth : number = 10;
+    enemyAgility: number = 10;
+    enemyStrength : number = 10;
 
     playerName : string = "Thou";
     
@@ -41,9 +41,9 @@ export class CombatEvent extends Component {
     }
 
     protected onEnable(): void {
-        this.health = this.maxHealth
-        this.agility = this.maxAgility;
-        this.strength = this.maxStrength;
+        this.enemyHealth = this.maxHealth
+        this.enemyAgility = this.maxAgility;
+        this.enemyStrength = this.maxStrength;
         this.musketFired = false;
         this.pistolFired = false;
         if (GameManager.instance.health + StatsManager.instance.healingAmount <= 20 && GameManager.instance.bandages > 0) {
@@ -78,13 +78,13 @@ export class CombatEvent extends Component {
     combatSystem () {
         //Enemy health bar
         EventManager.instance.enemyLabel.string = this.enemyName;
-        for (let i = 1; i <= this.health; i++){
+        for (let i = 1; i <= this.enemyHealth; i++){
             EventManager.instance.enemyLabel.string += '#';
         }
 
         if (CommandManager.instance.isCommandEntered) {
             EventManager.instance.clearConsole();
-            if (this.health > 0) {
+            if (this.enemyHealth > 0) {
                 switch (CommandManager.instance.command.string) {
                     case '0': this.attack(); break;
                     case '1': this.useBandage(); break;
@@ -92,7 +92,7 @@ export class CombatEvent extends Component {
                     case '3': this.useMusket(); break;
                     default: this.attack(); break;
                 }
-                if (this.health > 0){
+                if (this.enemyHealth > 0){
                     this.generateEnemyAction();
                 }
                 GameManager.instance.println(this.generateOptions());
@@ -131,8 +131,8 @@ export class CombatEvent extends Component {
         if (p <= GameManager.instance.agility - GameManager.instance.hunger){
             GameManager.instance.println(this.playerName + "dodged the attack");
         }else{
-            GameManager.instance.println(this.playerName + "failed to dodged the attack and receive " + (this.strength / 2).toString() + " damage");
-            GameManager.instance.health -= this.strength / 2;
+            GameManager.instance.println(this.playerName + "failed to dodged the attack and receive " + (this.enemyStrength / 2).toString() + " damage");
+            GameManager.instance.health -= this.enemyStrength / 2;
         }
         GameManager.instance.agility -= 1;
     }
@@ -140,14 +140,18 @@ export class CombatEvent extends Component {
     attack () {
         let p = GameManager.instance.getRandomInt(1 , 10);
         GameManager.instance.println(this.playerName + "attackest with thy blade");
-        if (p <= this.agility){
+        if (p <= this.enemyAgility){
             GameManager.instance.println(this.enemyName + "dodges thy attack");
         }else{
-            this.health -= GameManager.instance.strength - GameManager.instance.hunger;
+            let damage = GameManager.instance.strength - GameManager.instance.hunger;
+            if (damage < 1){
+                damage = 1;
+            }
+            this.enemyHealth -= damage;
             GameManager.instance.println(this.playerName + "make " + (GameManager.instance.strength - GameManager.instance.hunger) + " damage");
         }
         GameManager.instance.strength--;
-        this.agility--;
+        this.enemyAgility--;
         SoundManager.instance.playSwingSound();
     }
 
@@ -166,8 +170,8 @@ export class CombatEvent extends Component {
         if (GameManager.instance.pistolAmmo > 0){
             if (!this.pistolFired){
                 let damage = (GameManager.instance.getRandomInt(2 , 5));
-                this.health -= damage;
-                this.agility-= damage/2;
+                this.enemyHealth -= damage;
+                this.enemyAgility-= damage/2;
                 GameManager.instance.pistolAmmo--;
                 GameManager.instance.println(this.playerName + " fire thy pistol and make " + damage + " damage");
                 this.pistolFired = true;
@@ -187,8 +191,8 @@ export class CombatEvent extends Component {
             if (!this.musketFired){
                 GameManager.instance.musketAmmo--;
                 let damage = (GameManager.instance.getRandomInt(2 , 10));
-                this.health -= damage;
-                this.agility-= damage/2;
+                this.enemyHealth -= damage;
+                this.enemyAgility-= damage/2;
                 GameManager.instance.println(this.playerName + " fire thy musket and make " + damage + " damage");
                 this.musketFired = true;
                 GameManager.instance.musketAmmo--;
@@ -205,7 +209,7 @@ export class CombatEvent extends Component {
 
     generateOptions () {
         let options = "<br />";
-        if (this.health <= 0){
+        if (this.enemyHealth <= 0){
             EventManager.instance.clearConsole();
             options += this.enemyName + " hast been defeated <br />";
             options += this.getComponent(LootGeneration).generateLoot() + "<br />";
@@ -229,11 +233,11 @@ export class CombatEvent extends Component {
     }
 
     enemyStatsLimits(){
-        if (this.agility < 0){
-            this.agility = 0;
+        if (this.enemyAgility < 0){
+            this.enemyAgility = 0;
         }
-        if (this.strength < 0){
-            this.agility = 0;
+        if (this.enemyStrength < 0){
+            this.enemyAgility = 0;
         }
     }
 }
