@@ -45,7 +45,9 @@ export class SoundManager extends Component {
     onLoad() {
         SoundManager.instance = this;
         input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
-        this.command.node.on(EditBox.EventType.TEXT_CHANGED, this.onTextChanged, this);
+        if (this.command != null){
+            this.command.node.on(EditBox.EventType.TEXT_CHANGED, this.onTextChanged, this);
+        }
     }
 
     onTextChanged(editBox:EditBox){
