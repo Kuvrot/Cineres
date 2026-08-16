@@ -1,4 +1,4 @@
-import { _decorator, Component, EditBox, Node, RichText } from 'cc';
+import { _decorator, Component, EditBox, Node, RichText, director} from 'cc';
 import { EventManager } from './Core/EventManager';
 
 const { ccclass, property, executionOrder } = _decorator;
@@ -102,6 +102,7 @@ export class GameManager extends Component {
         }
         if (this.health < 0){
             this.health = 0;
+            director.loadScene("deathScreen");
         }
         if (this.hunger > 4){
             this.hunger = 4;
