@@ -548,7 +548,7 @@
     "_enabled": true,
     "__prefab": null,
     "_lineHeight": 68.7,
-    "_string": "cineres.v1.0",
+    "_string": "version number",
     "_horizontalAlign": 2,
     "_verticalAlign": 1,
     "_fontSize": 30,
@@ -1136,7 +1136,7 @@
     "_enabled": true,
     "__prefab": null,
     "application": "cineres",
-    "version": "1.0",
+    "version": "1.0.6",
     "versionLabel": {
       "__id__": 14
     },
@@ -2808,7 +2808,7 @@
     "_enabled": true,
     "__prefab": null,
     "_clip": {
-      "__uuid__": "c3276b40-9902-42c3-bf63-7080a680dba3",
+      "__uuid__": "440f0729-074d-434d-b879-acbe58bf8c7f",
       "__expectedType__": "cc.AudioClip"
     },
     "_loop": true,
