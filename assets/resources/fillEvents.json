@@ -2,151 +2,151 @@
   {
     "id": 1,
     "name": "A Distant Bell",
-    "description": "Somewhere beyond the hills, a bell rings three times. There is no village in sight."
+    "description": "fill.event.label.1"
   },
   {
     "id": 2,
     "name": "The Wandering Crow",
-    "description": "A crow lands on a nearby fence, looks directly at you, and lets out a single loud caw before flying away."
+    "description": "fill.event.label.2"
   },
   {
     "id": 3,
     "name": "Sudden Rain",
-    "description": "A brief shower begins without warning. Within a few minutes, the clouds disappear and the road is dry again."
+    "description": "fill.event.label.3"
   },
   {
     "id": 4,
     "name": "The Empty Wagon",
-    "description": "An old wooden wagon rolls slowly down the road by itself. It eventually disappears around a bend."
+    "description": "fill.event.label.4"
   },
   {
     "id": 5,
     "name": "Strange Footprints",
-    "description": "You notice a set of unfamiliar footprints crossing the path. They stop abruptly in the middle of the road."
+    "description": "fill.event.label.5"
   },
   {
     "id": 6,
     "name": "A Laugh in the Distance",
-    "description": "You hear someone laughing somewhere far away. When you look around, there is nobody there."
+    "description": "fill.event.label.6"
   },
   {
     "id": 7,
     "name": "Falling Leaves",
-    "description": "A sudden gust of wind sends a spiral of golden leaves dancing across the ground."
+    "description": "fill.event.label.7"
   },
   {
     "id": 8,
     "name": "The Old Man",
-    "description": "An old traveler walks past you without saying a word. After a few steps, he turns around, smiles, and continues on his way."
+    "description": "fill.event.label.8"
   },
   {
     "id": 9,
     "name": "A Howling Dog",
-    "description": "Somewhere nearby, a dog begins howling. Another dog answers from much farther away."
+    "description": "fill.event.label.9"
   },
   {
     "id": 10,
     "name": "The Flickering Light",
-    "description": "A faint light appears between the trees in the distance. It flickers several times before vanishing."
+    "description": "fill.event.label.10"
   },
   {
     "id": 11,
     "name": "A Broken Signpost",
-    "description": "You pass an old signpost. One of its arrows slowly creaks in the wind, pointing toward nowhere in particular."
+    "description": "fill.event.label.11"
   },
   {
     "id": 12,
     "name": "The Fox",
-    "description": "A red fox crosses the road ahead of you. It pauses for a moment, glances back, and disappears into the bushes."
+    "description": "fill.event.label.12"
   },
   {
     "id": 13,
     "name": "Distant Thunder",
-    "description": "Thunder rumbles across the horizon, although the sky above you remains perfectly clear."
+    "description": "fill.event.label.13"
   },
   {
     "id": 14,
     "name": "The Silent Rider",
-    "description": "A rider on a dark horse passes by without a word. Neither the rider nor the horse makes much noise as they disappear into the distance."
+    "description": "fill.event.label.14"
   },
   {
     "id": 15,
     "name": "A Strange Smell",
-    "description": "For a moment, the air smells strongly of smoke and pine. A few seconds later, the scent is completely gone."
+    "description": "fill.event.label.15"
   },
   {
     "id": 16,
     "name": "The Dancing Grass",
-    "description": "A small patch of grass bends and sways despite the fact that the surrounding air is perfectly still."
+    "description": "fill.event.label.16"
   },
   {
     "id": 17,
     "name": "A Child's Song",
-    "description": "You hear a child singing somewhere nearby. The song stops suddenly when you turn toward the sound."
+    "description": "fill.event.label.17"
   },
   {
     "id": 18,
     "name": "The Falling Star",
-    "description": "A bright star streaks across the night sky, vanishing beyond the horizon."
+    "description": "fill.event.label.18"
   },
   {
     "id": 19,
     "name": "The Traveling Merchant",
-    "description": "A merchant passes you on the road, muttering to himself about the weather. He never notices you."
+    "description": "fill.event.label.19"
   },
   {
     "id": 20,
     "name": "The Empty Campfire",
-    "description": "You come across a campfire that is still warm, but there is nobody around it."
+    "description": "fill.event.label.20"
   },
   {
     "id": 21,
     "name": "A Moment of Silence",
-    "description": "For several seconds, every sound around you disappears. Then the world suddenly becomes noisy again."
+    "description": "fill.event.label.21"
   },
   {
     "id": 22,
     "name": "The Curious Deer",
-    "description": "A deer watches you from between the trees. After a few moments, it calmly turns around and walks away."
+    "description": "fill.event.label.22"
   },
   {
     "id": 23,
     "name": "The Distant Horn",
-    "description": "A deep horn sounds somewhere beyond the mountains. No second horn follows."
+    "description": "fill.event.label.23"
   },
   {
     "id": 24,
     "name": "A Door in the Woods",
-    "description": "Between two trees stands an old wooden door with no visible building around it. It is slightly open."
+    "description": "fill.event.label.24"
   },
   {
     "id": 25,
     "name": "The Sudden Fog",
-    "description": "A thin layer of fog drifts across the road, surrounding you for a few moments before slowly fading away."
+    "description": "fill.event.label.25"
   },
   {
     "id": 26,
     "name": "The Singing Wind",
-    "description": "The wind passes through a narrow gap in the rocks, producing a sound strangely similar to a human whistle."
+    "description": "fill.event.label.26"
   },
   {
     "id": 27,
     "name": "A Forgotten Statue",
-    "description": "You pass a weathered stone statue half-covered in moss. Its face has been worn away by time."
+    "description": "fill.event.label.27"
   },
   {
     "id": 28,
     "name": "The Running Rabbit",
-    "description": "A rabbit suddenly races across your path at full speed, as if being chased by something you cannot see."
+    "description": "fill.event.label.28"
   },
   {
     "id": 29,
     "name": "A Distant Argument",
-    "description": "Two voices can be heard arguing somewhere far away. Their words are impossible to make out."
+    "description": "fill.event.label.29"
   },
   {
     "id": 30,
     "name": "The Unusual Moon",
-    "description": "For just a moment, a thin cloud passes over the moon, making it appear strangely enormous before the illusion disappears."
+    "description": "fill.event.label.30"
   }
 ]

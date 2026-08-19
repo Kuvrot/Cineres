@@ -2,6 +2,7 @@ import { _decorator, Component, Node } from 'cc';
 import { CommandManager } from '../../Core/CommandManager';
 import { EventManager } from '../../Core/EventManager';
 import { GameManager } from '../../GameManager';
+import { LanguageManager } from '../../Core/LanguageManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('GenericEvent')
@@ -80,9 +81,9 @@ export class GenericEvent extends Component {
     displayText () {  
         if (this.realesCost > 0){
             if ((GameManager.instance.reales - this.realesCost < 0)){
-                GameManager.instance.println("Thou hast not enough reales");
+                GameManager.instance.println("not.reales");
                 GameManager.instance.println("");
-                GameManager.instance.println("0.Continue");
+                GameManager.instance.println("0" + LanguageManager.instance.getLabel("continue.label"));
                 return;
             }else{
                 GameManager.instance.reales -= this.realesCost;
@@ -101,41 +102,43 @@ export class GenericEvent extends Component {
             GameManager.instance.agility -= this.agilityCost;
         }
         if (this.reales > 0) {
-            GameManager.instance.println("Thou hast found " + this.reales + "<color=#FFFF00> Reales </color>");
+            GameManager.instance.println(LanguageManager.instance.getLabel("player.found") + this.reales + "<color=#FFFF00>" + GameManager.instance.println(LanguageManager.instance.getLabel("reales.label")) + "</color>");
         }
         if (this.bandages > 0) {
-            GameManager.instance.println("Thou hast found " + this.bandages + "<color=#FF00FF> Bandages </color>");
+            GameManager.instance.println(LanguageManager.instance.getLabel("player.found") + this.bandages + "<color=#FF00FF>" + GameManager.instance.println(LanguageManager.instance.getLabel("bandages.label")) + "</color>");
             
         }
         if (this.pistolAmmo > 0) {
-            GameManager.instance.println("Thou hast found " + this.pistolAmmo + "<color=#FF00FF> Pistol Ammo </color>");
+            GameManager.instance.println(LanguageManager.instance.getLabel("player.found") + this.pistolAmmo + "<color=#FF00FF>" + GameManager.instance.println(LanguageManager.instance.getLabel("pistol.ammo.label")) + "</color>");
         }
         if (this.musketAmmo > 0) {
-            GameManager.instance.println("Thou hast found " + this.musketAmmo + "<color=#FF00FF> Musket ammo </color>");
+            GameManager.instance.println(LanguageManager.instance.getLabel("player.found") + this.musketAmmo + "<color=#FF00FF>" + GameManager.instance.println(LanguageManager.instance.getLabel("musket.ammo.label")) + "</color>");
         }
         if (this.agility > 0 || this.strength > 0 || this.health > 0){
-            let stat = "Luckly, Thou wast able to rest. <br />";
-            if (this.agility > 0){
-                stat += "| +" + this.agility + " agility | <br />";
+            let stat = LanguageManager.instance.getLabel("rest") + ". <br />";
+            if (this.agility > 0) {
+                stat += "| +" + this.agility + " " + LanguageManager.instance.getLabel("agility.label") + " | <br />";
             }
-            if (this.strength > 0){
-                stat += "| +" + this.strength + " strength | <br />";
+
+            if (this.strength > 0) {
+                stat += "| +" + this.strength + " " + LanguageManager.instance.getLabel("strength.label") + " | <br />";
             }
-            if (this.health > 0){
-                stat += "| +" + this.health + " health | <br />";
+
+            if (this.health > 0) {
+                stat += "| +" + this.health + " " + LanguageManager.instance.getLabel("health.label") + " | <br />";
             }
             GameManager.instance.println(stat);
         }
         if (this.eat) {
-            GameManager.instance.println("Thy hunger hast been satisfied. <br />");
+            GameManager.instance.println(LanguageManager.instance.getLabel("hunger.satisfied") + "<br />");
             GameManager.instance.hunger = 0;
         }else{
             if (this.hunger > 0){
-                GameManager.instance.println("Thy hunger hast increased by " + this.hunger +  "<br />");
+                GameManager.instance.println(LanguageManager.instance.getLabel("hunger.increased") + " " + this.hunger +  "<br />");
                 GameManager.instance.hunger += this.hunger;
             }
         }
-        GameManager.instance.println("<br />0.Continue");                             
+        GameManager.instance.println("<br /> 0." + LanguageManager.instance.getLabel("continue.label"));                        
     }
 }
 

@@ -1,10 +1,10 @@
 import { _decorator, Component, EditBox, Node, RichText, director} from 'cc';
 import { EventManager } from './Core/EventManager';
+import { LanguageManager } from './Core/LanguageManager';
 
 const { ccclass, property, executionOrder } = _decorator;
 
 @ccclass('GameManager')
-@executionOrder(-1) 
 export class GameManager extends Component {
     
     @property
@@ -65,7 +65,8 @@ export class GameManager extends Component {
     }
 
     println (text : string) {
-        let newString = text + "<br />"
+        let label = LanguageManager.instance.getLabel(text);
+        let newString = label + "<br />"
         EventManager.instance.consoleText.string += newString;
     }
 
@@ -75,21 +76,21 @@ export class GameManager extends Component {
 
     displayInventory () {
         let inventoryString = "";
-        //Stats
-        inventoryString += "<br />" + this.statsHeader;
-        inventoryString += "<br />Health: " + this.health;
-        inventoryString += "<br />Strength: " + this.strength;
-        //inventoryString += "<br />Skill: " + this.skill;
-        //inventoryString += "<br /> Gun skill: " + this.gunSkill);
-        inventoryString += "<br />Agility: " + this.agility;
-        inventoryString += "<br />Hunger: " + this.hunger;
-        
-        //Inventory
-        inventoryString += "<br />" + this.inventoryHeader;
-        inventoryString += "<br />Reales: " + this.reales;
-        inventoryString += "<br />Bandages: " + this.bandages;
-        inventoryString += "<br />Pistol ammo: " + this.pistolAmmo;
-        inventoryString += "<br />Musket ammo: " + this.musketAmmo;
+        // Stats
+        inventoryString += "<br />" + LanguageManager.instance.getLabel(this.statsHeader);
+        inventoryString += "<br />" + LanguageManager.instance.getLabel("health.label") + " " + this.health;
+        inventoryString += "<br />" + LanguageManager.instance.getLabel("strength.label") + " " + this.strength;
+        //inventoryString += "<br />" + LanguageManager.instance.getLabel("skill.label") + " " +  this.skill;
+        //inventoryString += "<br />" + LanguageManager.instance.getLabel("gunSkill.label") + " " +  this.gunSkill;
+        inventoryString += "<br />" + LanguageManager.instance.getLabel("agility.label") + " " +  this.agility;
+        inventoryString += "<br />" + LanguageManager.instance.getLabel("hunger.label") + " " +  this.hunger;
+
+        // Inventory
+        inventoryString += "<br />" + LanguageManager.instance.getLabel(this.inventoryHeader);
+        inventoryString += "<br />" + LanguageManager.instance.getLabel("reales.label") + " " +  this.reales;
+        inventoryString += "<br />" + LanguageManager.instance.getLabel("bandages.label") + " " +  this.bandages;
+        inventoryString += "<br />" + LanguageManager.instance.getLabel("pistol.ammo.label") + " " +  this.pistolAmmo;
+        inventoryString += "<br />" + LanguageManager.instance.getLabel("musket.ammo.label") + " " +  this.musketAmmo;
         this.inventoryLabel.string = inventoryString;
     }
 

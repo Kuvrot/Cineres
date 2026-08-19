@@ -3,6 +3,7 @@ import { EventComponent } from '../Gameplay/EventComponent';
 import { GameManager } from '../GameManager';
 import { CombatEvent } from '../Gameplay/Events/CombatEvent';
 import { SoundManager } from './SoundManager';
+import { LanguageManager } from './LanguageManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('EventManager')
@@ -86,12 +87,12 @@ export class EventManager extends Component {
         consoleText += "<br />";
         if (this.events[this.currentEvent].eventType == 3 && this.events[this.currentEvent].getComponent(CombatEvent)){
             consoleText += "<br />";
-            consoleText += "A<color=#FF0000> " + this.events[this.currentEvent].getComponent(CombatEvent).enemyName +  " </color>has appeared.";
+            consoleText += "<color=#FF0000> " + this.events[this.currentEvent].getComponent(CombatEvent).enemyName +  " </color>" + LanguageManager.instance.getLabel("enemy.appeared");
             consoleText += "<br />";
         }
         for (let i  = 0; i < this.events[this.currentEvent].options.length; i++){
             consoleText += "<br/>";
-            consoleText += i + ". " + this.events[this.currentEvent].options[i];
+            consoleText += i + ". " + LanguageManager.instance.getLabel(this.events[this.currentEvent].options[i].toString());
         }
         this.consoleText.string = consoleText;
         this.display.spriteFrame = this.events[this.currentEvent].eventImage;

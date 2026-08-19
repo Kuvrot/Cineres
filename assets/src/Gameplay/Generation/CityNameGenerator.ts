@@ -6,7 +6,7 @@ const { ccclass, property } = _decorator;
 export class CityNameGenerator extends Component {
     
     @property
-    header : string = "You have arrived to a town called "
+    header : string = "city.header.label";
 
     cityName: string = "";
 

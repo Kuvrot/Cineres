@@ -1,0 +1,547 @@
+[
+  {
+    "code" : "play.label",
+    "label" : "PLAY"
+  },
+  {
+    "code" : "credits.label",
+    "label" : "CREDITS"
+  },
+  {
+    "code" : "exit.label",
+    "label" : "EXIT"
+  },
+  {
+    "code" : "intro.label",
+    "label" : "<color=#FFFF00>La corrupción</color> <br />This curse has spread like a plague. But this plague didn't just killed people, it removed all the humanity of the victim, and the remaining flesh and bones transformed into something else. <br />Some people got insane, but others were transformed into something that can not be described as something native to this world. <br />The misery of the region is unbearable. <br />Much of the towns are now full with dust, bones, and ashes."
+  },
+  {
+    "code" : "city.header.label",
+    "label" : "You have arrived to a town called "
+  },
+  {
+    "code": "city.label.1",
+    "label": "The poverty of this place is tragic"
+  },
+  {
+    "code": "city.label.2",
+    "label": "People are weak, only a few souls have enough strength to work"
+  },
+  {
+    "code": "city.label.3",
+    "label": "People are malnourished, or the dead lie on the streets"
+  },
+  {
+    "code": "city.label.4",
+    "label": "This place has been devastated by corruption and plague"
+  },
+  {
+    "code": "city.label.5",
+    "label": "This place has been devastated; just a few souls gather in the streets"
+  },
+  {
+    "code": "city.label.6",
+    "label": "People look at you with distrust"
+  },
+  {
+    "code": "city.label.7",
+    "label": "People look at you with curiosity"
+  },
+  {
+    "code": "city.label.8",
+    "label": "You can smell the misery in this place"
+  },
+
+  {
+    "code": "city.option0",
+    "label": "Verdugo maldito"
+  },
+  {
+    "code": "city.option1",
+    "label": "Verdugo maldito"
+  },
+  {
+    "code": "city.option2",
+    "label": "Verdugo maldito"
+  },
+  {
+    "code": "city.option3",
+    "label": "Verdugo maldito"
+  },
+  {
+    "code": "city.option4",
+    "label": "Verdugo maldito"
+  },
+
+  {
+    "code": "city.option0",
+    "label": "Keep walking"
+  },
+  {
+    "code": "city.option1",
+    "label": "Go to the store"
+  },
+  {
+    "code": "city.option2",
+    "label": "Rest in a <color=#00FFFF>posada </color> (-3 reales , +10 agility)"
+  },
+  
+  
+  {
+    "code": "funeral.label",
+    "label": "You stumble upon a solemn funeral ceremony. <br />A quiet crowd gathers around the grave, their faces heavy with grief as a cold wind passes through the cemetery."
+  },
+
+  {
+    "code": "funeral.option0",
+    "label": "Pray with them (+1 strength) (+2 health) (+1 bandage) (+2 hunger)"
+  },
+
+  {
+    "code": "wedding.label",
+    "label": "You arrive at a small <color=#FFFF00> pueblo </color>. <br />Colorful decorations hang from the streets while music and laughter fill the air, celebrating the union of two souls."
+  },
+
+  {
+    "code": "wedding.option0",
+    "label": "Celebrate with them <br />(-2 agility) (-1 strength) (downs hunger to 0)"
+  },
+
+  {
+    "code": "bullfight.label",
+    "label": "A <color=#FFFF00> corrida de toros </color> is underway. <br />The crowd roars from the stands as the bull charges across the arena, while the bullfighter calmly faces the beast."
+  },
+
+  {
+    "code": "bullfight.option0",
+    "label": "Watch the event (+ 2 agility) (+1 strength) (-2 reales)"
+  },
+
+  {
+    "code": "house.label",
+    "label": "You find an abandoned house, slowly being claimed by time. <br />Parts of the ceiling have collapsed, mold covers the walls, and broken windows allow the wind to whistle through the empty rooms."
+  },
+
+  {
+    "code": "house.option0",
+    "label": "Explore the house (- 2 agility)"
+  },
+
+  {
+    "code": "store.label",
+    "label": "You stumble across a <color=#FF0000>store</color>. <br />The shelves hold poor-quality food at unforgiving prices, while the tired faces of the customers tell a story of hardship."
+  },
+
+  {
+    "code": "store.option0",
+    "label": "Buy 1 Bandage"
+  },
+  {
+    "code": "store.option1",
+    "label": "Eat something"
+  },
+  {
+    "code": "store.option2",
+    "label": "Buy 1 musket ball"
+  },
+  {
+    "code": "store.option3",
+    "label": "Explore the house (- 2 agility)"
+  },
+
+
+  {
+    "code": "concert.label",
+    "label": "You come across a lively concert. <br />Music echoes through the streets as people gather beneath the lights, forgetting their troubles for a brief moment."
+  },
+  {
+    "code": "concert.option0",
+    "label": "Watch the event (+ 2 agility) (+1 strength) (-2 reales))"
+  },
+  
+  {
+    "code" : "wagon.label",
+    "label" : "An old wooden wagon stands abandoned before you. <br />The wood is dark with age and stained by rain, while patches of moss cling stubbornly to the lower boards. One of its wheels is half-buried in the earth, and the other bears a long, splintered crack. <br />A length of frayed rope hangs from the rear, swaying gently in the evening breeze.  <br />Whatever became of its owner, he seems to have departed in considerable haste—or never had the opportunity to return. <br />Perhaps its forgotten contents may yet prove worth investigating."
+  },
+  {
+    "code": "wagon.option0",
+    "label": "Check the wagon (- 1 agility)"
+  },
+
+
+  {
+    "code": "fill.event.label.1",
+    "label": "Somewhere beyond the hills, a bell rings three times. There is no village in sight."
+  },
+  {
+    "code": "fill.event.label.2",
+    "label": "A crow lands on a nearby fence, looks directly at you, and lets out a single loud caw before flying away."
+  },
+  {
+    "code": "fill.event.label.3",
+    "label": "A brief shower begins without warning. Within a few minutes, the clouds disappear and the road is dry again."
+  },
+  {
+    "code": "fill.event.label.4",
+    "label": "An old wooden wagon rolls slowly down the road by itself. It eventually disappears around a bend."
+  },
+  {
+    "code": "fill.event.label.5",
+    "label": "You notice a set of unfamiliar footprints crossing the path. They stop abruptly in the middle of the road."
+  },
+  {
+    "code": "fill.event.label.6",
+    "label": "You hear someone laughing somewhere far away. When you look around, there is nobody there."
+  },
+  {
+    "code": "fill.event.label.7",
+    "label": "A sudden gust of wind sends a spiral of golden leaves dancing across the ground."
+  },
+  {
+    "code": "fill.event.label.8",
+    "label": "An old traveler walks past you without saying a word. After a few steps, he turns around, smiles, and continues on his way."
+  },
+  {
+    "code": "fill.event.label.9",
+    "label": "Somewhere nearby, a dog begins howling. Another dog answers from much farther away."
+  },
+  {
+    "code": "fill.event.label.10",
+    "label": "A faint light appears between the trees in the distance. It flickers several times before vanishing."
+  },
+  {
+    "code": "fill.event.label.11",
+    "label": "You pass an old signpost. One of its arrows slowly creaks in the wind, pointing toward nowhere in particular."
+  },
+  {
+    "code": "fill.event.label.12",
+    "label": "A red fox crosses the road ahead of you. It pauses for a moment, glances back, and disappears into the bushes."
+  },
+  {
+    "code": "fill.event.label.13",
+    "label": "Thunder rumbles across the horizon, although the sky above you remains perfectly clear."
+  },
+  {
+    "code": "fill.event.label.14",
+    "label": "A rider on a dark horse passes by without a word. Neither the rider nor the horse makes much noise as they disappear into the distance."
+  },
+  {
+    "code": "fill.event.label.15",
+    "label": "For a moment, the air smells strongly of smoke and pine. A few seconds later, the scent is completely gone."
+  },
+  {
+    "code": "fill.event.label.16",
+    "label": "A small patch of grass bends and sways despite the fact that the surrounding air is perfectly still."
+  },
+  {
+    "code": "fill.event.label.17",
+    "label": "You hear a child singing somewhere nearby. The song stops suddenly when you turn toward the sound."
+  },
+  {
+    "code": "fill.event.label.18",
+    "label": "A bright star streaks across the night sky, vanishing beyond the horizon."
+  },
+  {
+    "code": "fill.event.label.19",
+    "label": "A merchant passes you on the road, muttering to himself about the weather. He never notices you."
+  },
+  {
+    "code": "fill.event.label.20",
+    "label": "You come across a campfire that is still warm, but there is nobody around it."
+  },
+  {
+    "code": "fill.event.label.21",
+    "label": "For several seconds, every sound around you disappears. Then the world suddenly becomes noisy again."
+  },
+  {
+    "code": "fill.event.label.22",
+    "label": "A deer watches you from between the trees. After a few moments, it calmly turns around and walks away."
+  },
+  {
+    "code": "fill.event.label.23",
+    "label": "A deep horn sounds somewhere beyond the mountains. No second horn follows."
+  },
+  {
+    "code": "fill.event.label.24",
+    "label": "Between two trees stands an old wooden door with no visible building around it. It is slightly open."
+  },
+  {
+    "code": "fill.event.label.25",
+    "label": "A thin layer of fog drifts across the road, surrounding you for a few moments before slowly fading away."
+  },
+  {
+    "code": "fill.event.label.26",
+    "label": "The wind passes through a narrow gap in the rocks, producing a sound strangely similar to a human whistle."
+  },
+  {
+    "code": "fill.event.label.27",
+    "label": "You pass a weathered stone statue half-covered in moss. Its face has been worn away by time."
+  },
+  {
+    "code": "fill.event.label.28",
+    "label": "A rabbit suddenly races across your path at full speed, as if being chased by something you cannot see."
+  },
+  {
+    "code": "fill.event.label.29",
+    "label": "Two voices can be heard arguing somewhere far away. Their words are impossible to make out."
+  },
+  {
+    "code": "fill.event.label.30",
+    "label": "For just a moment, a thin cloud passes over the moon, making it appear strangely enormous before the illusion disappears."
+  },
+  {
+    "code": "fill.event.label.30",
+    "label": "For just a moment, a thin cloud passes over the moon, making it appear strangely enormous before the illusion disappears."
+  },
+
+  {
+    "code": "continue.label",
+    "label": "Continue"
+  },
+
+  {
+    "code": "enemy1.name.label",
+    "label": "Verdugo maldito"
+  },
+  {
+    "code": "enemy2.name.label",
+    "label": "Currutaco"
+  },
+  {
+    "code": "enemy3.name.label",
+    "label": "Bandido"
+  },
+  {
+    "code": "enemy4.name.label",
+    "label": "Kimen"
+  },
+  {
+    "code": "enemy5.name.label",
+    "label": "Verdugo corrupto"
+  },
+  {
+    "code": "enemy6.name.label",
+    "label": "Espinoso"
+  },
+  {
+    "code": "enemy7.name.label",
+    "label": "Tlahuelpuchi"
+  },
+  {
+    "code": "enemy1.description.label",
+    "label": "A cold presence follows you through the silence. <br />When you turn around, a dreadful executioner stands before you, his worn blade stained by countless deaths. Something in his empty gaze suggests that your fate was decided long ago."
+  },
+  {
+    "code": "enemy2.description.label",
+    "label": "While walking through the streets, you accidentally cross paths with a pompous individual dressed in extravagant clothes. <br />His pride quickly turns to anger, and before long, you find yourself challenged to a duel by a <color=#FFFF00>Currutaco</color>."
+  },
+  {
+    "code": "enemy3.description.label",
+    "label": "While walking along the road, a shadow steps into your path. <br />A <color=#FF0000>bandido</color> reveals his weapon and demands your belongings, his eyes fixed upon you with the cold confidence of a man accustomed to taking what he wants."
+  },
+  {
+    "code": "enemy4.description.label",
+    "label": "A strange silence falls over your surroundings. <br />From somewhere nearby comes the faint sound of movement, followed by a presence you cannot quite place. A <color=#FFFF00>Kimen</color> emerges from the shadows, watching you with an unsettling calm."
+  },
+  {
+    "code": "enemy5.description.label",
+    "label": "The air grows heavy as a figure approaches through the gloom. <br />Once an executioner, this corrupted soul now carries something far darker than duty. His armor is worn and stained, and the blade in his hands seems almost eager to taste blood once more."
+  },
+  {
+    "code": "enemy6.description.label",
+    "label": "You hear a grotesque barking and turn around to seek its source. <br />From the shadows emerges a dark creature. This is no ordinary hound. Its crimson eyes burn with malice, and its gaping maw reveals monstrous fangs eager to rend your flesh. Its serpentine tail lashes behind it, as though it would drag you into the abyss itself."
+  },
+  {
+    "code": "enemy7.description.label",
+    "label": "A sudden chill runs through the air, and the distant sounds of the night fall strangely quiet. <br />From the darkness comes a figure wrapped in an unnatural stillness. The <color=#FFFF00>Tlahuelpuchi</color> watches from the shadows, its presence carrying the ancient dread of something that should never have been disturbed."
+  },
+
+  {
+    "code": "inventory.header",
+    "label": "--------------- <br />INVENTORY<br />---------------"
+  },
+  {
+    "code": "stats.header",
+    "label": "--------------- <br />STATS <br />---------------"
+  },
+  {
+    "code": "enemy3.name.label",
+    "label": "Bandido"
+  },
+  {
+    "code": "enemy4.name.label",
+    "label": "Kimen"
+  },
+  {
+    "code": "enemy5.name.label",
+    "label": "Verdugo corrupto"
+  },
+  {
+    "code": "enemy6.name.label",
+    "label": "Espinoso"
+  },
+  {
+    "code": "enemy7.name.label",
+    "label": "Tlahuelpuchi"
+  },
+
+  {
+    "code": "bandages.label",
+    "label": "Bandages"
+  },
+  {
+    "code": "reales.label",
+    "label": "Reales"
+  },
+  {
+    "code": "musket.ammo.label",
+    "label": "Musket balls"
+  },
+  {
+    "code": "pistol.ammo.label",
+    "label": "Pistol ammo"
+  },
+
+  {
+    "code": "health.label",
+    "label": "Health"
+  },
+  {
+    "code": "strength.label",
+    "label": "Strength"
+  },
+  {
+    "code": "agility.label",
+    "label": "Musket balls"
+  },
+  {
+    "code": "hunger.label",
+    "label": "Pistol ammo"
+  },
+
+  {
+    "code": "general.option",
+    "label": "Keep walking"
+  },
+
+  {
+    "code": "death.label",
+    "label": "You died"
+  },
+
+  {
+    "code": "enemy.appeared",
+    "label": "Has appeared."
+  },
+
+  {
+    "code": "not.reales",
+    "label": "Not enough reales"
+  },
+  {
+    "code": "player.found",
+    "label": "You have found"
+  },
+  {
+    "code": "rest",
+    "label": "Luckly, you were able to rest"
+  },
+  {
+    "code": "hunger.increased",
+    "label": "Your hunger has increased by"
+  },   
+  {
+    "code": "hunger.satisfied",
+    "label": "Your hunger has been satisfied"
+  },
+
+  {
+    "code": "fight",
+    "label": "Fight"
+  }, 
+  {
+    "code": "flee",
+    "label": "Run away (-2 agility)"
+  },  
+  {
+    "code": "player.name",
+    "label": "You"
+  },
+  {
+    "code": "enemy.attack",
+    "label": "Attacks"
+  },   
+  {
+    "code": "dodge.label",
+    "label": "dodged the attack"
+  },
+  {
+    "code": "dodge.failed.name",
+    "label": "failed to dodged the attack and receive "
+  },
+  {
+    "code": "damage",
+    "label": "damage"
+  },   
+  {
+    "code": "player.attack",
+    "label": "attackest with thy blade"
+  },
+  {
+    "code": "player.heal",
+    "label": "dressed your wounds."
+  },   
+  {
+    "code": "bandages.not.found",
+    "label": "Thou reached into thy pockets, but found no bandages remained; thou hadst wasted precious time"
+  },  
+  {
+    "code": "player.pistol.fire",
+    "label": "fire your pistol"
+  },
+  {
+    "code": "player.pistol.reload",
+    "label": "reloaded your pistol"
+  },  
+  {
+    "code": "player.musket.fire",
+    "label": "fire your musket"
+  },
+  {
+    "code": "player.musket.reload",
+    "label": "reloaded your musket"
+  },
+  {
+    "code": "player.ammo.not.found",
+    "label": "You reached into your pockets, but found no ammo remained; you have wasted precious time"
+  },
+  {
+    "code": "enemy.defeated",
+    "label": "has been defeated"
+  },
+
+  {
+    "code": "combat.attack.label",
+    "label": "Attack with thy blade"
+  },
+  {
+    "code": "combat.bandage.label",
+    "label": "Use bandage (+10 health)"
+  },
+  {
+    "code": "combat.reloadPistol.label",
+    "label": "Reload pistol"
+  },
+  {
+    "code": "combat.firePistol.label",
+    "label": "Fire pistol"
+  },
+  {
+    "code": "combat.reloadMusket.label",
+    "label": "Reload musket"
+  },
+  {
+    "code": "combat.fireMusket.label",
+    "label": "Fire musket"
+  }
+]

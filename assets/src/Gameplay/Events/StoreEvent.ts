@@ -4,6 +4,7 @@ import { EventManager } from '../../Core/EventManager';
 import { EventComponent } from '../EventComponent';
 import { GameManager } from '../../GameManager';
 import { SoundManager } from '../../Core/SoundManager';
+import { LanguageManager } from '../../Core/LanguageManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('StoreEvent')
@@ -48,14 +49,14 @@ export class StoreEvent extends Component {
     generateCostsString (price: number) {
         let str = "(-";
         str += price;
-        str += " Reales";
+        str += " " + LanguageManager.instance.getLabel("reales.label");
         str += ')';
         return str;
     }
 
     validateMoney (price: number) {
         if (GameManager.instance.reales < price){
-            alert('Thou hast not enough reales');
+            alert(LanguageManager.instance.getLabel("not.reales"));
             return false;
         }
         return true;

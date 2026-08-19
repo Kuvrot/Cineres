@@ -2,6 +2,7 @@ import { _decorator, Component, Node, Sprite, SpriteFrame } from 'cc';
 import { EventManager } from '../Core/EventManager';
 import { CityNameGenerator } from './Generation/CityNameGenerator';
 import { GenerateUselessEvent } from './Generation/GenerateUselessEvent';
+import { LanguageManager } from '../Core/LanguageManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('EventComponent')
@@ -45,10 +46,12 @@ export class EventComponent extends Component {
     }
 
     getPrompt () {
+        let translatedPrompt = LanguageManager.instance.getLabel(this.prompt);
+        console.log(translatedPrompt);
         if (this.eventType == 0 && this.getComponent(CityNameGenerator) != null){
-            this.prompt = this.getComponent(CityNameGenerator).generateCityName(this.prompt);
+            translatedPrompt = this.getComponent(CityNameGenerator).generateCityName(translatedPrompt);
         }
-        return this.prompt;
+        return translatedPrompt;
     }
 
     removeEvent () {
