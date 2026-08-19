@@ -75,6 +75,11 @@ export class GameManager extends Component {
     }
 
     displayInventory () {
+        
+        if (!EventManager.instance.loaded){
+            return;
+        }
+
         let inventoryString = "";
         // Stats
         inventoryString += "<br />" + LanguageManager.instance.getLabel(this.statsHeader);

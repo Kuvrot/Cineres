@@ -30,15 +30,15 @@ export class CombatEvent extends Component {
     
     isCombatInitiated : boolean = false;
 
-    musketFired : boolean = false;
+    musketFired : boolean = false; 
 
     pistolFired: boolean = false;
 
     start() {
-        this.playerName = LanguageManager.instance.getLabel(this.playerName.trim());
+        this.playerName = LanguageManager.instance.getLabel(this.playerName.trim()).toString();
         
         //Cleans enemy name
-        this.enemyName = LanguageManager.instance.getLabel(this.enemyName.trim());
+        this.enemyName = LanguageManager.instance.getLabel(this.enemyName.trim()).toString();
         this.enemyName.replace("  " , " ");
 
         this.enemyName = "<color=#FF0000>" + this.enemyName + " </color>";
@@ -167,7 +167,7 @@ export class CombatEvent extends Component {
             GameManager.instance.println(this.playerName + " " + LanguageManager.instance.getLabel("player.heal"));
             SoundManager.instance.playPageSound();
         }else{
-            GameManager.instance.println(LanguageManager.instance.getLabel("bandages.not.found"));
+            GameManager.instance.println(LanguageManager.instance.getLabel("bandages.not.found").toString());
         }
     }
 
@@ -187,7 +187,7 @@ export class CombatEvent extends Component {
                 SoundManager.instance.playReloadSound();
             }
         }else{
-            GameManager.instance.println(LanguageManager.instance.getLabel("player.ammo.not.found"));
+            GameManager.instance.println(LanguageManager.instance.getLabel("player.ammo.not.found").toString());
         }
     }
 
@@ -208,7 +208,7 @@ export class CombatEvent extends Component {
                 SoundManager.instance.playReloadSound();
             }
         }else{
-            GameManager.instance.println(LanguageManager.instance.getLabel("player.ammo.not.found"));
+            GameManager.instance.println(LanguageManager.instance.getLabel("player.ammo.not.found").toString());
         }
     }
 

@@ -1,5 +1,6 @@
 import { _decorator, Component, Node } from 'cc';
 import { GameManager } from '../../GameManager';
+import { LanguageManager } from '../../Core/LanguageManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('LootGeneration')
@@ -32,29 +33,45 @@ export class LootGeneration extends Component {
         let bandages = GameManager.instance.getRandomInt(0, 2);
         let pistolAmmo = GameManager.instance.getRandomInt(0, 2);
         let musketAmmo = GameManager.instance.getRandomInt(0, 2);
-
         if (reales > 0 && this.reales) {
             GameManager.instance.reales += reales;
-            newString += `<br />Thou hast looted ${reales} real${reales > 1 ? "es" : ""}.`;
+
+            newString += LanguageManager.instance
+                .getLabel("loot.reales.label")
+                .replace("{0}", reales.toString())
+                .replace("{1}", reales > 1 ? "es" : "");
         }
 
         if (bandages > 0 && this.bandages) {
             GameManager.instance.bandages += bandages;
-            newString += `<br />Thou hast looted ${bandages} bandage${bandages > 1 ? "s" : ""}.`;
+
+            newString += LanguageManager.instance
+                .getLabel("loot.bandages.label")
+                .replace("{0}", bandages.toString())
+                .replace("{1}", bandages > 1 ? "s" : "");
         }
 
         if (pistolAmmo > 0 && this.pistolAmmo) {
             GameManager.instance.pistolAmmo += pistolAmmo;
-            newString += `<br />Thou hast looted ${pistolAmmo} pistol round${pistolAmmo > 1 ? "s" : ""}.`;
+
+            newString += LanguageManager.instance
+                .getLabel("loot.pistolAmmo.label")
+                .replace("{0}", pistolAmmo.toString())
+                .replace("{1}", pistolAmmo > 1 ? "s" : "");
         }
 
         if (musketAmmo > 0 && this.musketAmmo) {
             GameManager.instance.musketAmmo += musketAmmo;
-            newString += `<br />Thou hast looted ${musketAmmo} musket ball${musketAmmo > 1 ? "s" : ""}.`;
+
+            newString += LanguageManager.instance
+                .getLabel("loot.musketAmmo.label")
+                .replace("{0}", musketAmmo.toString())
+                .replace("{1}", musketAmmo > 1 ? "s" : "");
         }
 
         if (newString == "") {
-            newString = "<br />Thou hast found nothing of worth.";
+            newString = LanguageManager.instance
+                .getLabel("loot.nothing.label");
         }
 
         return newString;

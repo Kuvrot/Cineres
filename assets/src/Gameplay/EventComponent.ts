@@ -47,7 +47,6 @@ export class EventComponent extends Component {
 
     getPrompt () {
         let translatedPrompt = LanguageManager.instance.getLabel(this.prompt);
-        console.log(translatedPrompt);
         if (this.eventType == 0 && this.getComponent(CityNameGenerator) != null){
             translatedPrompt = this.getComponent(CityNameGenerator).generateCityName(translatedPrompt);
         }

@@ -476,7 +476,7 @@
     "label": "dodged the attack"
   },
   {
-    "code": "dodge.failed.name",
+    "code": "dodge.failed.label",
     "label": "failed to dodged the attack and receive "
   },
   {
@@ -493,7 +493,7 @@
   },   
   {
     "code": "bandages.not.found",
-    "label": "Thou reached into thy pockets, but found no bandages remained; thou hadst wasted precious time"
+    "label": "You reached into you pockets, but found no bandages remained; you have wasted precious time"
   },  
   {
     "code": "player.pistol.fire",
@@ -543,5 +543,25 @@
   {
     "code": "combat.fireMusket.label",
     "label": "Fire musket"
+  },
+  {
+    "code": "loot.reales.label",
+    "label": "<br />You have looted {0} real{1}."
+  },
+  {
+    "code": "loot.bandages.label",
+    "label": "<br />You have looted {0} bandage{1}."
+  },
+  {
+    "code": "loot.pistolAmmo.label",
+    "label": "<br />You have looted {0} pistol round{1}."
+  },
+  {
+    "code": "loot.musketAmmo.label",
+    "label": "<br />You have looted {0} musket ball{1}."
+  },
+  {
+    "code": "loot.nothing.label",
+    "label": "<br />You have found nothing of worth."
   }
 ]

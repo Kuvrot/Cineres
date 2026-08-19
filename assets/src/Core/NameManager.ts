@@ -1,4 +1,5 @@
 import { _decorator, Component, Node } from 'cc';
+import { LanguageManager } from './LanguageManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('NameManager')
@@ -45,7 +46,7 @@ export class NameManager extends Component {
         let adjectives = "";
         adjectives += "<br />";
         let index1 = this.getRandomInt(0 , this.cityAdjectives.length - 1);
-        adjectives += this.cityAdjectives[index1] + "<br />";
+        adjectives += LanguageManager.instance.getLabel(this.cityAdjectives[index1]) + "<br />";
         return adjectives;
     }
 }

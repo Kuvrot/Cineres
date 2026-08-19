@@ -30,15 +30,37 @@ export class EventManager extends Component {
     @property(SpriteComponent)
     display: SpriteComponent;
     
+    init : boolean = false;
+    counter : number = 0.0;
+    loaded : boolean = false;
+    @property(SpriteComponent)
+    loadScreen : SpriteComponent;
+
+
     start() {
-        EventManager.instance = this;
-        for (let i = 0; i < this.events.length; i++){
-            this.events[i].node.active = false;
-        }
-        this.generateNewEvent();
+
     }
 
     update(deltaTime: number) {
+
+        if (this.counter >= 0.15){
+            this.init = true;
+        }
+
+        if (!this.init){
+            this.counter += 1 * deltaTime;
+            return;
+        }else{
+            if (!this.loaded){
+                EventManager.instance = this;
+                for (let i = 0; i < this.events.length; i++){
+                    this.events[i].node.active = false;
+                }
+                this.generateNewEvent();
+                this.loadScreen.node.active = false;
+                this.loaded = true;
+            }
+        }
     }
     
     //If the argument provided is null, a random event will be generated
@@ -82,12 +104,12 @@ export class EventManager extends Component {
     }
 
     displayPrompt () {
-        let consoleText = this.events[this.currentEvent].getPrompt();
+        let consoleText = LanguageManager.instance.getLabel(this.events[this.currentEvent].getPrompt()).toString();
         //Display options
         consoleText += "<br />";
         if (this.events[this.currentEvent].eventType == 3 && this.events[this.currentEvent].getComponent(CombatEvent)){
             consoleText += "<br />";
-            consoleText += "<color=#FF0000> " + this.events[this.currentEvent].getComponent(CombatEvent).enemyName +  " </color>" + LanguageManager.instance.getLabel("enemy.appeared");
+            consoleText += "<color=#FF0000> " + LanguageManager.instance.getLabel(this.events[this.currentEvent].getComponent(CombatEvent).enemyName) +  " </color>" + LanguageManager.instance.getLabel("enemy.appeared");
             consoleText += "<br />";
         }
         for (let i  = 0; i < this.events[this.currentEvent].options.length; i++){

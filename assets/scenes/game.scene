@@ -23,16 +23,16 @@
         "__id__": 44
       },
       {
-        "__id__": 65
+        "__id__": 69
       },
       {
-        "__id__": 134
+        "__id__": 138
       },
       {
         "__id__": 58
       },
       {
-        "__id__": 136
+        "__id__": 140
       }
     ],
     "_active": true,
@@ -67,7 +67,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 138
+      "__id__": 142
     },
     "_id": "3f2aa2ba-f8bb-418d-8350-00afc21c85fb"
   },
@@ -87,13 +87,13 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 62
+        "__id__": 66
       },
       {
-        "__id__": 63
+        "__id__": 67
       },
       {
-        "__id__": 64
+        "__id__": 68
       }
     ],
     "_prefab": null,
@@ -152,12 +152,15 @@
       },
       {
         "__id__": 48
+      },
+      {
+        "__id__": 61
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 61
+        "__id__": 65
       }
     ],
     "_prefab": null,
@@ -2227,6 +2230,149 @@
     "_id": "a3OQGJc7VPo6V+TuJcV+hL"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "LoadScreen",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 3
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 62
+      },
+      {
+        "__id__": 63
+      },
+      {
+        "__id__": 64
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 14.026499999999977,
+      "y": -24.968000000000046,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "c5/Xg0nrhMLbURBEiDeGRT"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "pageView-horizontal<UITransform>",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 61
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1319.0210000000002,
+      "height": 769.4791041656944
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "c6WFLUptNJTZ3OHWcd4/rM"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "pageView-horizontal<Sprite>",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 61
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "b730527c-3233-41c2-aaf7-7cdab58f9749@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 1,
+    "_fillType": 0,
+    "_sizeMode": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": true,
+    "_atlas": null,
+    "_id": "1e2w3ZFMhPGKsqosCuXsr3"
+  },
+  {
+    "__type__": "cc.PageView",
+    "_name": "pageView-horizontal<PageView>",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 61
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "bounceDuration": 1,
+    "brake": 0.5,
+    "elastic": true,
+    "inertia": true,
+    "horizontal": false,
+    "vertical": true,
+    "cancelInnerEvents": true,
+    "scrollEvents": [],
+    "_content": null,
+    "_horizontalScrollBar": null,
+    "_verticalScrollBar": null,
+    "autoPageTurningThreshold": 100,
+    "pageTurningSpeed": 0.3,
+    "pageEvents": [],
+    "_sizeMode": 0,
+    "_direction": 0,
+    "_scrollThreshold": 0.5,
+    "_pageTurningEventTiming": 0.1,
+    "_indicator": null,
+    "_id": "3bxG7017BD1ZzK+cX5hWim"
+  },
+  {
     "__type__": "cc.Camera",
     "_name": "",
     "_objFlags": 0,
@@ -2305,7 +2451,7 @@
     "_enabled": true,
     "__prefab": null,
     "_cameraComponent": {
-      "__id__": 61
+      "__id__": 65
     },
     "_alignCanvasWithScreen": true,
     "_id": "4b0eUJUzFNOIuahXtKsKAy"
@@ -2350,46 +2496,46 @@
     },
     "_children": [
       {
-        "__id__": 66
+        "__id__": 70
       },
       {
-        "__id__": 78
+        "__id__": 82
       },
       {
-        "__id__": 85
+        "__id__": 89
       },
       {
-        "__id__": 88
+        "__id__": 92
       },
       {
-        "__id__": 91
+        "__id__": 95
       },
       {
-        "__id__": 94
+        "__id__": 98
       },
       {
-        "__id__": 83
+        "__id__": 87
       },
       {
-        "__id__": 97
+        "__id__": 101
       },
       {
-        "__id__": 100
+        "__id__": 104
       },
       {
-        "__id__": 103
+        "__id__": 107
       },
       {
-        "__id__": 71
+        "__id__": 75
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 132
+        "__id__": 136
       },
       {
-        "__id__": 133
+        "__id__": 137
       }
     ],
     "_prefab": null,
@@ -2428,16 +2574,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 65
+      "__id__": 69
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
-        "__id__": 67
+        "__id__": 71
       },
       {
-        "__id__": 68
+        "__id__": 72
       }
     ],
     "_prefab": null,
@@ -2476,7 +2622,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 66
+      "__id__": 70
     },
     "_enabled": false,
     "__prefab": null,
@@ -2498,12 +2644,12 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 66
+      "__id__": 70
     },
     "_enabled": true,
     "__prefab": null,
     "initialEvent": {
-      "__id__": 69
+      "__id__": 73
     },
     "uniqueEvent": true,
     "_id": "dcWcTEkU9E7KsvRCwj/D/f"
@@ -2514,7 +2660,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 70
+      "__id__": 74
     },
     "_enabled": true,
     "__prefab": null,
@@ -2536,19 +2682,19 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 71
+      "__id__": 75
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 69
+        "__id__": 73
       },
       {
-        "__id__": 76
+        "__id__": 80
       },
       {
-        "__id__": 77
+        "__id__": 81
       }
     ],
     "_prefab": null,
@@ -2587,14 +2733,14 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 65
+      "__id__": 69
     },
     "_children": [
       {
-        "__id__": 70
+        "__id__": 74
       },
       {
-        "__id__": 72
+        "__id__": 76
       }
     ],
     "_active": true,
@@ -2635,19 +2781,19 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 71
+      "__id__": 75
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 73
+        "__id__": 77
       },
       {
-        "__id__": 74
+        "__id__": 78
       },
       {
-        "__id__": 75
+        "__id__": 79
       }
     ],
     "_prefab": null,
@@ -2686,7 +2832,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 72
+      "__id__": 76
     },
     "_enabled": true,
     "__prefab": null,
@@ -2708,7 +2854,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 72
+      "__id__": 76
     },
     "_enabled": true,
     "__prefab": null,
@@ -2720,7 +2866,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 72
+      "__id__": 76
     },
     "_enabled": true,
     "__prefab": null,
@@ -2733,7 +2879,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 70
+      "__id__": 74
     },
     "_enabled": true,
     "__prefab": null,
@@ -2745,7 +2891,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 70
+      "__id__": 74
     },
     "_enabled": true,
     "__prefab": null,
@@ -2758,19 +2904,19 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 65
+      "__id__": 69
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 79
+        "__id__": 83
       },
       {
-        "__id__": 80
+        "__id__": 84
       },
       {
-        "__id__": 81
+        "__id__": 85
       }
     ],
     "_prefab": null,
@@ -2809,7 +2955,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 78
+      "__id__": 82
     },
     "_enabled": true,
     "__prefab": null,
@@ -2833,7 +2979,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 78
+      "__id__": 82
     },
     "_enabled": true,
     "__prefab": null,
@@ -2846,12 +2992,12 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 78
+      "__id__": 82
     },
     "_enabled": true,
     "__prefab": null,
     "storeEvent": {
-      "__id__": 82
+      "__id__": 86
     },
     "restingCost": 3,
     "_id": "3dFfPmAQpL84L3o7O6Yp/Z"
@@ -2862,7 +3008,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 83
+      "__id__": 87
     },
     "_enabled": true,
     "__prefab": null,
@@ -2888,16 +3034,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 65
+      "__id__": 69
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 82
+        "__id__": 86
       },
       {
-        "__id__": 84
+        "__id__": 88
       }
     ],
     "_prefab": null,
@@ -2936,7 +3082,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 83
+      "__id__": 87
     },
     "_enabled": true,
     "__prefab": null,
@@ -2950,16 +3096,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 65
+      "__id__": 69
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 86
+        "__id__": 90
       },
       {
-        "__id__": 87
+        "__id__": 91
       }
     ],
     "_prefab": null,
@@ -2998,7 +3144,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 85
+      "__id__": 89
     },
     "_enabled": true,
     "__prefab": null,
@@ -3021,7 +3167,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 85
+      "__id__": 89
     },
     "_enabled": true,
     "__prefab": null,
@@ -3046,16 +3192,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 65
+      "__id__": 69
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 89
+        "__id__": 93
       },
       {
-        "__id__": 90
+        "__id__": 94
       }
     ],
     "_prefab": null,
@@ -3094,7 +3240,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 88
+      "__id__": 92
     },
     "_enabled": true,
     "__prefab": null,
@@ -3117,7 +3263,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 88
+      "__id__": 92
     },
     "_enabled": true,
     "__prefab": null,
@@ -3142,16 +3288,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 65
+      "__id__": 69
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 92
+        "__id__": 96
       },
       {
-        "__id__": 93
+        "__id__": 97
       }
     ],
     "_prefab": null,
@@ -3190,7 +3336,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 91
+      "__id__": 95
     },
     "_enabled": true,
     "__prefab": null,
@@ -3213,7 +3359,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 91
+      "__id__": 95
     },
     "_enabled": true,
     "__prefab": null,
@@ -3238,16 +3384,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 65
+      "__id__": 69
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 95
+        "__id__": 99
       },
       {
-        "__id__": 96
+        "__id__": 100
       }
     ],
     "_prefab": null,
@@ -3286,7 +3432,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 94
+      "__id__": 98
     },
     "_enabled": true,
     "__prefab": null,
@@ -3309,7 +3455,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 94
+      "__id__": 98
     },
     "_enabled": true,
     "__prefab": null,
@@ -3334,16 +3480,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 65
+      "__id__": 69
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 98
+        "__id__": 102
       },
       {
-        "__id__": 99
+        "__id__": 103
       }
     ],
     "_prefab": null,
@@ -3382,7 +3528,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 97
+      "__id__": 101
     },
     "_enabled": true,
     "__prefab": null,
@@ -3405,7 +3551,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 97
+      "__id__": 101
     },
     "_enabled": true,
     "__prefab": null,
@@ -3430,16 +3576,16 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 65
+      "__id__": 69
     },
     "_children": [],
     "_active": false,
     "_components": [
       {
-        "__id__": 101
+        "__id__": 105
       },
       {
-        "__id__": 102
+        "__id__": 106
       }
     ],
     "_prefab": null,
@@ -3478,7 +3624,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 100
+      "__id__": 104
     },
     "_enabled": true,
     "__prefab": null,
@@ -3501,7 +3647,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 100
+      "__id__": 104
     },
     "_enabled": true,
     "__prefab": null,
@@ -3526,12 +3672,9 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 65
+      "__id__": 69
     },
     "_children": [
-      {
-        "__id__": 104
-      },
       {
         "__id__": 108
       },
@@ -3549,6 +3692,9 @@
       },
       {
         "__id__": 128
+      },
+      {
+        "__id__": 132
       }
     ],
     "_active": true,
@@ -3589,113 +3735,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 103
-    },
-    "_children": [],
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 105
-      },
-      {
-        "__id__": 106
-      },
-      {
-        "__id__": 107
-      }
-    ],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_mobility": 0,
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "cffsnAcFVOxbRLQc0nWNIa"
-  },
-  {
-    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 104
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "eventType": 3,
-    "prompt": "enemy1.description.label",
-    "options": [
-      "fight",
-      "flee"
-    ],
-    "optionSelected": 0,
-    "eventImage": {
-      "__uuid__": "1f3d0e3a-f6c1-4fd4-b445-76727c497f87@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_id": "04pGMjHEJP5ZHdMqMCvIv7"
-  },
-  {
-    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 104
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "enemyName": "enemy1.name.label",
-    "maxHealth": 10,
-    "maxAgility": 7,
-    "maxStrength": 10,
-    "_id": "70qCXBi1ZHl7Qt98lrpD5U"
-  },
-  {
-    "__type__": "ce10fd/l6JKAKy30te3aHLN",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 104
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "reales": false,
-    "bandages": true,
-    "pistolAmmo": true,
-    "musketAmmo": true,
-    "_id": "2cR21uCrBCraYTXBDcAu56"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Currutaco",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "_parent": {
-      "__id__": 103
+      "__id__": 107
     },
     "_children": [],
     "_active": false,
@@ -3738,7 +3778,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "15VfjYcyVIe7CYbz0QEdAC"
+    "_id": "cffsnAcFVOxbRLQc0nWNIa"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -3751,17 +3791,17 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "enemy2.description.label",
+    "prompt": "enemy1.description.label",
     "options": [
       "fight",
       "flee"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "da223073-f567-46df-b302-c2fea9c6df06@f9941",
+      "__uuid__": "1f3d0e3a-f6c1-4fd4-b445-76727c497f87@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "6eUBYH3pZOILySFAoUDerk"
+    "_id": "04pGMjHEJP5ZHdMqMCvIv7"
   },
   {
     "__type__": "0faa0FxCxpC+rZLSeYB7svv",
@@ -3773,11 +3813,11 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "enemy2.name.label",
-    "maxHealth": 3,
-    "maxAgility": 5,
+    "enemyName": "enemy1.name.label",
+    "maxHealth": 10,
+    "maxAgility": 7,
     "maxStrength": 10,
-    "_id": "a190+cHRlDz7khk2iPn4K5"
+    "_id": "70qCXBi1ZHl7Qt98lrpD5U"
   },
   {
     "__type__": "ce10fd/l6JKAKy30te3aHLN",
@@ -3789,19 +3829,19 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": true,
-    "bandages": false,
+    "reales": false,
+    "bandages": true,
     "pistolAmmo": true,
-    "musketAmmo": false,
-    "_id": "f8u45a+D9NL7yA1Frk5P33"
+    "musketAmmo": true,
+    "_id": "2cR21uCrBCraYTXBDcAu56"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Bandido",
+    "_name": "Currutaco",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 103
+      "__id__": 107
     },
     "_children": [],
     "_active": false,
@@ -3844,7 +3884,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "d9GnXYlDhKKrm/as1Vfhfv"
+    "_id": "15VfjYcyVIe7CYbz0QEdAC"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -3857,17 +3897,17 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "enemy3.description.label",
+    "prompt": "enemy2.description.label",
     "options": [
       "fight",
       "flee"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "1daa0750-2f9a-4d82-8bcd-5c4f7a093354@f9941",
+      "__uuid__": "da223073-f567-46df-b302-c2fea9c6df06@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "00vr8owChDNZAZdzdToSpa"
+    "_id": "6eUBYH3pZOILySFAoUDerk"
   },
   {
     "__type__": "0faa0FxCxpC+rZLSeYB7svv",
@@ -3879,11 +3919,11 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Bandido",
+    "enemyName": "enemy2.name.label",
     "maxHealth": 3,
-    "maxAgility": 7,
+    "maxAgility": 5,
     "maxStrength": 10,
-    "_id": "7cSAWI6wZJw4dusPJZAasc"
+    "_id": "a190+cHRlDz7khk2iPn4K5"
   },
   {
     "__type__": "ce10fd/l6JKAKy30te3aHLN",
@@ -3896,18 +3936,18 @@
     "_enabled": true,
     "__prefab": null,
     "reales": true,
-    "bandages": true,
+    "bandages": false,
     "pistolAmmo": true,
-    "musketAmmo": true,
-    "_id": "32XcxbaL5DBpJasn7pYn7d"
+    "musketAmmo": false,
+    "_id": "f8u45a+D9NL7yA1Frk5P33"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Kimen",
+    "_name": "Bandido",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 103
+      "__id__": 107
     },
     "_children": [],
     "_active": false,
@@ -3950,7 +3990,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "b9gokN7UFJCJCeGrETYWB7"
+    "_id": "d9GnXYlDhKKrm/as1Vfhfv"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -3963,17 +4003,17 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "enemy4.description.label",
+    "prompt": "enemy3.description.label",
     "options": [
       "fight",
       "flee"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "c96fda03-893f-43a6-9eef-7dbca2228d1e@f9941",
+      "__uuid__": "1daa0750-2f9a-4d82-8bcd-5c4f7a093354@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "12lWfd/cFASoxO1HPMdCFO"
+    "_id": "00vr8owChDNZAZdzdToSpa"
   },
   {
     "__type__": "0faa0FxCxpC+rZLSeYB7svv",
@@ -3985,11 +4025,11 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Kimen",
-    "maxHealth": 15,
-    "maxAgility": 1,
+    "enemyName": "Bandido",
+    "maxHealth": 3,
+    "maxAgility": 7,
     "maxStrength": 10,
-    "_id": "86CIdCP7hOsYXGqYtYOy8k"
+    "_id": "7cSAWI6wZJw4dusPJZAasc"
   },
   {
     "__type__": "ce10fd/l6JKAKy30te3aHLN",
@@ -4001,19 +4041,19 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": false,
+    "reales": true,
     "bandages": true,
-    "pistolAmmo": false,
-    "musketAmmo": false,
-    "_id": "fbNCW6lPxA7Ipa5lDoG0oB"
+    "pistolAmmo": true,
+    "musketAmmo": true,
+    "_id": "32XcxbaL5DBpJasn7pYn7d"
   },
   {
     "__type__": "cc.Node",
-    "_name": "VerdugoCorrupto",
+    "_name": "Kimen",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 103
+      "__id__": 107
     },
     "_children": [],
     "_active": false,
@@ -4056,7 +4096,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "c46vflTFJFyqtnu7DUEwdi"
+    "_id": "b9gokN7UFJCJCeGrETYWB7"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -4069,17 +4109,17 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "enemy5.description.label",
+    "prompt": "enemy4.description.label",
     "options": [
       "fight",
-      "fllee"
+      "flee"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "ef34153f-e00e-40f0-8f97-6a61a0d318b5@f9941",
+      "__uuid__": "c96fda03-893f-43a6-9eef-7dbca2228d1e@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "99PfTU51NHtpDP6gRyW8BK"
+    "_id": "12lWfd/cFASoxO1HPMdCFO"
   },
   {
     "__type__": "0faa0FxCxpC+rZLSeYB7svv",
@@ -4091,11 +4131,11 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Verdugo corrupto",
-    "maxHealth": 7,
-    "maxAgility": 7,
+    "enemyName": "Kimen",
+    "maxHealth": 15,
+    "maxAgility": 1,
     "maxStrength": 10,
-    "_id": "c7YkECy+1NBIVZ2xaaokr9"
+    "_id": "86CIdCP7hOsYXGqYtYOy8k"
   },
   {
     "__type__": "ce10fd/l6JKAKy30te3aHLN",
@@ -4107,19 +4147,19 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": true,
+    "reales": false,
     "bandages": true,
     "pistolAmmo": false,
     "musketAmmo": false,
-    "_id": "63LQ19dz1FWbgALnrybkYq"
+    "_id": "fbNCW6lPxA7Ipa5lDoG0oB"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Espinoso",
+    "_name": "VerdugoCorrupto",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 103
+      "__id__": 107
     },
     "_children": [],
     "_active": false,
@@ -4162,7 +4202,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "ae0EwyxpROCLV+sqaICeDI"
+    "_id": "c46vflTFJFyqtnu7DUEwdi"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -4175,17 +4215,17 @@
     "_enabled": true,
     "__prefab": null,
     "eventType": 3,
-    "prompt": "enemy6.description.label",
+    "prompt": "enemy5.description.label",
     "options": [
       "fight",
-      "flee"
+      "fllee"
     ],
     "optionSelected": 0,
     "eventImage": {
-      "__uuid__": "2fb4abb6-96fc-496e-a492-03162facab6e@f9941",
+      "__uuid__": "ef34153f-e00e-40f0-8f97-6a61a0d318b5@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_id": "d8Aw3b5ONPaYlUKTwzdfYZ"
+    "_id": "99PfTU51NHtpDP6gRyW8BK"
   },
   {
     "__type__": "0faa0FxCxpC+rZLSeYB7svv",
@@ -4197,11 +4237,11 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "enemyName": "Espinoso",
-    "maxHealth": 1,
-    "maxAgility": 15,
+    "enemyName": "Verdugo corrupto",
+    "maxHealth": 7,
+    "maxAgility": 7,
     "maxStrength": 10,
-    "_id": "f3ugxU/5hPmIB/npnP5VSY"
+    "_id": "c7YkECy+1NBIVZ2xaaokr9"
   },
   {
     "__type__": "ce10fd/l6JKAKy30te3aHLN",
@@ -4213,19 +4253,19 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "reales": false,
-    "bandages": false,
+    "reales": true,
+    "bandages": true,
     "pistolAmmo": false,
     "musketAmmo": false,
-    "_id": "86Fa3umPZIo5BnaIixU57/"
+    "_id": "63LQ19dz1FWbgALnrybkYq"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Tlahuelpuchi",
+    "_name": "Espinoso",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
-      "__id__": 103
+      "__id__": 107
     },
     "_children": [],
     "_active": false,
@@ -4268,7 +4308,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "26qgoOkb9IBKkzCCImx34j"
+    "_id": "ae0EwyxpROCLV+sqaICeDI"
   },
   {
     "__type__": "9ec81E9cr5M0rcHHSFp0ani",
@@ -4277,6 +4317,112 @@
     "__editorExtras__": {},
     "node": {
       "__id__": 128
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "eventType": 3,
+    "prompt": "enemy6.description.label",
+    "options": [
+      "fight",
+      "flee"
+    ],
+    "optionSelected": 0,
+    "eventImage": {
+      "__uuid__": "2fb4abb6-96fc-496e-a492-03162facab6e@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_id": "d8Aw3b5ONPaYlUKTwzdfYZ"
+  },
+  {
+    "__type__": "0faa0FxCxpC+rZLSeYB7svv",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 128
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "enemyName": "Espinoso",
+    "maxHealth": 1,
+    "maxAgility": 15,
+    "maxStrength": 10,
+    "_id": "f3ugxU/5hPmIB/npnP5VSY"
+  },
+  {
+    "__type__": "ce10fd/l6JKAKy30te3aHLN",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 128
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "reales": false,
+    "bandages": false,
+    "pistolAmmo": false,
+    "musketAmmo": false,
+    "_id": "86Fa3umPZIo5BnaIixU57/"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Tlahuelpuchi",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 107
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 133
+      },
+      {
+        "__id__": 134
+      },
+      {
+        "__id__": 135
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "26qgoOkb9IBKkzCCImx34j"
+  },
+  {
+    "__type__": "9ec81E9cr5M0rcHHSFp0ani",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 132
     },
     "_enabled": true,
     "__prefab": null,
@@ -4299,7 +4445,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 128
+      "__id__": 132
     },
     "_enabled": true,
     "__prefab": null,
@@ -4315,7 +4461,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 128
+      "__id__": 132
     },
     "_enabled": true,
     "__prefab": null,
@@ -4331,49 +4477,46 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 65
+      "__id__": 69
     },
     "_enabled": true,
     "__prefab": null,
     "events": [
       {
-        "__id__": 67
+        "__id__": 71
       },
       {
-        "__id__": 79
-      },
-      {
-        "__id__": 109
+        "__id__": 83
       },
       {
         "__id__": 113
       },
       {
+        "__id__": 117
+      },
+      {
+        "__id__": 90
+      },
+      {
+        "__id__": 93
+      },
+      {
+        "__id__": 109
+      },
+      {
         "__id__": 86
       },
       {
-        "__id__": 89
+        "__id__": 96
       },
       {
-        "__id__": 105
+        "__id__": 99
       },
       {
-        "__id__": 82
+        "__id__": 109
       },
       {
-        "__id__": 92
-      },
-      {
-        "__id__": 95
-      },
-      {
-        "__id__": 105
-      },
-      {
-        "__id__": 98
-      },
-      {
-        "__id__": 117
+        "__id__": 102
       },
       {
         "__id__": 121
@@ -4385,25 +4528,28 @@
         "__id__": 129
       },
       {
-        "__id__": 101
+        "__id__": 133
       },
       {
-        "__id__": 69
-      },
-      {
-        "__id__": 73
-      },
-      {
-        "__id__": 69
+        "__id__": 105
       },
       {
         "__id__": 73
       },
       {
-        "__id__": 69
+        "__id__": 77
       },
       {
         "__id__": 73
+      },
+      {
+        "__id__": 77
+      },
+      {
+        "__id__": 73
+      },
+      {
+        "__id__": 77
       }
     ],
     "currentEvent": 0,
@@ -4417,6 +4563,9 @@
     "display": {
       "__id__": 31
     },
+    "loadScreen": {
+      "__id__": 63
+    },
     "_id": "39/laC7VpDo7Ff1prEYwkh"
   },
   {
@@ -4425,7 +4574,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 65
+      "__id__": 69
     },
     "_enabled": true,
     "__prefab": null,
@@ -4444,7 +4593,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 135
+        "__id__": 139
       }
     ],
     "_prefab": null,
@@ -4483,7 +4632,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 134
+      "__id__": 138
     },
     "_enabled": true,
     "__prefab": null,
@@ -4508,7 +4657,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 137
+        "__id__": 141
       }
     ],
     "_prefab": null,
@@ -4547,7 +4696,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 136
+      "__id__": 140
     },
     "_enabled": true,
     "__prefab": null,
@@ -4556,28 +4705,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 139
-    },
-    "shadows": {
-      "__id__": 140
-    },
-    "_skybox": {
-      "__id__": 141
-    },
-    "fog": {
-      "__id__": 142
-    },
-    "octree": {
       "__id__": 143
     },
-    "skin": {
+    "shadows": {
       "__id__": 144
     },
-    "lightProbeInfo": {
+    "_skybox": {
       "__id__": 145
     },
-    "postSettings": {
+    "fog": {
       "__id__": 146
+    },
+    "octree": {
+      "__id__": 147
+    },
+    "skin": {
+      "__id__": 148
+    },
+    "lightProbeInfo": {
+      "__id__": 149
+    },
+    "postSettings": {
+      "__id__": 150
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
