@@ -2667,7 +2667,7 @@
     "eventType": 2,
     "prompt": "",
     "options": [
-      "Continue on your way"
+      "general.option"
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -2839,7 +2839,7 @@
     "eventType": 2,
     "prompt": "",
     "options": [
-      "Continue on your way"
+      "general.option"
     ],
     "optionSelected": 0,
     "eventImage": {
@@ -4590,7 +4590,7 @@
       "__id__": 1
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 139

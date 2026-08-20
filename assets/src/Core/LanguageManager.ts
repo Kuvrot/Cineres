@@ -1,4 +1,4 @@
-import { _decorator, Component, resources, JsonAsset } from 'cc';
+import { _decorator, Component, resources, JsonAsset, director, sys } from 'cc';
 const { ccclass , executionOrder } = _decorator;
 
 @ccclass('LanguageManager')
@@ -6,13 +6,20 @@ const { ccclass , executionOrder } = _decorator;
 export class LanguageManager extends Component {
 
     public static instance: LanguageManager;
-
+    language : string;
     private labels;
 
-    onLoad() {
+    protected onLoad(): void {
         LanguageManager.instance = this;
+        if (sys.localStorage.getItem("language") !=  null){
+            this.language = sys.localStorage.getItem("language");
+            this.loadLanguageModule();
+        }
+    }
 
-        resources.load('language', JsonAsset, (err, asset) => {
+    loadLanguageModule() {  
+        let languageFile = 'language' + '-' + this.language;
+        resources.load(languageFile, JsonAsset, (err, asset) => {
             if (err) {
                 console.error('Error loading language.json:', err);
                 return;
@@ -37,5 +44,29 @@ export class LanguageManager extends Component {
 
         console.warn("Label not found:", labelCode);
         return labelCode;
+    }
+
+    selectLanguage (languageCode : string) {
+        LanguageManager.instance.language = languageCode;
+        console.log("Language selected : " +  LanguageManager.instance.language);
+        this.loadLanguageModule();
+        sys.localStorage.setItem("language", languageCode);
+        director.loadScene("mainMenu");
+    }
+
+    selectEnglish() {
+        this.selectLanguage("en");
+    }
+
+    selectSpanish() {
+        this.selectLanguage("es");
+    }
+
+    selectFrench() {
+        this.selectLanguage("fr");
+    }
+
+    selectGerman() {
+        this.selectLanguage("de");
     }
 }

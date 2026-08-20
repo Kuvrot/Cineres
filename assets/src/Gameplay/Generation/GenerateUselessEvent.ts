@@ -1,8 +1,7 @@
 import { _decorator, Component, resources, JsonAsset } from 'cc';
 import { GameManager } from '../../GameManager';
-import { EventManager } from '../../Core/EventManager';
 import { EventComponent } from '../EventComponent';
-const { ccclass, executionOrder } = _decorator;
+const { ccclass } = _decorator;
 
 @ccclass('GenerateUselessEvent')
 export class GenerateUselessEvent extends Component {
@@ -13,7 +12,6 @@ export class GenerateUselessEvent extends Component {
 
     generateEvent(): string {
         const randomId = GameManager.instance.getRandomInt(1 , 30);
-
         resources.load('fillEvents', JsonAsset, (err, asset) => {
             if (err) {
                 console.error('Error loading events.json:', err);

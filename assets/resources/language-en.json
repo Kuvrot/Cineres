@@ -412,11 +412,11 @@
   },
   {
     "code": "agility.label",
-    "label": "Musket balls"
+    "label": "Agility"
   },
   {
     "code": "hunger.label",
-    "label": "Pistol ammo"
+    "label": "Hunger"
   },
 
   {
@@ -426,7 +426,7 @@
 
   {
     "code": "death.label",
-    "label": "You died"
+    "label": "You died <br /> <br /> 0.Continue"
   },
 
   {

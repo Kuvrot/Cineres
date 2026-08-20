@@ -76,7 +76,7 @@ export class GameManager extends Component {
 
     displayInventory () {
         
-        if (!EventManager.instance.loaded){
+        if (EventManager.instance != null && !EventManager.instance.loaded){
             return;
         }
 

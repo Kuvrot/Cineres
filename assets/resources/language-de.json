@@ -1,0 +1,566 @@
+[
+  {
+    "code" : "play.label",
+    "label" : "SPIELEN"
+  },
+  {
+    "code" : "credits.label",
+    "label" : "CREDITS"
+  },
+  {
+    "code" : "exit.label",
+    "label" : "BEENDEN"
+  },
+  {
+    "code" : "intro.label",
+    "label" : "<color=#FFFF00>Die Verderbnis</color> <br />Dieser Fluch hat sich wie eine Seuche ausgebreitet. Doch diese Seuche tötete nicht nur Menschen, sie raubte ihren Opfern auch jede Menschlichkeit, und das verbliebene Fleisch und die Knochen verwandelten sich in etwas anderes. <br />Manche Menschen wurden wahnsinnig, andere verwandelten sich in etwas, das nicht von dieser Welt zu sein scheint. <br />Das Elend der Region ist unerträglich. <br />Viele der Dörfer sind nun voller Staub, Knochen und Asche."
+  },
+  {
+    "code" : "city.header.label",
+    "label" : "Du bist in einem Ort namens "
+  },
+  {
+    "code": "city.label.1",
+    "label": "Die Armut an diesem Ort ist tragisch"
+  },
+  {
+    "code": "city.label.2",
+    "label": "Die Menschen sind schwach, nur wenige Seelen haben genug Kraft zum Arbeiten"
+  },
+  {
+    "code": "city.label.3",
+    "label": "Die Menschen sind unterernährt, oder die Toten liegen auf den Straßen"
+  },
+  {
+    "code": "city.label.4",
+    "label": "Dieser Ort wurde von Verderbnis und Seuche verwüstet"
+  },
+  {
+    "code": "city.label.5",
+    "label": "Dieser Ort wurde verwüstet; nur wenige Seelen versammeln sich auf den Straßen"
+  },
+  {
+    "code": "city.label.6",
+    "label": "Die Menschen betrachten dich mit Misstrauen"
+  },
+  {
+    "code": "city.label.7",
+    "label": "Die Menschen betrachten dich neugierig"
+  },
+  {
+    "code": "city.label.8",
+    "label": "Du kannst das Elend dieses Ortes riechen"
+  },
+
+  {
+    "code": "city.option0",
+    "label": "Verfluchter Henker"
+  },
+  {
+    "code": "city.option1",
+    "label": "Verfluchter Henker"
+  },
+  {
+    "code": "city.option2",
+    "label": "Verfluchter Henker"
+  },
+  {
+    "code": "city.option3",
+    "label": "Verfluchter Henker"
+  },
+  {
+    "code": "city.option4",
+    "label": "Verfluchter Henker"
+  },
+
+  {
+    "code": "city.option0",
+    "label": "Weitergehen"
+  },
+  {
+    "code": "city.option1",
+    "label": "Zum Laden gehen"
+  },
+  {
+    "code": "city.option2",
+    "label": "In einem <color=#00FFFF>Gasthaus</color> ausruhen (-3 Reales, +10 Geschicklichkeit)"
+  },
+
+  {
+    "code": "funeral.label",
+    "label": "Du stößt auf eine feierliche Beerdigung. <br />Eine stille Menge versammelt sich um das Grab. Ihre Gesichter sind von Trauer gezeichnet, während ein kalter Wind durch den Friedhof zieht."
+  },
+
+  {
+    "code": "funeral.option0",
+    "label": "Mit ihnen beten (+1 Stärke) (+2 Gesundheit) (+1 Verband) (+2 Hunger)"
+  },
+
+  {
+    "code": "wedding.label",
+    "label": "Du erreichst ein kleines <color=#FFFF00>Dorf</color>. <br />Bunte Dekorationen hängen über den Straßen, während Musik und Gelächter die Luft erfüllen und die Verbindung zweier Seelen feiern."
+  },
+
+  {
+    "code": "wedding.option0",
+    "label": "Mit ihnen feiern <br />(-2 Geschicklichkeit) (-1 Stärke) (Hunger auf 0)"
+  },
+
+  {
+    "code": "bullfight.label",
+    "label": "Eine <color=#FFFF00>Stierkampfveranstaltung</color> findet statt. <br />Die Menge brüllt von den Rängen, während der Stier durch die Arena stürmt und der Torero sich ruhig der Bestie entgegenstellt."
+  },
+
+  {
+    "code": "bullfight.option0",
+    "label": "Die Veranstaltung ansehen (+2 Geschicklichkeit) (+1 Stärke) (-2 Reales)"
+  },
+
+  {
+    "code": "house.label",
+    "label": "Du findest ein verlassenes Haus, das langsam vom Zahn der Zeit verschlungen wird. <br />Teile der Decke sind eingestürzt, Schimmel bedeckt die Wände und zerbrochene Fenster lassen den Wind durch die leeren Räume pfeifen."
+  },
+
+  {
+    "code": "house.option0",
+    "label": "Das Haus erkunden (-2 Geschicklichkeit)"
+  },
+
+  {
+    "code": "store.label",
+    "label": "Du stößt auf einen <color=#FF0000>Laden</color>. <br />In den Regalen liegt minderwertige Nahrung zu unerbittlichen Preisen, während die müden Gesichter der Kunden von ihrem harten Leben erzählen."
+  },
+
+  {
+    "code": "store.option0",
+    "label": "1 Verband kaufen"
+  },
+  {
+    "code": "store.option1",
+    "label": "Etwas essen"
+  },
+  {
+    "code": "store.option2",
+    "label": "1 Musketenkugel kaufen"
+  },
+  {
+    "code": "store.option3",
+    "label": "Das Haus erkunden (-2 Geschicklichkeit)"
+  },
+
+  {
+    "code": "concert.label",
+    "label": "Du stößt auf ein lebhaftes Konzert. <br />Musik hallt durch die Straßen, während sich Menschen unter den Lichtern versammeln und ihre Sorgen für einen kurzen Moment vergessen."
+  },
+  {
+    "code": "concert.option0",
+    "label": "Die Veranstaltung ansehen (+2 Geschicklichkeit) (+1 Stärke) (-2 Reales)"
+  },
+
+  {
+    "code" : "wagon.label",
+    "label" : "Ein alter Holzwagen steht verlassen vor dir. <br />Das Holz ist vom Alter dunkel geworden und vom Regen gezeichnet, während hartnäckige Moosflecken an den unteren Brettern haften. Eines seiner Räder ist halb in der Erde vergraben, das andere weist einen langen, splitternden Riss auf. <br />Ein Stück ausgefranstes Seil hängt von der Rückseite herab und bewegt sich sanft im Abendwind. <br />Was auch immer mit seinem Besitzer geschehen ist, er scheint es in großer Eile verlassen zu haben – oder hatte nie die Gelegenheit zurückzukehren. <br />Vielleicht lohnt es sich, seinen vergessenen Inhalt zu untersuchen."
+  },
+  {
+    "code": "wagon.option0",
+    "label": "Den Wagen durchsuchen (-1 Geschicklichkeit)"
+  },
+
+  {
+    "code": "fill.event.label.1",
+    "label": "Irgendwo hinter den Hügeln läutet dreimal eine Glocke. Kein Dorf ist zu sehen."
+  },
+  {
+    "code": "fill.event.label.2",
+    "label": "Eine Krähe landet auf einem nahegelegenen Zaun, sieht dich direkt an und stößt einen einzigen lauten Krächzer aus, bevor sie davonfliegt."
+  },
+  {
+    "code": "fill.event.label.3",
+    "label": "Ohne Vorwarnung beginnt ein kurzer Regenschauer. Innerhalb weniger Minuten verschwinden die Wolken und der Weg ist wieder trocken."
+  },
+  {
+    "code": "fill.event.label.4",
+    "label": "Ein alter Holzwagen rollt langsam von selbst die Straße entlang. Schließlich verschwindet er hinter einer Kurve."
+  },
+  {
+    "code": "fill.event.label.5",
+    "label": "Du bemerkst eine Reihe unbekannter Fußspuren, die den Weg kreuzen. Sie enden abrupt mitten auf der Straße."
+  },
+  {
+    "code": "fill.event.label.6",
+    "label": "Du hörst irgendwo in der Ferne jemanden lachen. Als du dich umsiehst, ist niemand da."
+  },
+  {
+    "code": "fill.event.label.7",
+    "label": "Eine plötzliche Windböe lässt einen Wirbel goldener Blätter über den Boden tanzen."
+  },
+  {
+    "code": "fill.event.label.8",
+    "label": "Ein alter Reisender geht wortlos an dir vorbei. Nach einigen Schritten dreht er sich um, lächelt und setzt seinen Weg fort."
+  },
+  {
+    "code": "fill.event.label.9",
+    "label": "Irgendwo in der Nähe beginnt ein Hund zu heulen. Ein anderer Hund antwortet aus großer Entfernung."
+  },
+  {
+    "code": "fill.event.label.10",
+    "label": "In der Ferne erscheint zwischen den Bäumen ein schwaches Licht. Es flackert mehrmals, bevor es verschwindet."
+  },
+  {
+    "code": "fill.event.label.11",
+    "label": "Du kommst an einem alten Wegweiser vorbei. Einer seiner Pfeile knarrt langsam im Wind und zeigt in keine bestimmte Richtung."
+  },
+  {
+    "code": "fill.event.label.12",
+    "label": "Ein roter Fuchs überquert vor dir die Straße. Er hält einen Moment inne, blickt zurück und verschwindet im Gebüsch."
+  },
+  {
+    "code": "fill.event.label.13",
+    "label": "Donner grollt am Horizont, obwohl der Himmel über dir vollkommen klar bleibt."
+  },
+  {
+    "code": "fill.event.label.14",
+    "label": "Ein Reiter auf einem dunklen Pferd zieht wortlos an dir vorbei. Weder der Reiter noch das Pferd machen viel Lärm, während sie in der Ferne verschwinden."
+  },
+  {
+    "code": "fill.event.label.15",
+    "label": "Für einen Moment riecht die Luft stark nach Rauch und Kiefern. Wenige Sekunden später ist der Geruch vollständig verschwunden."
+  },
+  {
+    "code": "fill.event.label.16",
+    "label": "Ein kleines Stück Gras beugt und bewegt sich, obwohl die Luft ringsum vollkommen stillsteht."
+  },
+  {
+    "code": "fill.event.label.17",
+    "label": "Du hörst irgendwo in der Nähe ein Kind singen. Das Lied verstummt plötzlich, als du dich dem Geräusch zuwendest."
+  },
+  {
+    "code": "fill.event.label.18",
+    "label": "Ein heller Stern zieht über den Nachthimmel und verschwindet hinter dem Horizont."
+  },
+  {
+    "code": "fill.event.label.19",
+    "label": "Ein Händler kommt dir auf der Straße entgegen und murmelt vor sich hin über das Wetter. Er bemerkt dich überhaupt nicht."
+  },
+  {
+    "code": "fill.event.label.20",
+    "label": "Du stößt auf ein Lagerfeuer, das noch warm ist, aber niemand befindet sich in seiner Nähe."
+  },
+  {
+    "code": "fill.event.label.21",
+    "label": "Für einige Sekunden verstummen sämtliche Geräusche um dich herum. Dann wird die Welt plötzlich wieder laut."
+  },
+  {
+    "code": "fill.event.label.22",
+    "label": "Ein Hirsch beobachtet dich zwischen den Bäumen. Nach einigen Augenblicken dreht er sich ruhig um und geht davon."
+  },
+  {
+    "code": "fill.event.label.23",
+    "label": "Irgendwo jenseits der Berge ertönt ein tiefes Horn. Ein zweiter Hornstoß folgt nicht."
+  },
+  {
+    "code": "fill.event.label.24",
+    "label": "Zwischen zwei Bäumen steht eine alte Holztür, ohne dass ein Gebäude in ihrer Nähe zu sehen ist. Sie steht einen Spalt offen."
+  },
+  {
+    "code": "fill.event.label.25",
+    "label": "Eine dünne Nebelschicht zieht über die Straße und umhüllt dich für einige Augenblicke, bevor sie langsam verschwindet."
+  },
+  {
+    "code": "fill.event.label.26",
+    "label": "Der Wind zieht durch einen schmalen Spalt im Fels und erzeugt ein Geräusch, das seltsam nach einem menschlichen Pfiff klingt."
+  },
+  {
+    "code": "fill.event.label.27",
+    "label": "Du kommst an einer verwitterten Steinstatue vorbei, die teilweise von Moos bedeckt ist. Ihr Gesicht wurde vom Zahn der Zeit abgetragen."
+  },
+  {
+    "code": "fill.event.label.28",
+    "label": "Plötzlich rast ein Kaninchen mit voller Geschwindigkeit über deinen Weg, als würde es von etwas verfolgt, das du nicht sehen kannst."
+  },
+  {
+    "code": "fill.event.label.29",
+    "label": "Irgendwo in der Ferne sind zwei Stimmen zu hören, die sich streiten. Ihre Worte sind nicht zu verstehen."
+  },
+  {
+    "code": "fill.event.label.30",
+    "label": "Für einen kurzen Moment zieht eine dünne Wolke über den Mond und lässt ihn seltsam riesig erscheinen, bevor die Illusion verschwindet."
+  },
+  {
+    "code": "fill.event.label.30",
+    "label": "Für einen kurzen Moment zieht eine dünne Wolke über den Mond und lässt ihn seltsam riesig erscheinen, bevor die Illusion verschwindet."
+  },
+
+  {
+    "code": "continue.label",
+    "label": "Weiter"
+  },
+
+  {
+    "code": "enemy1.name.label",
+    "label": "Verfluchter Henker"
+  },
+  {
+    "code": "enemy2.name.label",
+    "label": "Currutaco"
+  },
+  {
+    "code": "enemy3.name.label",
+    "label": "Bandit"
+  },
+  {
+    "code": "enemy4.name.label",
+    "label": "Kimen"
+  },
+  {
+    "code": "enemy5.name.label",
+    "label": "Verderbter Henker"
+  },
+  {
+    "code": "enemy6.name.label",
+    "label": "Dornenbestie"
+  },
+  {
+    "code": "enemy7.name.label",
+    "label": "Tlahuelpuchi"
+  },
+
+  {
+    "code": "enemy1.description.label",
+    "label": "Eine kalte Präsenz folgt dir durch die Stille. <br />Als du dich umdrehst, steht ein schrecklicher Henker vor dir. Seine abgenutzte Klinge ist von unzähligen Toden befleckt. Etwas in seinem leeren Blick deutet darauf hin, dass dein Schicksal schon vor langer Zeit besiegelt wurde."
+  },
+  {
+    "code": "enemy2.description.label",
+    "label": "Während du durch die Straßen gehst, kreuzt du versehentlich den Weg eines vornehmen Mannes in extravaganten Kleidern. <br />Sein Stolz verwandelt sich schnell in Wut, und schon bald wirst du von einem <color=#FFFF00>Currutaco</color> zu einem Duell herausgefordert."
+  },
+  {
+    "code": "enemy3.description.label",
+    "label": "Während du die Straße entlanggehst, tritt ein Schatten in deinen Weg. <br />Ein <color=#FF0000>Bandit</color> zieht seine Waffe und fordert deine Besitztümer, während seine Augen mit der kalten Selbstsicherheit eines Mannes auf dich gerichtet sind, der es gewohnt ist, sich zu nehmen, was er will."
+  },
+  {
+    "code": "enemy4.description.label",
+    "label": "Eine seltsame Stille legt sich über deine Umgebung. <br />Irgendwo in der Nähe hörst du leise Bewegungen, gefolgt von einer Präsenz, die du nicht genau einordnen kannst. Ein <color=#FFFF00>Kimen</color> tritt aus den Schatten und beobachtet dich mit beunruhigender Ruhe."
+  },
+  {
+    "code": "enemy5.description.label",
+    "label": "Die Luft wird schwer, als sich eine Gestalt durch die Dunkelheit nähert. <br />Einst war er ein Henker, doch diese verdorbene Seele trägt nun etwas in sich, das weitaus dunkler ist als bloße Pflicht. Seine Rüstung ist abgenutzt und befleckt, und die Klinge in seinen Händen scheint geradezu darauf zu warten, wieder Blut zu kosten."
+  },
+  {
+    "code": "enemy6.description.label",
+    "label": "Du hörst ein groteskes Bellen und drehst dich um, um nach seiner Quelle zu suchen. <br />Aus den Schatten tritt eine dunkle Kreatur hervor. Dies ist kein gewöhnlicher Jagdhund. Seine purpurroten Augen brennen vor Bosheit, und sein weit aufgerissenes Maul zeigt monströse Fangzähne, die begierig darauf sind, dein Fleisch zu zerreißen. Sein schlangenartiger Schwanz peitscht hinter ihm, als wolle er dich selbst in den Abgrund ziehen."
+  },
+  {
+    "code": "enemy7.description.label",
+    "label": "Eine plötzliche Kälte durchzieht die Luft, und die fernen Geräusche der Nacht verstummen auf seltsame Weise. <br />Aus der Dunkelheit erscheint eine Gestalt, umgeben von unnatürlicher Stille. Die <color=#FFFF00>Tlahuelpuchi</color> beobachtet dich aus den Schatten. Ihre Anwesenheit trägt den uralten Schrecken von etwas in sich, das niemals hätte gestört werden dürfen."
+  },
+
+  {
+    "code": "inventory.header",
+    "label": "--------------- <br />INVENTAR<br />---------------"
+  },
+  {
+    "code": "stats.header",
+    "label": "--------------- <br />WERTE <br />---------------"
+  },
+
+  {
+    "code": "enemy3.name.label",
+    "label": "Bandit"
+  },
+  {
+    "code": "enemy4.name.label",
+    "label": "Kimen"
+  },
+  {
+    "code": "enemy5.name.label",
+    "label": "Verderbter Henker"
+  },
+  {
+    "code": "enemy6.name.label",
+    "label": "Dornenbestie"
+  },
+  {
+    "code": "enemy7.name.label",
+    "label": "Tlahuelpuchi"
+  },
+
+  {
+    "code": "bandages.label",
+    "label": "Verbände"
+  },
+  {
+    "code": "reales.label",
+    "label": "Reales"
+  },
+  {
+    "code": "musket.ammo.label",
+    "label": "Musketenkugeln"
+  },
+  {
+    "code": "pistol.ammo.label",
+    "label": "Pistolenmunition"
+  },
+
+  {
+    "code": "health.label",
+    "label": "Gesundheit"
+  },
+  {
+    "code": "strength.label",
+    "label": "Stärke"
+  },
+  {
+    "code": "agility.label",
+    "label": "Geschicklichkeit"
+  },
+  {
+    "code": "hunger.label",
+    "label": "Hunger"
+  },
+
+  {
+    "code": "general.option",
+    "label": "Weitergehen"
+  },
+
+  {
+    "code": "death.label",
+    "label": "Du bist gestorben <br /> <br /> 0.Weiter"
+  },
+
+  {
+    "code": "enemy.appeared",
+    "label": "ist erschienen."
+  },
+
+  {
+    "code": "not.reales",
+    "label": "Nicht genug Reales"
+  },
+  {
+    "code": "player.found",
+    "label": "Du hast gefunden"
+  },
+  {
+    "code": "rest",
+    "label": "Glücklicherweise konntest du dich ausruhen"
+  },
+  {
+    "code": "hunger.increased",
+    "label": "Dein Hunger ist um"
+  },
+  {
+    "code": "hunger.satisfied",
+    "label": "Dein Hunger wurde gestillt"
+  },
+
+  {
+    "code": "fight",
+    "label": "Kämpfen"
+  },
+  {
+    "code": "flee",
+    "label": "Fliehen (-2 Geschicklichkeit)"
+  },
+  {
+    "code": "player.name",
+    "label": "Du"
+  },
+  {
+    "code": "enemy.attack",
+    "label": "greift an"
+  },
+  {
+    "code": "dodge.label",
+    "label": "wich dem Angriff aus"
+  },
+  {
+    "code": "dodge.failed.label",
+    "label": "konnte dem Angriff nicht ausweichen und erlitt "
+  },
+  {
+    "code": "damage",
+    "label": "Schaden"
+  },
+  {
+    "code": "player.attack",
+    "label": "greifst mit deiner Klinge an"
+  },
+  {
+    "code": "player.heal",
+    "label": "hast deine Wunden verbunden."
+  },
+  {
+    "code": "bandages.not.found",
+    "label": "Du greifst in deine Taschen, findest jedoch keine Verbände mehr; du hast wertvolle Zeit verloren"
+  },
+  {
+    "code": "player.pistol.fire",
+    "label": "feuerst deine Pistole ab"
+  },
+  {
+    "code": "player.pistol.reload",
+    "label": "lädst deine Pistole nach"
+  },
+  {
+    "code": "player.musket.fire",
+    "label": "feuerst dein Musketengewehr ab"
+  },
+  {
+    "code": "player.musket.reload",
+    "label": "lädst dein Musketengewehr nach"
+  },
+  {
+    "code": "player.ammo.not.found",
+    "label": "Du greifst in deine Taschen, findest jedoch keine Munition mehr; du hast wertvolle Zeit verloren"
+  },
+  {
+    "code": "enemy.defeated",
+    "label": "wurde besiegt"
+  },
+
+  {
+    "code": "combat.attack.label",
+    "label": "Mit deiner Klinge angreifen"
+  },
+  {
+    "code": "combat.bandage.label",
+    "label": "Verband benutzen (+10 Gesundheit)"
+  },
+  {
+    "code": "combat.reloadPistol.label",
+    "label": "Pistole nachladen"
+  },
+  {
+    "code": "combat.firePistol.label",
+    "label": "Pistole abfeuern"
+  },
+  {
+    "code": "combat.reloadMusket.label",
+    "label": "Musketengewehr nachladen"
+  },
+  {
+    "code": "combat.fireMusket.label",
+    "label": "Musketengewehr abfeuern"
+  },
+  {
+    "code": "loot.reales.label",
+    "label": "<br />Du hast {0} Real{1} erbeutet."
+  },
+  {
+    "code": "loot.bandages.label",
+    "label": "<br />Du hast {0} Verband{1} erbeutet."
+  },
+  {
+    "code": "loot.pistolAmmo.label",
+    "label": "<br />Du hast {0} Pistolenmunition{1} erbeutet."
+  },
+  {
+    "code": "loot.musketAmmo.label",
+    "label": "<br />Du hast {0} Musketenkugel{1} erbeutet."
+  },
+  {
+    "code": "loot.nothing.label",
+    "label": "<br />Du hast nichts Wertvolles gefunden."
+  }
+]

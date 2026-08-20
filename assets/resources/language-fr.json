@@ -1,0 +1,566 @@
+[
+  {
+    "code" : "play.label",
+    "label" : "JOUER"
+  },
+  {
+    "code" : "credits.label",
+    "label" : "CRÉDITS"
+  },
+  {
+    "code" : "exit.label",
+    "label" : "QUITTER"
+  },
+  {
+    "code" : "intro.label",
+    "label" : "<color=#FFFF00>La corruption</color> <br />Cette malédiction s'est répandue comme une peste. Mais cette peste n'a pas seulement tué les gens, elle a également ôté toute humanité à ses victimes, et la chair et les os restants se sont transformés en quelque chose d'autre. <br />Certaines personnes sont devenues folles, tandis que d'autres se sont transformées en quelque chose qui ne peut être décrit comme appartenant à ce monde. <br />La misère de la région est insupportable. <br />Une grande partie des villages est désormais remplie de poussière, d'os et de cendres."
+  },
+  {
+    "code" : "city.header.label",
+    "label" : "Vous êtes arrivé dans un village appelé "
+  },
+  {
+    "code": "city.label.1",
+    "label": "La pauvreté de cet endroit est tragique"
+  },
+  {
+    "code": "city.label.2",
+    "label": "Les gens sont faibles, seules quelques âmes ont assez de force pour travailler"
+  },
+  {
+    "code": "city.label.3",
+    "label": "Les gens sont mal nourris, ou les morts gisent dans les rues"
+  },
+  {
+    "code": "city.label.4",
+    "label": "Cet endroit a été dévasté par la corruption et la peste"
+  },
+  {
+    "code": "city.label.5",
+    "label": "Cet endroit a été dévasté ; seules quelques âmes se rassemblent dans les rues"
+  },
+  {
+    "code": "city.label.6",
+    "label": "Les gens vous regardent avec méfiance"
+  },
+  {
+    "code": "city.label.7",
+    "label": "Les gens vous regardent avec curiosité"
+  },
+  {
+    "code": "city.label.8",
+    "label": "Vous pouvez sentir la misère de cet endroit"
+  },
+
+  {
+    "code": "city.option0",
+    "label": "Bourreau maudit"
+  },
+  {
+    "code": "city.option1",
+    "label": "Bourreau maudit"
+  },
+  {
+    "code": "city.option2",
+    "label": "Bourreau maudit"
+  },
+  {
+    "code": "city.option3",
+    "label": "Bourreau maudit"
+  },
+  {
+    "code": "city.option4",
+    "label": "Bourreau maudit"
+  },
+
+  {
+    "code": "city.option0",
+    "label": "Continuer à marcher"
+  },
+  {
+    "code": "city.option1",
+    "label": "Aller au magasin"
+  },
+  {
+    "code": "city.option2",
+    "label": "Se reposer dans une <color=#00FFFF>auberge</color> (-3 réaux, +10 agilité)"
+  },
+
+  {
+    "code": "funeral.label",
+    "label": "Vous tombez sur une cérémonie funéraire solennelle. <br />Une foule silencieuse se rassemble autour de la tombe, le visage accablé de chagrin tandis qu'un vent froid traverse le cimetière."
+  },
+
+  {
+    "code": "funeral.option0",
+    "label": "Prier avec eux (+1 force) (+2 santé) (+1 bandage) (+2 faim)"
+  },
+
+  {
+    "code": "wedding.label",
+    "label": "Vous arrivez dans un petit <color=#FFFF00>village</color>. <br />Des décorations colorées sont suspendues dans les rues tandis que la musique et les rires emplissent l'air, célébrant l'union de deux âmes."
+  },
+
+  {
+    "code": "wedding.option0",
+    "label": "Célébrer avec eux <br />(-2 agilité) (-1 force) (faim réduite à 0)"
+  },
+
+  {
+    "code": "bullfight.label",
+    "label": "Une <color=#FFFF00>corrida</color> est en cours. <br />La foule rugit depuis les gradins tandis que le taureau charge à travers l'arène, alors que le torero fait calmement face à la bête."
+  },
+
+  {
+    "code": "bullfight.option0",
+    "label": "Regarder le spectacle (+2 agilité) (+1 force) (-2 réaux)"
+  },
+
+  {
+    "code": "house.label",
+    "label": "Vous trouvez une maison abandonnée, lentement envahie par le temps. <br />Une partie du plafond s'est effondrée, de la moisissure recouvre les murs et les fenêtres brisées permettent au vent de siffler à travers les pièces vides."
+  },
+
+  {
+    "code": "house.option0",
+    "label": "Explorer la maison (-2 agilité)"
+  },
+
+  {
+    "code": "store.label",
+    "label": "Vous tombez sur un <color=#FF0000>magasin</color>. <br />Les étagères contiennent de la nourriture de mauvaise qualité à des prix exorbitants, tandis que les visages fatigués des clients racontent une histoire de misère."
+  },
+
+  {
+    "code": "store.option0",
+    "label": "Acheter 1 bandage"
+  },
+  {
+    "code": "store.option1",
+    "label": "Manger quelque chose"
+  },
+  {
+    "code": "store.option2",
+    "label": "Acheter 1 balle de mousquet"
+  },
+  {
+    "code": "store.option3",
+    "label": "Explorer la maison (-2 agilité)"
+  },
+
+  {
+    "code": "concert.label",
+    "label": "Vous tombez sur un concert animé. <br />La musique résonne dans les rues tandis que les gens se rassemblent sous les lumières, oubliant leurs soucis pendant un bref instant."
+  },
+  {
+    "code": "concert.option0",
+    "label": "Regarder le spectacle (+2 agilité) (+1 force) (-2 réaux)"
+  },
+
+  {
+    "code" : "wagon.label",
+    "label" : "Un vieux chariot en bois se tient abandonné devant vous. <br />Le bois est assombri par l'âge et marqué par la pluie, tandis que des plaques de mousse s'accrochent obstinément aux planches inférieures. L'une de ses roues est à moitié enfouie dans la terre, tandis que l'autre porte une longue fissure éclatée. <br />Une corde effilochée pend à l'arrière, se balançant doucement dans la brise du soir. <br />Quoi qu'il soit arrivé à son propriétaire, il semble être parti précipitamment — ou n'a jamais eu l'occasion de revenir. <br />Peut-être que son contenu oublié mérite encore d'être examiné."
+  },
+  {
+    "code": "wagon.option0",
+    "label": "Fouiller le chariot (-1 agilité)"
+  },
+
+  {
+    "code": "fill.event.label.1",
+    "label": "Quelque part au-delà des collines, une cloche sonne trois fois. Aucun village n'est visible."
+  },
+  {
+    "code": "fill.event.label.2",
+    "label": "Un corbeau se pose sur une clôture proche, vous regarde droit dans les yeux et pousse un seul croassement sonore avant de s'envoler."
+  },
+  {
+    "code": "fill.event.label.3",
+    "label": "Une brève averse commence sans prévenir. En quelques minutes, les nuages disparaissent et la route est de nouveau sèche."
+  },
+  {
+    "code": "fill.event.label.4",
+    "label": "Un vieux chariot en bois descend lentement la route tout seul. Il finit par disparaître au détour d'un virage."
+  },
+  {
+    "code": "fill.event.label.5",
+    "label": "Vous remarquez une série d'empreintes inconnues traversant le chemin. Elles s'arrêtent brusquement au milieu de la route."
+  },
+  {
+    "code": "fill.event.label.6",
+    "label": "Vous entendez quelqu'un rire quelque part au loin. Lorsque vous regardez autour de vous, il n'y a personne."
+  },
+  {
+    "code": "fill.event.label.7",
+    "label": "Une soudaine rafale de vent fait danser un tourbillon de feuilles dorées sur le sol."
+  },
+  {
+    "code": "fill.event.label.8",
+    "label": "Un vieux voyageur passe devant vous sans dire un mot. Après quelques pas, il se retourne, sourit et poursuit son chemin."
+  },
+  {
+    "code": "fill.event.label.9",
+    "label": "Quelque part à proximité, un chien commence à hurler. Un autre chien lui répond depuis beaucoup plus loin."
+  },
+  {
+    "code": "fill.event.label.10",
+    "label": "Une faible lumière apparaît entre les arbres au loin. Elle vacille plusieurs fois avant de disparaître."
+  },
+  {
+    "code": "fill.event.label.11",
+    "label": "Vous passez devant un vieux panneau indicateur. L'une de ses flèches grince lentement dans le vent, pointant vers nulle part en particulier."
+  },
+  {
+    "code": "fill.event.label.12",
+    "label": "Un renard roux traverse la route devant vous. Il s'arrête un instant, jette un regard en arrière, puis disparaît dans les buissons."
+  },
+  {
+    "code": "fill.event.label.13",
+    "label": "Le tonnerre gronde à l'horizon, bien que le ciel au-dessus de vous reste parfaitement dégagé."
+  },
+  {
+    "code": "fill.event.label.14",
+    "label": "Un cavalier monté sur un cheval sombre passe devant vous sans un mot. Ni le cavalier ni le cheval ne font beaucoup de bruit tandis qu'ils disparaissent au loin."
+  },
+  {
+    "code": "fill.event.label.15",
+    "label": "Pendant un instant, l'air sent fortement la fumée et le pin. Quelques secondes plus tard, l'odeur a complètement disparu."
+  },
+  {
+    "code": "fill.event.label.16",
+    "label": "Une petite parcelle d'herbe se courbe et se balance malgré le fait que l'air environnant soit parfaitement immobile."
+  },
+  {
+    "code": "fill.event.label.17",
+    "label": "Vous entendez un enfant chanter quelque part à proximité. La chanson s'arrête brusquement lorsque vous vous tournez vers le son."
+  },
+  {
+    "code": "fill.event.label.18",
+    "label": "Une étoile brillante traverse le ciel nocturne avant de disparaître au-delà de l'horizon."
+  },
+  {
+    "code": "fill.event.label.19",
+    "label": "Un marchand vous dépasse sur la route, marmonnant à propos du temps. Il ne remarque jamais votre présence."
+  },
+  {
+    "code": "fill.event.label.20",
+    "label": "Vous tombez sur un feu de camp encore chaud, mais personne ne se trouve autour."
+  },
+  {
+    "code": "fill.event.label.21",
+    "label": "Pendant plusieurs secondes, tous les sons autour de vous disparaissent. Puis, soudainement, le monde redevient bruyant."
+  },
+  {
+    "code": "fill.event.label.22",
+    "label": "Un cerf vous observe entre les arbres. Après quelques instants, il se retourne calmement et s'éloigne."
+  },
+  {
+    "code": "fill.event.label.23",
+    "label": "Un son de cor profond retentit quelque part au-delà des montagnes. Aucun second coup de cor ne suit."
+  },
+  {
+    "code": "fill.event.label.24",
+    "label": "Entre deux arbres se trouve une vieille porte en bois sans aucun bâtiment visible autour d'elle. Elle est légèrement entrouverte."
+  },
+  {
+    "code": "fill.event.label.25",
+    "label": "Une fine couche de brouillard dérive sur la route, vous entourant pendant quelques instants avant de disparaître lentement."
+  },
+  {
+    "code": "fill.event.label.26",
+    "label": "Le vent traverse une étroite ouverture dans les rochers, produisant un son étrangement similaire à un sifflement humain."
+  },
+  {
+    "code": "fill.event.label.27",
+    "label": "Vous passez devant une vieille statue de pierre recouverte en partie de mousse. Son visage a été effacé par le passage du temps."
+  },
+  {
+    "code": "fill.event.label.28",
+    "label": "Un lapin traverse soudainement votre chemin à toute vitesse, comme s'il était poursuivi par quelque chose que vous ne pouvez pas voir."
+  },
+  {
+    "code": "fill.event.label.29",
+    "label": "Deux voix se disputent quelque part au loin. Leurs paroles sont impossibles à distinguer."
+  },
+  {
+    "code": "fill.event.label.30",
+    "label": "Pendant un bref instant, un mince nuage passe devant la lune, la faisant paraître étrangement énorme avant que l'illusion ne disparaisse."
+  },
+  {
+    "code": "fill.event.label.30",
+    "label": "Pendant un bref instant, un mince nuage passe devant la lune, la faisant paraître étrangement énorme avant que l'illusion ne disparaisse."
+  },
+
+  {
+    "code": "continue.label",
+    "label": "Continuer"
+  },
+
+  {
+    "code": "enemy1.name.label",
+    "label": "Bourreau maudit"
+  },
+  {
+    "code": "enemy2.name.label",
+    "label": "Currutaco"
+  },
+  {
+    "code": "enemy3.name.label",
+    "label": "Bandit"
+  },
+  {
+    "code": "enemy4.name.label",
+    "label": "Kimen"
+  },
+  {
+    "code": "enemy5.name.label",
+    "label": "Bourreau corrompu"
+  },
+  {
+    "code": "enemy6.name.label",
+    "label": "Bête épineuse"
+  },
+  {
+    "code": "enemy7.name.label",
+    "label": "Tlahuelpuchi"
+  },
+
+  {
+    "code": "enemy1.description.label",
+    "label": "Une présence glaciale vous suit dans le silence. <br />Lorsque vous vous retournez, un terrible bourreau se tient devant vous, sa lame usée tachée par d'innombrables morts. Quelque chose dans son regard vide suggère que votre destin a été décidé il y a bien longtemps."
+  },
+  {
+    "code": "enemy2.description.label",
+    "label": "Alors que vous marchez dans les rues, vous croisez accidentellement le chemin d'un individu pompeux vêtu de vêtements extravagants. <br />Sa fierté se transforme rapidement en colère et, bientôt, vous voilà défié en duel par un <color=#FFFF00>Currutaco</color>."
+  },
+  {
+    "code": "enemy3.description.label",
+    "label": "Alors que vous avancez sur la route, une ombre se dresse sur votre chemin. <br />Un <color=#FF0000>bandit</color> révèle son arme et exige vos biens, les yeux fixés sur vous avec la froide assurance d'un homme habitué à prendre ce qu'il désire."
+  },
+  {
+    "code": "enemy4.description.label",
+    "label": "Un étrange silence s'abat sur les environs. <br />Quelque part à proximité, vous entendez un léger mouvement, suivi d'une présence que vous ne parvenez pas à identifier. Un <color=#FFFF00>Kimen</color> émerge des ombres et vous observe avec un calme inquiétant."
+  },
+  {
+    "code": "enemy5.description.label",
+    "label": "L'air devient lourd tandis qu'une silhouette s'approche dans l'obscurité. <br />Autrefois bourreau, cette âme corrompue porte désormais quelque chose de bien plus sombre que le devoir. Son armure est usée et tachée, et la lame entre ses mains semble presque impatiente de goûter à nouveau au sang."
+  },
+  {
+    "code": "enemy6.description.label",
+    "label": "Vous entendez un aboiement grotesque et vous vous retournez pour en chercher la source. <br />Une créature sombre émerge des ombres. Ce n'est pas un chien ordinaire. Ses yeux cramoisis brûlent de malveillance et sa gueule béante révèle des crocs monstrueux avides de déchirer votre chair. Sa queue serpentine fouette l'air derrière elle, comme si elle voulait vous entraîner jusque dans les abysses."
+  },
+  {
+    "code": "enemy7.description.label",
+    "label": "Un froid soudain parcourt l'air et les sons lointains de la nuit deviennent étrangement silencieux. <br />Une silhouette enveloppée d'une immobilité surnaturelle émerge des ténèbres. La <color=#FFFF00>Tlahuelpuchi</color> vous observe depuis les ombres, sa présence portant la terreur ancienne de quelque chose qui n'aurait jamais dû être dérangé."
+  },
+
+  {
+    "code": "inventory.header",
+    "label": "--------------- <br />INVENTAIRE<br />---------------"
+  },
+  {
+    "code": "stats.header",
+    "label": "--------------- <br />STATISTIQUES <br />---------------"
+  },
+
+  {
+    "code": "enemy3.name.label",
+    "label": "Bandit"
+  },
+  {
+    "code": "enemy4.name.label",
+    "label": "Kimen"
+  },
+  {
+    "code": "enemy5.name.label",
+    "label": "Bourreau corrompu"
+  },
+  {
+    "code": "enemy6.name.label",
+    "label": "Bête épineuse"
+  },
+  {
+    "code": "enemy7.name.label",
+    "label": "Tlahuelpuchi"
+  },
+
+  {
+    "code": "bandages.label",
+    "label": "Bandages"
+  },
+  {
+    "code": "reales.label",
+    "label": "Réaux"
+  },
+  {
+    "code": "musket.ammo.label",
+    "label": "Balles de mousquet"
+  },
+  {
+    "code": "pistol.ammo.label",
+    "label": "Munitions de pistolet"
+  },
+
+  {
+    "code": "health.label",
+    "label": "Santé"
+  },
+  {
+    "code": "strength.label",
+    "label": "Force"
+  },
+  {
+    "code": "agility.label",
+    "label": "Agilité"
+  },
+  {
+    "code": "hunger.label",
+    "label": "Faim"
+  },
+
+  {
+    "code": "general.option",
+    "label": "Continuer à marcher"
+  },
+
+  {
+    "code": "death.label",
+    "label": "Vous êtes mort <br /> <br /> 0.Continuer"
+  },
+
+  {
+    "code": "enemy.appeared",
+    "label": "est apparu."
+  },
+
+  {
+    "code": "not.reales",
+    "label": "Pas assez de réaux"
+  },
+  {
+    "code": "player.found",
+    "label": "Vous avez trouvé"
+  },
+  {
+    "code": "rest",
+    "label": "Heureusement, vous avez pu vous reposer"
+  },
+  {
+    "code": "hunger.increased",
+    "label": "Votre faim a augmenté de"
+  },
+  {
+    "code": "hunger.satisfied",
+    "label": "Votre faim a été rassasiée"
+  },
+
+  {
+    "code": "fight",
+    "label": "Combattre"
+  },
+  {
+    "code": "flee",
+    "label": "Fuir (-2 agilité)"
+  },
+  {
+    "code": "player.name",
+    "label": "Vous"
+  },
+  {
+    "code": "enemy.attack",
+    "label": "attaque"
+  },
+  {
+    "code": "dodge.label",
+    "label": "a esquivé l'attaque"
+  },
+  {
+    "code": "dodge.failed.label",
+    "label": "n'a pas réussi à esquiver l'attaque et a subi "
+  },
+  {
+    "code": "damage",
+    "label": "dégâts"
+  },
+  {
+    "code": "player.attack",
+    "label": "attaquez avec votre lame"
+  },
+  {
+    "code": "player.heal",
+    "label": "avez bandé vos blessures."
+  },
+  {
+    "code": "bandages.not.found",
+    "label": "Vous fouillez vos poches, mais vous ne trouvez plus aucun bandage ; vous avez perdu un temps précieux"
+  },
+  {
+    "code": "player.pistol.fire",
+    "label": "tirez avec votre pistolet"
+  },
+  {
+    "code": "player.pistol.reload",
+    "label": "rechargez votre pistolet"
+  },
+  {
+    "code": "player.musket.fire",
+    "label": "tirez avec votre mousquet"
+  },
+  {
+    "code": "player.musket.reload",
+    "label": "rechargez votre mousquet"
+  },
+  {
+    "code": "player.ammo.not.found",
+    "label": "Vous fouillez vos poches, mais vous n'avez plus de munitions ; vous avez perdu un temps précieux"
+  },
+  {
+    "code": "enemy.defeated",
+    "label": "a été vaincu"
+  },
+
+  {
+    "code": "combat.attack.label",
+    "label": "Attaquer avec votre lame"
+  },
+  {
+    "code": "combat.bandage.label",
+    "label": "Utiliser un bandage (+10 santé)"
+  },
+  {
+    "code": "combat.reloadPistol.label",
+    "label": "Recharger le pistolet"
+  },
+  {
+    "code": "combat.firePistol.label",
+    "label": "Tirer avec le pistolet"
+  },
+  {
+    "code": "combat.reloadMusket.label",
+    "label": "Recharger le mousquet"
+  },
+  {
+    "code": "combat.fireMusket.label",
+    "label": "Tirer avec le mousquet"
+  },
+  {
+    "code": "loot.reales.label",
+    "label": "<br />Vous avez récupéré {0} réal{1}."
+  },
+  {
+    "code": "loot.bandages.label",
+    "label": "<br />Vous avez récupéré {0} bandage{1}."
+  },
+  {
+    "code": "loot.pistolAmmo.label",
+    "label": "<br />Vous avez récupéré {0} balle{1} de pistolet."
+  },
+  {
+    "code": "loot.musketAmmo.label",
+    "label": "<br />Vous avez récupéré {0} balle{1} de mousquet."
+  },
+  {
+    "code": "loot.nothing.label",
+    "label": "<br />Vous n'avez rien trouvé de valeur."
+  }
+]
