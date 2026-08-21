@@ -4,6 +4,9 @@ const { ccclass, property } = _decorator;
 @ccclass('MainMenuManager')
 export class MainMenuManager extends Component {
 
+    @property(Node)
+    loadingScreen : Node;
+
     @property
     application : string = "cineres";
 
@@ -13,7 +16,10 @@ export class MainMenuManager extends Component {
     @property(RichText)
     versionLabel : RichText;
 
+    static instance : MainMenuManager;
+
     start() {
+        MainMenuManager.instance = this;
         if (this.versionLabel != null){
             this.versionLabel.string = this.application + " v" + this.version;
         }
@@ -25,6 +31,7 @@ export class MainMenuManager extends Component {
     
     loadGame() {
         director.loadScene("game");
+        MainMenuManager.instance.activeLoadScreen();
     }
 
     loadMainMenu (){
@@ -34,6 +41,10 @@ export class MainMenuManager extends Component {
     // Exit the game
     exitApplication() {
         game.end();
+    }
+
+    activeLoadScreen () {
+        this.loadingScreen.active = true;
     }
 }
 

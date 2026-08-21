@@ -1,4 +1,6 @@
 import { _decorator, Component, resources, JsonAsset, director, sys } from 'cc';
+import { GameManager } from '../GameManager';
+import { MainMenuManager } from '../MainMenu/MainMenuManager';
 const { ccclass , executionOrder } = _decorator;
 
 @ccclass('LanguageManager')
@@ -51,6 +53,7 @@ export class LanguageManager extends Component {
         console.log("Language selected : " +  LanguageManager.instance.language);
         this.loadLanguageModule();
         sys.localStorage.setItem("language", languageCode);
+        MainMenuManager.instance.activeLoadScreen();
         director.loadScene("mainMenu");
     }
 
