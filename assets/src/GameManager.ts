@@ -106,7 +106,7 @@ export class GameManager extends Component {
         if (this.strength < 1){
             this.strength = 1;
         }
-        if (this.health < 0){
+        if (this.health <= 0){
             this.health = 0;
             director.loadScene("deathScreen");
         }
