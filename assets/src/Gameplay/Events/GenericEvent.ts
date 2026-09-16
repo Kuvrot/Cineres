@@ -98,22 +98,46 @@ export class GenericEvent extends Component {
         GameManager.instance.strength += this.strength;
         GameManager.instance.health += this.health;
 
-        if (this.agilityCost > 0){
-            GameManager.instance.agility -= this.agilityCost;
-        }
         if (this.reales > 0) {
-            GameManager.instance.println(LanguageManager.instance.getLabel("player.found") + this.reales + "<color=#FFFF00>" + GameManager.instance.println(LanguageManager.instance.getLabel("reales.label").toString()) + "</color>");
+            GameManager.instance.println(
+                LanguageManager.instance.getLabel("player.found") + " " + 
+                this.reales +
+                " <color=#FFFF00>" +
+                LanguageManager.instance.getLabel("reales.label") +
+                "</color>"
+            );
         }
+
         if (this.bandages > 0) {
-            GameManager.instance.println(LanguageManager.instance.getLabel("player.found") + this.bandages + "<color=#FF00FF>" + GameManager.instance.println(LanguageManager.instance.getLabel("bandages.label").toString()) + "</color>");
-            
+            GameManager.instance.println(
+                LanguageManager.instance.getLabel("player.found") + " " + 
+                this.bandages +
+                " <color=#FF00FF>" +
+                LanguageManager.instance.getLabel("bandages.label") +
+                "</color>"
+            );
         }
+
         if (this.pistolAmmo > 0) {
-            GameManager.instance.println(LanguageManager.instance.getLabel("player.found") + this.pistolAmmo + "<color=#FF00FF>" + GameManager.instance.println(LanguageManager.instance.getLabel("pistol.ammo.label").toString()) + "</color>");
+            GameManager.instance.println(
+                LanguageManager.instance.getLabel("player.found") + " " + 
+                this.pistolAmmo +
+                " <color=#FF00FF>" +
+                LanguageManager.instance.getLabel("pistol.ammo.label") +
+                "</color>"
+            );
         }
+
         if (this.musketAmmo > 0) {
-            GameManager.instance.println(LanguageManager.instance.getLabel("player.found") + this.musketAmmo + "<color=#FF00FF>" + GameManager.instance.println(LanguageManager.instance.getLabel("musket.ammo.label").toString()) + "</color>");
+            GameManager.instance.println(
+                LanguageManager.instance.getLabel("player.found") + " " + 
+                this.musketAmmo +
+                " <color=#FF00FF>" +
+                LanguageManager.instance.getLabel("musket.ammo.label") +
+                "</color>"
+            );
         }
+        
         if (this.agility > 0 || this.strength > 0 || this.health > 0){
             let stat = LanguageManager.instance.getLabel("rest") + ". <br />";
             if (this.agility > 0) {
