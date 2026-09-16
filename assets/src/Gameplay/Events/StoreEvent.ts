@@ -18,8 +18,10 @@ export class StoreEvent extends Component {
     onLoad() {
         let event = this.getComponent(EventComponent);
         for (let i = 0; i < event.options.length - 2; i++){
+            event.options[i] = LanguageManager.instance.getLabel(event.options[i].toString());
             event.options[i] += this.generateCostsString(this.generalPrice);
         }
+        event.options[3] = LanguageManager.instance.getLabel(event.options[3].toString());
         event.options[3] += this.generateCostsString(this.musketAmmoPrice);
     }
     update(deltaTime: number) {
