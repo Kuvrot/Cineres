@@ -54,15 +54,15 @@
 
   {
     "code": "city.option0",
-    "label": "Bourreau maudit"
+    "label": "Continue ton chemin"
   },
   {
     "code": "city.option1",
-    "label": "Bourreau maudit"
+    "label": "Va au magasin"
   },
   {
     "code": "city.option2",
-    "label": "Bourreau maudit"
+    "label": "Repose-toi dans une auberge"
   },
   {
     "code": "city.option3",
