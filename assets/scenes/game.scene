@@ -3974,7 +3974,7 @@
     "prompt": "enemy5.description.label",
     "options": [
       "fight",
-      "fllee"
+      "flee"
     ],
     "optionSelected": 0,
     "eventImage": {
