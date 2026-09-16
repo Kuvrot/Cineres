@@ -117,17 +117,10 @@ export class CombatEvent extends Component {
 
     runAway () {
         let p = GameManager.instance.getRandomInt(0 , 10);
-        if (p <= GameManager.instance.agility){
+        if (GameManager.instance.agility > 0){
             EventManager.instance.generateNewEvent();
-        }else{
-            alert("You failed to run away");
-            this.isCombatInitiated = true;
-            EventManager.instance.clearConsole();
-            CommandManager.instance.clearCommand();
-            GameManager.instance.println(this.generateOptions());
-            this.combatSystem();
+            GameManager.instance.agility -= 1;
         }
-        GameManager.instance.agility -= 2;
     }
 
     generateEnemyAction(){
