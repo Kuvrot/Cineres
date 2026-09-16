@@ -485,7 +485,7 @@
   },   
   {
     "code": "player.attack",
-    "label": "attackest with thy blade"
+    "label": "attack with your blade"
   },
   {
     "code": "player.heal",
@@ -522,7 +522,7 @@
 
   {
     "code": "combat.attack.label",
-    "label": "Attack with thy blade"
+    "label": "Attack with your blade"
   },
   {
     "code": "combat.bandage.label",
